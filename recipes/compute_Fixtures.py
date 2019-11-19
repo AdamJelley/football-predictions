@@ -4,7 +4,7 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
-
+leagues_df = dataiku.Dataset("Leagues_prepared_filtered").get_dataframe()
 
 # Compute recipe outputs
 # TODO: Write here your actual code that computes the outputs
