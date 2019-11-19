@@ -16,7 +16,16 @@
   },
   "redispatchPartitioning": false,
   "maxRunningActivities": 0,
-  "inputs": {},
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "Leagues_prepared_filtered",
+          "deps": []
+        }
+      ]
+    }
+  },
   "outputs": {
     "main": {
       "items": [
@@ -28,11 +37,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574173145137
+    "lastModifiedOn": 1574173161700
   },
   "creationTag": {
     "versionNumber": 0,
