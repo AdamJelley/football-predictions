@@ -1,4 +1,57 @@
 {
+  "uiData": {
+    "mode": "||",
+    "conditions": [
+      {
+        "input": "country",
+        "col": "name",
+        "string": "England",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "country",
+        "col": "name",
+        "string": "France",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "country",
+        "col": "name",
+        "string": "Germany",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "country",
+        "col": "name",
+        "string": "Spain",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "country",
+        "col": "name",
+        "string": "Italy",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "country",
+        "col": "name",
+        "string": "World",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      }
+    ]
+  },
+  "$status": {
+    "validated": false,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Filter expression is invalid"
+  },
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
