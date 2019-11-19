@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574165079510
+    "lastModifiedOn": 1574178047918
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,55 +59,75 @@
   "schema": {
     "columns": [
       {
-        "name": "country",
+        "name": "awayTeam",
         "type": "string"
       },
       {
-        "name": "country_code",
-        "type": "string"
-      },
-      {
-        "name": "coverage",
-        "type": "string"
-      },
-      {
-        "name": "flag",
-        "type": "string"
-      },
-      {
-        "name": "is_current",
+        "name": "elapsed",
         "type": "bigint"
+      },
+      {
+        "name": "event_date",
+        "type": "string"
+      },
+      {
+        "name": "event_timestamp",
+        "type": "bigint"
+      },
+      {
+        "name": "firstHalfStart",
+        "type": "string"
+      },
+      {
+        "name": "fixture_id",
+        "type": "bigint"
+      },
+      {
+        "name": "goalsAwayTeam",
+        "type": "double"
+      },
+      {
+        "name": "goalsHomeTeam",
+        "type": "double"
+      },
+      {
+        "name": "homeTeam",
+        "type": "string"
+      },
+      {
+        "name": "league",
+        "type": "string"
       },
       {
         "name": "league_id",
         "type": "bigint"
       },
       {
-        "name": "logo",
+        "name": "referee",
         "type": "string"
       },
       {
-        "name": "name",
+        "name": "round",
         "type": "string"
       },
       {
-        "name": "season",
-        "type": "bigint"
-      },
-      {
-        "name": "season_end",
+        "name": "score",
         "type": "string"
       },
       {
-        "name": "season_start",
+        "name": "secondHalfStart",
         "type": "string"
       },
       {
-        "name": "standings",
-        "type": "bigint"
+        "name": "status",
+        "type": "string"
       },
       {
-        "name": "type",
+        "name": "statusShort",
+        "type": "string"
+      },
+      {
+        "name": "venue",
         "type": "string"
       }
     ],
