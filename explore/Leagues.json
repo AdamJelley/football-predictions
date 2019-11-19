@@ -54,7 +54,9 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "Premier League": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
@@ -70,6 +72,41 @@
           "column": "name",
           "params": {
             "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      },
+      {
+        "column": "country",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "country",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "England": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "country",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "country",
+          "params": {
+            "type": "CountryMeaning",
             "ok": true,
             "nok": true,
             "empty": true
