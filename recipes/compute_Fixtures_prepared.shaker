@@ -317,7 +317,57 @@
       "params": {
         "referenceColumn": "league_id",
         "columns": [
-          "goalsAwayTeam"
+          "goalsAwayTeam",
+          "status",
+          "statusShort"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "awayTeam_logo",
+        "columns": [
+          "league_country",
+          "elapsed",
+          "homeTeam_logo"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "event_timestamp",
+        "columns": [
+          "league_logo",
+          "league_flag"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "elapsed",
+        "columns": [
+          "venue"
         ],
         "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "SINGLE_COLUMN"
