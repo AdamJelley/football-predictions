@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574170662958
+    "lastModifiedOn": 1574171928028
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,32 +59,8 @@
   "schema": {
     "columns": [
       {
-        "name": "country",
-        "type": "string"
-      },
-      {
-        "name": "country_code",
-        "type": "string"
-      },
-      {
-        "name": "coverage",
-        "type": "string"
-      },
-      {
-        "name": "flag",
-        "type": "string"
-      },
-      {
-        "name": "is_current",
-        "type": "bigint"
-      },
-      {
         "name": "league_id",
         "type": "bigint"
-      },
-      {
-        "name": "logo",
-        "type": "string"
       },
       {
         "name": "name",
@@ -95,7 +71,15 @@
         "type": "bigint"
       },
       {
-        "name": "season_end",
+        "name": "country",
+        "type": "string"
+      },
+      {
+        "name": "country_code",
+        "type": "string"
+      },
+      {
+        "name": "type",
         "type": "string"
       },
       {
@@ -103,11 +87,59 @@
         "type": "string"
       },
       {
+        "name": "season_end",
+        "type": "string"
+      },
+      {
+        "name": "is_current",
+        "type": "bigint"
+      },
+      {
         "name": "standings",
         "type": "bigint"
       },
       {
-        "name": "type",
+        "name": "flag",
+        "type": "string"
+      },
+      {
+        "name": "logo",
+        "type": "string"
+      },
+      {
+        "name": "coverage_odds",
+        "type": "boolean"
+      },
+      {
+        "name": "coverage_topScorers",
+        "type": "boolean"
+      },
+      {
+        "name": "coverage_fixtures_lineups",
+        "type": "boolean"
+      },
+      {
+        "name": "coverage_fixtures_events",
+        "type": "boolean"
+      },
+      {
+        "name": "coverage_fixtures_statistics",
+        "type": "boolean"
+      },
+      {
+        "name": "coverage_fixtures_players_statistics",
+        "type": "boolean"
+      },
+      {
+        "name": "coverage_standings",
+        "type": "boolean"
+      },
+      {
+        "name": "coverage_players",
+        "type": "boolean"
+      },
+      {
+        "name": "coverage_predictions",
         "type": "string"
       }
     ],
