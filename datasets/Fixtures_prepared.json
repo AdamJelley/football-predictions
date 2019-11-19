@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574179277083
+    "lastModifiedOn": 1574179695725
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,6 +91,14 @@
         "type": "double"
       },
       {
+        "name": "status",
+        "type": "string"
+      },
+      {
+        "name": "statusShort",
+        "type": "string"
+      },
+      {
         "name": "league_id",
         "type": "bigint"
       },
@@ -99,7 +107,11 @@
         "type": "string"
       },
       {
-        "name": "awayTeam_logo",
+        "name": "league_country",
+        "type": "string"
+      },
+      {
+        "name": "venue",
         "type": "string"
       },
       {
@@ -107,19 +119,11 @@
         "type": "bigint"
       },
       {
-        "name": "event_timestamp",
-        "type": "bigint"
-      },
-      {
-        "name": "firstHalfStart",
-        "type": "double"
-      },
-      {
         "name": "homeTeam_logo",
         "type": "string"
       },
       {
-        "name": "league_country",
+        "name": "awayTeam_logo",
         "type": "string"
       },
       {
@@ -129,6 +133,14 @@
       {
         "name": "league_flag",
         "type": "string"
+      },
+      {
+        "name": "event_timestamp",
+        "type": "bigint"
+      },
+      {
+        "name": "firstHalfStart",
+        "type": "double"
       },
       {
         "name": "referee",
@@ -157,18 +169,6 @@
       {
         "name": "secondHalfStart",
         "type": "double"
-      },
-      {
-        "name": "status",
-        "type": "string"
-      },
-      {
-        "name": "statusShort",
-        "type": "string"
-      },
-      {
-        "name": "venue",
-        "type": "string"
       }
     ],
     "userModified": true
