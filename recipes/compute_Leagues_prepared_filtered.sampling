@@ -1,6 +1,6 @@
 {
   "uiData": {
-    "mode": "||",
+    "mode": "SQL",
     "conditions": [
       {
         "input": "country",
@@ -8,14 +8,22 @@
         "string": "England",
         "num": 0,
         "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "name",
+        "col": "name",
+        "string": "Premier League",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
       }
     ]
   },
+  "expression": "(\"country\" \u003d \u0027England\u0027) AND ((\"name\" \u003d \u0027Premier League\u0027) OR (\"name\" \u003d \u0027Championship\u0027))",
   "$status": {
     "validated": true,
     "fullyTranslated": false,
     "ok": false,
-    "message": "Filter expression is invalid"
+    "message": "Incorrect formula: \u0027(\"country\" \u003d \u0027England\u0027) OR (\"name\" \u003d \u0027Premier League\u0027)\u0027 : Unidentified token \"\u003d\". (Parsing error at offset 11)"
   },
   "distinct": false,
   "enabled": true
