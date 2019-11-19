@@ -367,10 +367,12 @@
       "params": {
         "referenceColumn": "elapsed",
         "columns": [
-          "venue"
+          "venue",
+          "referee",
+          "round"
         ],
         "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
