@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574178125307
+    "lastModifiedOn": 1574179277083
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,16 +59,52 @@
   "schema": {
     "columns": [
       {
-        "name": "awayTeam",
+        "name": "event_date",
+        "type": "date"
+      },
+      {
+        "name": "fixture_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_id",
+        "type": "bigint"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "goalsHomeTeam",
+        "type": "double"
+      },
+      {
+        "name": "goalsAwayTeam",
+        "type": "double"
+      },
+      {
+        "name": "league_id",
+        "type": "bigint"
+      },
+      {
+        "name": "league_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_logo",
         "type": "string"
       },
       {
         "name": "elapsed",
         "type": "bigint"
-      },
-      {
-        "name": "event_date",
-        "type": "date"
       },
       {
         "name": "event_timestamp",
@@ -79,28 +115,20 @@
         "type": "double"
       },
       {
-        "name": "fixture_id",
-        "type": "bigint"
-      },
-      {
-        "name": "goalsAwayTeam",
-        "type": "double"
-      },
-      {
-        "name": "goalsHomeTeam",
-        "type": "double"
-      },
-      {
-        "name": "homeTeam",
+        "name": "homeTeam_logo",
         "type": "string"
       },
       {
-        "name": "league",
+        "name": "league_country",
         "type": "string"
       },
       {
-        "name": "league_id",
-        "type": "bigint"
+        "name": "league_logo",
+        "type": "string"
+      },
+      {
+        "name": "league_flag",
+        "type": "string"
       },
       {
         "name": "referee",
@@ -111,7 +139,19 @@
         "type": "string"
       },
       {
-        "name": "score",
+        "name": "score_halftime",
+        "type": "string"
+      },
+      {
+        "name": "score_penalty",
+        "type": "string"
+      },
+      {
+        "name": "score_fulltime",
+        "type": "string"
+      },
+      {
+        "name": "score_extratime",
         "type": "string"
       },
       {
