@@ -32,347 +32,394 @@
   "steps": [
     {
       "preview": false,
-      "metaType": "PROCESSOR",
+      "name": "Unnest JSON Columns",
+      "metaType": "GROUP",
       "disabled": false,
-      "type": "JSONFlattener",
-      "params": {
-        "maxDepth": 1,
-        "inCol": "awayTeam",
-        "nullAsEmpty": true,
-        "prefixOutputs": true,
-        "flattenArrays": false,
-        "separator": "_"
-      },
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "JSONFlattener",
+          "params": {
+            "maxDepth": 1,
+            "inCol": "awayTeam",
+            "nullAsEmpty": true,
+            "prefixOutputs": true,
+            "flattenArrays": false,
+            "separator": "_"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "awayTeam"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "JSONFlattener",
+          "params": {
+            "maxDepth": 1,
+            "inCol": "homeTeam",
+            "nullAsEmpty": true,
+            "prefixOutputs": true,
+            "flattenArrays": false,
+            "separator": "_"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "homeTeam"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "JSONFlattener",
+          "params": {
+            "maxDepth": 1,
+            "inCol": "league",
+            "nullAsEmpty": true,
+            "prefixOutputs": true,
+            "flattenArrays": false,
+            "separator": "_"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "league"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "parseJson(score)",
+            "column": "score"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "JSONFlattener",
+          "params": {
+            "maxDepth": 1,
+            "inCol": "score",
+            "nullAsEmpty": true,
+            "prefixOutputs": true,
+            "flattenArrays": false,
+            "separator": "_"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "score"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
       "alwaysShowComment": false
     },
     {
       "preview": false,
+      "name": "Round Goals",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RoundProcessor",
+          "params": {
+            "mode": "ROUND",
+            "places": 0,
+            "columns": [
+              "goalsAwayTeam"
+            ],
+            "precision": 0,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RoundProcessor",
+          "params": {
+            "mode": "ROUND",
+            "places": 0,
+            "columns": [
+              "goalsHomeTeam"
+            ],
+            "precision": 0,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "name": "Reordering Columns",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "columns": [
+              "event_date"
+            ],
+            "reorderAction": "AT_START",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "awayTeam_team_id",
+            "columns": [
+              "fixture_id"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "awayTeam_team_name",
+            "columns": [
+              "league_id"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "awayTeam_team_id",
+            "columns": [
+              "homeTeam_team_id",
+              "homeTeam_team_name"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "league_id",
+            "columns": [
+              "awayTeam_team_name"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "awayTeam_team_name",
+            "columns": [
+              "league_id"
+            ],
+            "reorderAction": "AFTER_COLUMN",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "awayTeam_logo",
+            "columns": [
+              "league_name"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "league_id",
+            "columns": [
+              "goalsHomeTeam"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "league_id",
+            "columns": [
+              "goalsAwayTeam",
+              "status",
+              "statusShort"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "awayTeam_logo",
+            "columns": [
+              "league_country",
+              "elapsed",
+              "homeTeam_logo"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "event_timestamp",
+            "columns": [
+              "league_logo",
+              "league_flag"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "elapsed",
+            "columns": [
+              "venue",
+              "referee",
+              "round"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "ColumnsSelector",
+      "type": "FilterOnValue",
       "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
         "columns": [
-          "awayTeam"
-        ],
-        "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "JSONFlattener",
-      "params": {
-        "maxDepth": 1,
-        "inCol": "homeTeam",
-        "nullAsEmpty": true,
-        "prefixOutputs": true,
-        "flattenArrays": false,
-        "separator": "_"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "homeTeam"
-        ],
-        "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "JSONFlattener",
-      "params": {
-        "maxDepth": 1,
-        "inCol": "league",
-        "nullAsEmpty": true,
-        "prefixOutputs": true,
-        "flattenArrays": false,
-        "separator": "_"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "league"
-        ],
-        "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "parseJson(score)",
-        "column": "score"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "JSONFlattener",
-      "params": {
-        "maxDepth": 1,
-        "inCol": "score",
-        "nullAsEmpty": true,
-        "prefixOutputs": true,
-        "flattenArrays": false,
-        "separator": "_"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "score"
-        ],
-        "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "RoundProcessor",
-      "params": {
-        "mode": "ROUND",
-        "places": 0,
-        "columns": [
-          "goalsAwayTeam"
-        ],
-        "precision": 0,
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "RoundProcessor",
-      "params": {
-        "mode": "ROUND",
-        "places": 0,
-        "columns": [
-          "goalsHomeTeam"
-        ],
-        "precision": 0,
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "columns": [
-          "event_date"
-        ],
-        "reorderAction": "AT_START",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "awayTeam_team_id",
-        "columns": [
-          "fixture_id"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "awayTeam_team_name",
-        "columns": [
-          "league_id"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "awayTeam_team_id",
-        "columns": [
-          "homeTeam_team_id",
-          "homeTeam_team_name"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "league_id",
-        "columns": [
-          "awayTeam_team_name"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "awayTeam_team_name",
-        "columns": [
-          "league_id"
-        ],
-        "reorderAction": "AFTER_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "awayTeam_logo",
-        "columns": [
-          "league_name"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "league_id",
-        "columns": [
-          "goalsHomeTeam"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "league_id",
-        "columns": [
-          "goalsAwayTeam",
-          "status",
           "statusShort"
         ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "awayTeam_logo",
-        "columns": [
-          "league_country",
-          "elapsed",
-          "homeTeam_logo"
+        "values": [
+          "FT"
         ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "event_timestamp",
-        "columns": [
-          "league_logo",
-          "league_flag"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "elapsed",
-        "columns": [
-          "venue",
-          "referee",
-          "round"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "COLUMNS"
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -384,7 +431,12 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "sorting": [],
+  "sorting": [
+    {
+      "column": "event_date",
+      "ascending": true
+    }
+  ],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
