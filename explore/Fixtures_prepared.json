@@ -10,7 +10,12 @@
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "event_date",
+        "ascending": true
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
