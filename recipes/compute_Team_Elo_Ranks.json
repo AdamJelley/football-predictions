@@ -25,21 +25,7 @@
       "items": [
         {
           "ref": "Fixtures_prepared",
-          "deps": [
-            {
-              "out": "Team_Elo_Ranks",
-              "idim": "event_date",
-              "odim": "event_date",
-              "func": "equals",
-              "params": {
-                "fromMode": "RELATIVE_OFFSET",
-                "fromGranularity": "DAY",
-                "fromOffset": "0",
-                "toGranularity": "DAY",
-                "toOffset": "0"
-              }
-            }
-          ]
+          "deps": []
         }
       ]
     }
@@ -55,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574246770233
+    "lastModifiedOn": 1574247709392
   },
   "creationTag": {
     "versionNumber": 0,
