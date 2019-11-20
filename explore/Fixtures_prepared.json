@@ -13,7 +13,7 @@
     "sorting": [
       {
         "column": "event_date",
-        "ascending": true
+        "ascending": false
       }
     ],
     "analysisColumnData": {},
