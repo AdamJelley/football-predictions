@@ -44,9 +44,9 @@ def getFixturesByLeague(league_id, base_url, headers, querystring):
 def getFixturesByLeagueDate(league_id, date, base_url, headers, querystring):
     """Get fixtures dataframe for particular league id for a particular date"""
     if getRemainingRequests(base_url, headers, querystring) > 0:
-        upcoming_fixtures_url = base_url + '/fixtures/league/' + str(league_id) + '/' + str(date)
-        upcoming_fixtures_response = requests.request("GET", upcoming_fixtures_url, headers=headers, params=querystring)
-        upcoming_fixtures_df = pd.DataFrame(upcoming_fixtures_response.json()['api']['fixtures'])
+        date_fixtures_url = base_url + '/fixtures/league/' + str(league_id) + '/' + str(date)
+        date_fixtures_response = requests.request("GET", upcoming_fixtures_url, headers=headers, params=querystring)
+        date_fixtures_df = pd.DataFrame(date_fixtures_response.json()['api']['fixtures'])
     else:
         raise ValueError('No remaining requests. Try again tomorrow.')
-    return upcoming_fixtures_df
+    return date_fixtures_df
