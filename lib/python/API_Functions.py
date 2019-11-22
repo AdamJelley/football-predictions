@@ -42,7 +42,7 @@ def getFixturesByLeague(league_id, base_url, headers, querystring):
     return fixtures_df
 
 def getFixturesByLeagueDate(league_id, date, base_url, headers, querystring):
-    """Get fixtures dataframe for particular league id"""
+    """Get fixtures dataframe for particular league id for a particular date"""
     if API_Functions.getRemainingRequests(base_url, headers, querystring) > 0:
         upcoming_fixtures_url = base_url + '/fixtures/league/' + str(league_id) + '/' + str(date)
         upcoming_fixtures_response = requests.request("GET", upcoming_fixtures_url, headers=headers, params=querystring)
