@@ -11,6 +11,9 @@
           "map": {
             "Fixtures": {
               "repartition": 10
+            },
+            "Upcoming_Fixtures": {
+              "repartition": 10
             }
           }
         },
@@ -69,11 +72,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574442530587
+    "lastModifiedOn": 1574442970003
   },
   "creationTag": {
     "versionNumber": 0,
