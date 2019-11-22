@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574447847356
+    "lastModifiedOn": 1574447860949
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,10 +71,6 @@
         "type": "double"
       },
       {
-        "name": "target",
-        "type": "string"
-      },
-      {
         "name": "homeTeam_team_id_rank",
         "type": "double"
       },
@@ -89,6 +85,10 @@
       {
         "name": "ELOprob_awayTeam_team_id",
         "type": "double"
+      },
+      {
+        "name": "target",
+        "type": "string"
       }
     ],
     "userModified": true
