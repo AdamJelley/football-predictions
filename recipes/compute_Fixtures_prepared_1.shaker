@@ -32,6 +32,32 @@
   "steps": [
     {
       "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "u\u0027",
+            "to": "\u0027"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "awayTeam",
+          "homeTeam",
+          "league",
+          "score"
+        ],
+        "appliesTo": "COLUMNS",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
       "name": "Unnest JSON Columns",
       "metaType": "GROUP",
       "disabled": false,
