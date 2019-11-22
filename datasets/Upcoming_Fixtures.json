@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574271674736
+    "lastModifiedOn": 1574442488785
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,81 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "awayTeam",
+        "type": "string"
+      },
+      {
+        "name": "elapsed",
+        "type": "bigint"
+      },
+      {
+        "name": "event_date",
+        "type": "string"
+      },
+      {
+        "name": "event_timestamp",
+        "type": "bigint"
+      },
+      {
+        "name": "firstHalfStart",
+        "type": "string"
+      },
+      {
+        "name": "fixture_id",
+        "type": "bigint"
+      },
+      {
+        "name": "goalsAwayTeam",
+        "type": "string"
+      },
+      {
+        "name": "goalsHomeTeam",
+        "type": "string"
+      },
+      {
+        "name": "homeTeam",
+        "type": "string"
+      },
+      {
+        "name": "league",
+        "type": "string"
+      },
+      {
+        "name": "league_id",
+        "type": "bigint"
+      },
+      {
+        "name": "referee",
+        "type": "string"
+      },
+      {
+        "name": "round",
+        "type": "string"
+      },
+      {
+        "name": "score",
+        "type": "string"
+      },
+      {
+        "name": "secondHalfStart",
+        "type": "string"
+      },
+      {
+        "name": "status",
+        "type": "string"
+      },
+      {
+        "name": "statusShort",
+        "type": "string"
+      },
+      {
+        "name": "venue",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
