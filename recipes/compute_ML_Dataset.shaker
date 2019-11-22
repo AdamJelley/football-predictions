@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -26,19 +25,109 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "fixture_id",
+          "homeTeam_team_id",
+          "awayTeam_team_id",
+          "homeTeam_team_id_new_rank",
+          "awayTeam_team_id_new_rank",
+          "rank_change_homeTeam_team_id",
+          "rank_change_awayTeam_team_id",
+          "homeTeam_team_name",
+          "awayTeam_team_name",
+          "status",
+          "statusShort",
+          "league_id",
+          "league_name",
+          "league_country",
+          "venue",
+          "referee",
+          "round",
+          "elapsed",
+          "homeTeam_logo",
+          "awayTeam_logo",
+          "league_logo",
+          "league_flag",
+          "event_timestamp",
+          "firstHalfStart",
+          "score_halftime",
+          "score_penalty",
+          "score_fulltime",
+          "score_extratime",
+          "secondHalfStart"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 0,
+        "columns": [
+          "goalsHomeTeam"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 0,
+        "columns": [
+          "goalsAwayTeam"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(goalsHomeTeam\u003egoalsAwayTeam,\u0027Home\u0027,if(goalsAwayTeam\u003egoalsHomeTeam,\u0027Away\u0027,if(goalsHomeTeam\u003d\u003dgoalsAwayTeam,\u0027Draw\u0027,\u0027\u0027)))",
+        "column": "target"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
