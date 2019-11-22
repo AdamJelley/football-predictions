@@ -4,7 +4,7 @@ BASE_URL = 'https://api-football-v1.p.rapidapi.com/v2/'
 
 QUERYSTRING = {"timezone":"Europe/London"}
 
-def getAPIRequestHeaders:
+def getAPIRequestHeaders():
     client = dataiku.api_client()
     auth_info = client.get_auth_info(with_secrets=True)
 
