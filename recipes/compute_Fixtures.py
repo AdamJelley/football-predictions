@@ -3,7 +3,8 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 import requests
-import API_Functions 
+import API_Functions
+from API_Functions import BASE_URL, QUERYSTRING
 
 leagues_df = dataiku.Dataset("Leagues_prepared_filtered").get_dataframe()
 
