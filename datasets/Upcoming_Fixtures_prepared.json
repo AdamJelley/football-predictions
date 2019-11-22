@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574442530579
+    "lastModifiedOn": 1574442969910
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,19 +63,39 @@
         "type": "date"
       },
       {
-        "name": "fixture_id",
-        "type": "bigint"
-      },
-      {
-        "name": "homeTeam_team_id",
-        "type": "bigint"
-      },
-      {
-        "name": "homeTeam_team_name",
+        "name": "venue",
         "type": "string"
       },
       {
-        "name": "awayTeam_team_id",
+        "name": "referee",
+        "type": "string"
+      },
+      {
+        "name": "round",
+        "type": "string"
+      },
+      {
+        "name": "elapsed",
+        "type": "bigint"
+      },
+      {
+        "name": "league_logo",
+        "type": "string"
+      },
+      {
+        "name": "league_flag",
+        "type": "string"
+      },
+      {
+        "name": "event_timestamp",
+        "type": "bigint"
+      },
+      {
+        "name": "firstHalfStart",
+        "type": "double"
+      },
+      {
+        "name": "fixture_id",
         "type": "bigint"
       },
       {
@@ -103,6 +123,34 @@
         "type": "bigint"
       },
       {
+        "name": "score_u\u0027extratime\u0027",
+        "type": "string"
+      },
+      {
+        "name": "score_u\u0027penalty\u0027",
+        "type": "string"
+      },
+      {
+        "name": "score_u\u0027halftime\u0027",
+        "type": "string"
+      },
+      {
+        "name": "score_u\u0027fulltime\u0027",
+        "type": "string"
+      },
+      {
+        "name": "secondHalfStart",
+        "type": "double"
+      },
+      {
+        "name": "homeTeam_team_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
         "name": "league_name",
         "type": "string"
       },
@@ -111,64 +159,8 @@
         "type": "string"
       },
       {
-        "name": "venue",
-        "type": "string"
-      },
-      {
-        "name": "referee",
-        "type": "string"
-      },
-      {
-        "name": "round",
-        "type": "string"
-      },
-      {
-        "name": "elapsed",
-        "type": "bigint"
-      },
-      {
         "name": "homeTeam_logo",
         "type": "string"
-      },
-      {
-        "name": "awayTeam_logo",
-        "type": "string"
-      },
-      {
-        "name": "league_logo",
-        "type": "string"
-      },
-      {
-        "name": "league_flag",
-        "type": "string"
-      },
-      {
-        "name": "event_timestamp",
-        "type": "bigint"
-      },
-      {
-        "name": "firstHalfStart",
-        "type": "double"
-      },
-      {
-        "name": "score_halftime",
-        "type": "string"
-      },
-      {
-        "name": "score_penalty",
-        "type": "string"
-      },
-      {
-        "name": "score_fulltime",
-        "type": "string"
-      },
-      {
-        "name": "score_extratime",
-        "type": "string"
-      },
-      {
-        "name": "secondHalfStart",
-        "type": "double"
       }
     ],
     "userModified": true
