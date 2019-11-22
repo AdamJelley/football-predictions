@@ -105,13 +105,27 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if(goalsHomeTeam\u003egoalsAwayTeam,\u0027Home\u0027,if(goalsAwayTeam\u003egoalsHomeTeam,\u0027Away\u0027,if(goalsHomeTeam\u003d\u003dgoalsAwayTeam,\u0027Draw\u0027,\u0027\u0027)))",
         "column": "target"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "target"
+        ],
+        "reorderAction": "AT_END",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
