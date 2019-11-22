@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574442969910
+    "lastModifiedOn": 1574446680331
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,6 +63,14 @@
         "type": "date"
       },
       {
+        "name": "league_name",
+        "type": "string"
+      },
+      {
+        "name": "league_country",
+        "type": "string"
+      },
+      {
         "name": "venue",
         "type": "string"
       },
@@ -79,23 +87,27 @@
         "type": "bigint"
       },
       {
-        "name": "league_logo",
+        "name": "homeTeam_logo",
         "type": "string"
       },
       {
-        "name": "league_flag",
+        "name": "awayTeam_logo",
         "type": "string"
-      },
-      {
-        "name": "event_timestamp",
-        "type": "bigint"
-      },
-      {
-        "name": "firstHalfStart",
-        "type": "double"
       },
       {
         "name": "fixture_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_id",
         "type": "bigint"
       },
       {
@@ -123,44 +135,40 @@
         "type": "bigint"
       },
       {
-        "name": "score_u\u0027extratime\u0027",
+        "name": "league_logo",
         "type": "string"
       },
       {
-        "name": "score_u\u0027penalty\u0027",
+        "name": "league_flag",
         "type": "string"
       },
       {
-        "name": "score_u\u0027halftime\u0027",
+        "name": "event_timestamp",
+        "type": "bigint"
+      },
+      {
+        "name": "firstHalfStart",
+        "type": "double"
+      },
+      {
+        "name": "score_halftime",
         "type": "string"
       },
       {
-        "name": "score_u\u0027fulltime\u0027",
+        "name": "score_penalty",
+        "type": "string"
+      },
+      {
+        "name": "score_extratime",
+        "type": "string"
+      },
+      {
+        "name": "score_fulltime",
         "type": "string"
       },
       {
         "name": "secondHalfStart",
         "type": "double"
-      },
-      {
-        "name": "homeTeam_team_id",
-        "type": "bigint"
-      },
-      {
-        "name": "homeTeam_team_name",
-        "type": "string"
-      },
-      {
-        "name": "league_name",
-        "type": "string"
-      },
-      {
-        "name": "league_country",
-        "type": "string"
-      },
-      {
-        "name": "homeTeam_logo",
-        "type": "string"
       }
     ],
     "userModified": true
