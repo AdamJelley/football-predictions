@@ -1,4 +1,6 @@
 import dataiku
+import pandas as pd, numpy as np
+import requests
 
 BASE_URL = 'https://api-football-v1.p.rapidapi.com/v2/'
 
