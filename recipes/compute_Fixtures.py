@@ -17,7 +17,7 @@ for league_id in leagues_df['league_id']:
     fixtures_df = fixtures_df.append(df)
     
 today = pd.to_datetime('today').strftime("%Y-%m-%d")
-fixtures_df = fixtures_df.loc[fixtures_df['event_date'].strftime("%Y-%m-%d") < today]
+fixtures_df = fixtures_df.loc[fixtures_df['event_date'] < today]
 
 # Write recipe outputs
 fixtures = dataiku.Dataset("Fixtures")
