@@ -6,14 +6,14 @@ FROM
             ORDER BY "event_date" desc)
     FROM
         (
-            SELECT a."event_date" as "event_date", a."homeTeam_team_id" as "teamId", a."homeTeam_team_name" as "teamName", a."homeTeam_team_id_new_rank" as "ELO_rank" FROM
+            SELECT a."event_date" as "event_date", a."homeTeam_team_id" as "teamId", a."homeTeam_team_name" as "teamName", a."homeTeam_team_id_new_rank" as "Elo_rank" FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "homeTeam_team_id"
               ORDER BY "event_date" desc)
               FROM "FOOTBALLMATCHPREDICTIONS_team_elo_ranks") a
               WHERE a.ROW_NUMBER = 1
         UNION
-            SELECT b."event_date" as "event_date", b."awayTeam_team_id" as "teamId", b."awayTeam_team_name" as "teamName", b."awayTeam_team_id_new_rank" as "ELO_rank" FROM
+            SELECT b."event_date" as "event_date", b."awayTeam_team_id" as "teamId", b."awayTeam_team_name" as "teamName", b."awayTeam_team_id_new_rank" as "Elo_rank" FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "awayTeam_team_id"
               ORDER BY "event_date" desc)
