@@ -1,0 +1,24 @@
+[
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "JidtqGs",
+    "id": "0PR1zX3Gyusz9W3U",
+    "key": "fFjtfn9QRUyszEpoiYCAiAiQjOG44c5U",
+    "label": "Key for Web app FootballPredictions(JidtqGs)",
+    "createdOn": 1574528072121
+  }
+]
