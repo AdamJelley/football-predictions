@@ -104,31 +104,6 @@
       "table": 0
     },
     {
-      "name": "elapsed",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "homeTeam_logo",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "awayTeam_logo",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "goalsHomeTeam",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "goalsAwayTeam",
-      "type": "double",
-      "table": 0
-    },
-    {
       "name": "status",
       "type": "string",
       "table": 0
@@ -159,49 +134,14 @@
       "table": 0
     },
     {
-      "name": "firstHalfStart",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "score_halftime",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "score_penalty",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "score_extratime",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "score_fulltime",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "secondHalfStart",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "teamId",
-      "type": "int",
-      "table": 1
-    },
-    {
-      "name": "teamName",
+      "name": "ELO_rank",
       "type": "string",
       "table": 1
     },
     {
       "name": "ELO_rank",
       "type": "string",
-      "table": 1
+      "table": 2
     }
   ],
   "engineParams": {
@@ -254,10 +194,12 @@
         "enabled": false
       },
       "autoSelectColumns": false,
+      "prefix": "home_",
       "index": 1,
       "computedColumns": []
     },
     {
+      "prefix": "away_",
       "index": 1
     }
   ],
@@ -311,26 +253,6 @@
             "type": "string"
           },
           {
-            "name": "elapsed",
-            "type": "bigint"
-          },
-          {
-            "name": "homeTeam_logo",
-            "type": "string"
-          },
-          {
-            "name": "awayTeam_logo",
-            "type": "string"
-          },
-          {
-            "name": "goalsHomeTeam",
-            "type": "double"
-          },
-          {
-            "name": "goalsAwayTeam",
-            "type": "double"
-          },
-          {
             "name": "status",
             "type": "string"
           },
@@ -355,42 +277,13 @@
             "type": "bigint"
           },
           {
-            "name": "firstHalfStart",
-            "type": "double"
-          },
-          {
-            "name": "score_halftime",
-            "type": "string"
-          },
-          {
-            "name": "score_penalty",
-            "type": "string"
-          },
-          {
-            "name": "score_extratime",
-            "type": "string"
-          },
-          {
-            "name": "score_fulltime",
-            "type": "string"
-          },
-          {
-            "name": "secondHalfStart",
-            "type": "double"
-          },
-          {
-            "originalType": "int4",
-            "name": "teamId",
-            "type": "int"
-          },
-          {
             "originalType": "text",
-            "name": "teamName",
+            "name": "home__ELO_rank",
             "type": "string"
           },
           {
             "originalType": "text",
-            "name": "ELO_rank",
+            "name": "away__ELO_rank",
             "type": "string"
           }
         ],
