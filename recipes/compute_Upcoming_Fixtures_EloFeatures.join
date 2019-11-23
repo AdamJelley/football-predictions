@@ -129,11 +129,6 @@
       "table": 0
     },
     {
-      "name": "event_timestamp",
-      "type": "bigint",
-      "table": 0
-    },
-    {
       "name": "ELO_rank",
       "type": "string",
       "table": 1
@@ -194,12 +189,12 @@
         "enabled": false
       },
       "autoSelectColumns": false,
-      "prefix": "home_",
+      "prefix": "home",
       "index": 1,
       "computedColumns": []
     },
     {
-      "prefix": "away_",
+      "prefix": "away",
       "index": 1
     }
   ],
@@ -273,17 +268,13 @@
             "type": "string"
           },
           {
-            "name": "event_timestamp",
-            "type": "bigint"
-          },
-          {
             "originalType": "text",
-            "name": "home__ELO_rank",
+            "name": "home_ELO_rank",
             "type": "string"
           },
           {
             "originalType": "text",
-            "name": "away__ELO_rank",
+            "name": "away_ELO_rank",
             "type": "string"
           }
         ],
