@@ -191,6 +191,25 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "homeTeam_team_id_rank",
+            "to": "home_Elo_rank"
+          },
+          {
+            "from": "awayTeam_team_id_rank",
+            "to": "away_Elo_rank"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
