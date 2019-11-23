@@ -3,13 +3,13 @@
   "id": "ComputeLatestRanks",
   "type": "step_based",
   "name": "ComputeLatestRanks",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574526701995
+    "lastModifiedOn": 1574527518969
   },
   "checklists": {
     "checklists": []
@@ -20,7 +20,25 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "W0BrLr2q",
+      "type": "temporal",
+      "name": "Daily Update",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "frequency": "Daily",
+        "daysOfWeek": [
+          "Saturday"
+        ],
+        "dayOfMonth": 1,
+        "minute": 0,
+        "hour": 2,
+        "count": 5
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
