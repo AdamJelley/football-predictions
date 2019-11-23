@@ -16,6 +16,6 @@ def first_call():
     mydataset = dataiku.Dataset("Upcoming_Fixtures_EloFeatures_scored")
     df = mydataset.get_dataframe(sampling='head', limit=max_rows)
     df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction']]
-    df = df.sort_values('match_datetime', ascending=False)
+    df = df.sort_values('event_date', ascending=False)
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
