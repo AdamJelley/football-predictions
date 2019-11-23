@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574525599812
+    "lastModifiedOn": 1574525656278
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,14 +61,6 @@
       {
         "name": "event_date",
         "type": "string"
-      },
-      {
-        "name": "goalsHomeTeam",
-        "type": "double"
-      },
-      {
-        "name": "goalsAwayTeam",
-        "type": "double"
       },
       {
         "name": "home_Elo_rank",
