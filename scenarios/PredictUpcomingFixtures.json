@@ -3,13 +3,13 @@
   "id": "PredictUpcomingFixtures",
   "type": "step_based",
   "name": "PredictUpcomingFixtures",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574527328623
+    "lastModifiedOn": 1574527620769
   },
   "checklists": {
     "checklists": []
@@ -20,7 +20,22 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "kxGbnjZJ",
+      "type": "follow_scenariorun",
+      "name": "GetUpcomingFixtures",
+      "delay": 60,
+      "active": true,
+      "params": {
+        "scenarioId": "GetUpcomingFixtures"
+      },
+      "graceDelaySettings": {
+        "delay": 0,
+        "checkAgainAfterGraceDelay": false
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
