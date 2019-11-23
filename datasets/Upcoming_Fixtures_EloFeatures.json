@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574525039453
+    "lastModifiedOn": 1574525191015
   },
   "creationTag": {
     "versionNumber": 0,
@@ -172,18 +172,15 @@
       },
       {
         "name": "teamId",
-        "type": "string",
-        "originalType": "text"
+        "type": "int"
       },
       {
         "name": "teamName",
-        "type": "string",
-        "originalType": "text"
+        "type": "string"
       },
       {
         "name": "ELO_rank",
-        "type": "string",
-        "originalType": "text"
+        "type": "string"
       }
     ],
     "userModified": true
