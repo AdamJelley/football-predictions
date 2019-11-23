@@ -108,6 +108,39 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "",
+        "formats": [
+          "yyyy-MM-dd\u0027T\u0027HH:mm:ss.SSSSSSSSSS"
+        ],
+        "columns": [
+          "event_date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "",
+        "outYearColumn": "event_date_year",
+        "column": "event_date",
+        "timezone_id": "UTC",
+        "outDayColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if(goalsHomeTeam\u003egoalsAwayTeam,\u0027Home\u0027,if(goalsAwayTeam\u003egoalsHomeTeam,\u0027Away\u0027,if(goalsHomeTeam\u003d\u003dgoalsAwayTeam,\u0027Draw\u0027,\u0027\u0027)))",
@@ -125,6 +158,36 @@
           "target"
         ],
         "reorderAction": "AT_END",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 2012.0,
+        "booleanMode": "AND",
+        "columns": [
+          "event_date_year"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "event_date_year"
+        ],
+        "keep": false,
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
