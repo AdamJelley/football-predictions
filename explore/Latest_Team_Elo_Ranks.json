@@ -12,7 +12,7 @@
     },
     "sorting": [
       {
-        "column": "ELO_rank",
+        "column": "Elo_rank",
         "ascending": false
       }
     ],
