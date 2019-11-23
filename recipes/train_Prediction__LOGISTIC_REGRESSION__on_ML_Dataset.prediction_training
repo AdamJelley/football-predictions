@@ -109,7 +109,7 @@
     "gridLength": 5
   },
   "partSource": "ACTIVE_VERSION",
-  "generatingModelId": "A-FOOTBALLMATCHPREDICTIONS-3cLkS2ib-iwPeay1B-s5-pp2-m1",
+  "generatingModelId": "A-FOOTBALLMATCHPREDICTIONS-3cLkS2ib-iwPeay1B-s6-pp2-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -136,7 +136,7 @@
       "awayTeam_team_id_rank": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "REJECT",
+        "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -199,7 +199,7 @@
       "homeTeam_team_id_rank": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "REJECT",
+        "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -257,7 +257,7 @@
       "ELOprob_homeTeam_team_id": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -278,7 +278,7 @@
       "ELOprob_awayTeam_team_id": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -439,10 +439,10 @@
     "kfold": false
   },
   "script": {
+    "contextProjectKey": "FOOTBALLMATCHPREDICTIONS",
     "columnsSelection": {
       "mode": "ALL"
     },
-    "analysisColumnData": {},
     "explorationSampling": {
       "_refreshTrigger": 0,
       "selection": {
@@ -466,20 +466,21 @@
       "autoRefreshSample": false
     },
     "explorationFilters": [],
-    "sorting": [],
     "exploreUIParams": {},
-    "globalSearchQuery": "",
-    "coloring": {
-      "scheme": "MEANING_AND_STATUS",
-      "individualColumns": [],
-      "valueColoringMode": "HASH"
-    },
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "previewMode": "ALL_ROWS",
     "vizSampling": {
       "_refreshTrigger": 0,
       "autoRefreshSample": false
+    },
+    "analysisColumnData": {},
+    "sorting": [],
+    "globalSearchQuery": "",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
     }
   },
   "sparkParams": {

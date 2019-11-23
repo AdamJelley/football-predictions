@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (LOGISTIC_REGRESSION) on ML_Dataset",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1574525006367",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -15,7 +15,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-FOOTBALLMATCHPREDICTIONS-3cLkS2ib-iwPeay1B-s5-pp2-m1",
+  "lastExportedFrom": "A-FOOTBALLMATCHPREDICTIONS-3cLkS2ib-iwPeay1B-s6-pp2-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -700,11 +700,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574524860481
+    "lastModifiedOn": 1574525006381
   },
   "creationTag": {
     "versionNumber": 0,
