@@ -2,7 +2,7 @@
   "type": "STANDARD",
   "hasLegacyBackendURL": false,
   "params": {
-    "backendEnabled": false,
+    "backendEnabled": true,
     "autoStartBackend": false,
     "envSelection": {
       "envMode": "INHERIT"
@@ -26,11 +26,11 @@
   "name": "FootballPredictions",
   "apiKey": "fFjtfn9QRUyszEpoiYCAiAiQjOG44c5U",
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574528201215
+    "lastModifiedOn": 1574528205741
   },
   "creationTag": {
     "versionNumber": 0,
