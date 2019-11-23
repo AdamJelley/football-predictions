@@ -15,6 +15,9 @@ for league_id in leagues_df['league_id']:
     df = API_Functions.getFixturesByLeague(league_id, BASE_URL, headers, QUERYSTRING)
     print(str(league_id) + ' done: ' + str(df.shape))
     fixtures_df = fixtures_df.append(df)
+    
+today = pd.to_datetime('today').strftime("%Y-%m-%d")
+fixtures_df = fixtures_df.loc[fixtures_df['event_date'].strftime("%Y-%m-%d") < today]
 
 # Write recipe outputs
 fixtures = dataiku.Dataset("Fixtures")
