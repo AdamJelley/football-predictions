@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574446829764
+    "lastModifiedOn": 1574524532210
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,6 +61,26 @@
       {
         "name": "event_date",
         "type": "date"
+      },
+      {
+        "name": "fixture_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_id",
+        "type": "bigint"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
       },
       {
         "name": "league_name",
@@ -92,26 +112,6 @@
       },
       {
         "name": "awayTeam_logo",
-        "type": "string"
-      },
-      {
-        "name": "fixture_id",
-        "type": "bigint"
-      },
-      {
-        "name": "homeTeam_team_id",
-        "type": "bigint"
-      },
-      {
-        "name": "homeTeam_team_name",
-        "type": "string"
-      },
-      {
-        "name": "awayTeam_team_id",
-        "type": "bigint"
-      },
-      {
-        "name": "awayTeam_team_name",
         "type": "string"
       },
       {
