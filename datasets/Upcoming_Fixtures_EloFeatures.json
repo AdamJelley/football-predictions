@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574525191015
+    "lastModifiedOn": 1574525284353
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,26 +103,6 @@
         "type": "string"
       },
       {
-        "name": "elapsed",
-        "type": "bigint"
-      },
-      {
-        "name": "homeTeam_logo",
-        "type": "string"
-      },
-      {
-        "name": "awayTeam_logo",
-        "type": "string"
-      },
-      {
-        "name": "goalsHomeTeam",
-        "type": "double"
-      },
-      {
-        "name": "goalsAwayTeam",
-        "type": "double"
-      },
-      {
         "name": "status",
         "type": "string"
       },
@@ -147,39 +127,11 @@
         "type": "bigint"
       },
       {
-        "name": "firstHalfStart",
-        "type": "double"
-      },
-      {
-        "name": "score_halftime",
+        "name": "home__ELO_rank",
         "type": "string"
       },
       {
-        "name": "score_penalty",
-        "type": "string"
-      },
-      {
-        "name": "score_extratime",
-        "type": "string"
-      },
-      {
-        "name": "score_fulltime",
-        "type": "string"
-      },
-      {
-        "name": "secondHalfStart",
-        "type": "double"
-      },
-      {
-        "name": "teamId",
-        "type": "int"
-      },
-      {
-        "name": "teamName",
-        "type": "string"
-      },
-      {
-        "name": "ELO_rank",
+        "name": "away__ELO_rank",
         "type": "string"
       }
     ],
