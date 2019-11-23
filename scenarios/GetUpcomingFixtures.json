@@ -5,11 +5,11 @@
   "name": "GetUpcomingFixtures",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574527074080
+    "lastModifiedOn": 1574527077852
   },
   "checklists": {
     "checklists": []
