@@ -5,11 +5,11 @@
   "name": "GetUpcomingFixtures",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574527030083
+    "lastModifiedOn": 1574527074080
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,56 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_1_true_d_Upcoming_Fixtures",
+        "type": "build_flowitem",
+        "name": "Upcoming Fixtures",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "Upcoming_Fixtures",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_1_true_d_Upcoming_Fixtures_prepared",
+        "type": "build_flowitem",
+        "name": "Upcoming Fixtures Prepared",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "Upcoming_Fixtures_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
