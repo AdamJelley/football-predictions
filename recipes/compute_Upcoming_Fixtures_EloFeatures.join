@@ -129,12 +129,12 @@
       "table": 0
     },
     {
-      "name": "ELO_rank",
+      "name": "Elo_rank",
       "type": "string",
       "table": 1
     },
     {
-      "name": "ELO_rank",
+      "name": "Elo_rank",
       "type": "string",
       "table": 2
     }
@@ -269,12 +269,12 @@
           },
           {
             "originalType": "text",
-            "name": "home_ELO_rank",
+            "name": "home_Elo_rank",
             "type": "string"
           },
           {
             "originalType": "text",
-            "name": "away_ELO_rank",
+            "name": "away_Elo_rank",
             "type": "string"
           }
         ],
