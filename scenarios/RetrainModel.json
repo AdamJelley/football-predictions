@@ -3,13 +3,13 @@
   "id": "RetrainModel",
   "type": "step_based",
   "name": "RetrainModel",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574529944133
+    "lastModifiedOn": 1574530032349
   },
   "checklists": {
     "checklists": []
@@ -20,10 +20,77 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "uZVcNgmQ",
+      "type": "temporal",
+      "name": "Weekly Retraining",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "frequency": "Weekly",
+        "daysOfWeek": [
+          "Sunday"
+        ],
+        "dayOfMonth": 1,
+        "minute": 0,
+        "hour": 4,
+        "count": 5
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_1_true_d_ML_Dataset",
+        "type": "build_flowitem",
+        "name": "ML Dataset",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "ML_Dataset",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_1_true_m_STX882mM",
+        "type": "build_flowitem",
+        "name": "Retrain Model",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "SAVED_MODEL",
+              "itemId": "STX882mM",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
