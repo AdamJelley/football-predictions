@@ -107,6 +107,8 @@
   },
   "name": "Football Match Predictions",
   "projectStatus": "Sandbox",
+  "imgPattern": 5,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -160,6 +162,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1574530713675
   },
   "creationTag": {
     "versionNumber": 0,
