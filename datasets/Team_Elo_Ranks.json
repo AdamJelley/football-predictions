@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574523145282
+    "lastModifiedOn": 1574526741954
   },
   "creationTag": {
     "versionNumber": 0,
@@ -115,6 +115,14 @@
         "type": "string"
       },
       {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
+      },
+      {
         "name": "league_name",
         "type": "string"
       },
@@ -144,14 +152,6 @@
       },
       {
         "name": "awayTeam_logo",
-        "type": "string"
-      },
-      {
-        "name": "homeTeam_team_name",
-        "type": "string"
-      },
-      {
-        "name": "awayTeam_team_name",
         "type": "string"
       },
       {
