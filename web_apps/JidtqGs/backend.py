@@ -15,7 +15,7 @@ def first_call():
     max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 500
     mydataset = dataiku.Dataset("Upcoming_Fixtures_EloFeatures_scored")
     df = mydataset.get_dataframe(sampling='head', limit=max_rows)
-    df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'leagueName', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction']]
+    df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction']]
     df = df.sort_values('match_datetime', ascending=False)
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
