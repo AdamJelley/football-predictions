@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574247709375
+    "lastModifiedOn": 1574523145282
   },
   "creationTag": {
     "versionNumber": 0,
@@ -115,26 +115,6 @@
         "type": "string"
       },
       {
-        "name": "homeTeam_team_name",
-        "type": "string"
-      },
-      {
-        "name": "awayTeam_team_name",
-        "type": "string"
-      },
-      {
-        "name": "status",
-        "type": "string"
-      },
-      {
-        "name": "statusShort",
-        "type": "string"
-      },
-      {
-        "name": "league_id",
-        "type": "string"
-      },
-      {
         "name": "league_name",
         "type": "string"
       },
@@ -167,6 +147,26 @@
         "type": "string"
       },
       {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "status",
+        "type": "string"
+      },
+      {
+        "name": "statusShort",
+        "type": "string"
+      },
+      {
+        "name": "league_id",
+        "type": "string"
+      },
+      {
         "name": "league_logo",
         "type": "string"
       },
@@ -191,11 +191,11 @@
         "type": "string"
       },
       {
-        "name": "score_fulltime",
+        "name": "score_extratime",
         "type": "string"
       },
       {
-        "name": "score_extratime",
+        "name": "score_fulltime",
         "type": "string"
       },
       {
@@ -203,7 +203,7 @@
         "type": "string"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "metrics": {
     "probes": [
