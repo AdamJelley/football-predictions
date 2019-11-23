@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574447860949
+    "lastModifiedOn": 1574523553707
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,6 +61,10 @@
       {
         "name": "event_date",
         "type": "string"
+      },
+      {
+        "name": "event_date_year",
+        "type": "bigint"
       },
       {
         "name": "goalsHomeTeam",
