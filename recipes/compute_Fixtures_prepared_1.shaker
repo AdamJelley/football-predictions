@@ -425,6 +425,25 @@
             "appliesTo": "COLUMNS"
           },
           "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "league_name",
+            "columns": [
+              "fixture_id",
+              "homeTeam_team_id",
+              "homeTeam_team_name",
+              "awayTeam_team_id",
+              "awayTeam_team_name"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
         }
       ],
       "alwaysShowComment": false
