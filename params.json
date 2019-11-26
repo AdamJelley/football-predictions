@@ -8,7 +8,22 @@
   },
   "projectType": "REGULAR",
   "owner": "ajelley",
-  "permissions": [],
+  "permissions": [
+    {
+      "group": "wscr",
+      "admin": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": true,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -164,11 +179,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574530713675
+    "lastModifiedOn": 1574762487120
   },
   "creationTag": {
     "versionNumber": 0,
