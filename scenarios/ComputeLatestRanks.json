@@ -5,11 +5,11 @@
   "name": "ComputeLatestRanks",
   "active": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574527518969
+    "lastModifiedOn": 1574760800582
   },
   "checklists": {
     "checklists": []
