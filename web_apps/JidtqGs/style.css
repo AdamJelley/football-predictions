@@ -26,6 +26,7 @@ h1 {
 #logo-left {
     width: 200px;
     height: 100px;
+    position:fixed;
     top: 0px;
     left: 0px;
 }
