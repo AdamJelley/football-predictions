@@ -44,8 +44,6 @@
           "awayTeam_team_id_new_rank",
           "rank_change_homeTeam_team_id",
           "rank_change_awayTeam_team_id",
-          "homeTeam_team_name",
-          "awayTeam_team_name",
           "status",
           "statusShort",
           "league_id",
@@ -222,6 +220,22 @@
           "goalsHomeTeam"
         ],
         "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "home_Elo_rank",
+        "columns": [
+          "homeTeam_team_name",
+          "awayTeam_team_name"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
