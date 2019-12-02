@@ -59,7 +59,6 @@
           "firstHalfStart",
           "score_halftime",
           "score_penalty",
-          "score_fulltime",
           "score_extratime",
           "secondHalfStart"
         ],
@@ -233,7 +232,8 @@
           "homeTeam_team_name",
           "awayTeam_team_name",
           "league_name",
-          "venue"
+          "venue",
+          "score_fulltime"
         ],
         "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "COLUMNS"
