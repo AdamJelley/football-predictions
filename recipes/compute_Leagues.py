@@ -11,8 +11,8 @@ from API_Functions import BASE_URL, QUERYSTRING
 headers = API_Functions.getAPIRequestHeaders()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-leagues_url = base_url + '/leagues'
-leagues_response = requests.request("GET", leagues_url, headers=headers, params=querystring)
+leagues_url = BASE_URL + '/leagues'
+leagues_response = requests.request("GET", leagues_url, headers=headers, params=QUERYSTRING)
 leagues_df = pd.DataFrame(leagues_response.json()['api']['leagues'])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
