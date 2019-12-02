@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575289037350
+    "lastModifiedOn": 1575290182221
   },
   "creationTag": {
     "versionNumber": 0,
@@ -76,6 +76,10 @@
       },
       {
         "name": "venue",
+        "type": "string"
+      },
+      {
+        "name": "score_fulltime",
         "type": "string"
       },
       {
