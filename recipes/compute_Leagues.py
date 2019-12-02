@@ -6,8 +6,8 @@ from dataiku import pandasutils as pdu
 import requests
 import API_Functions
 from API_Functions import BASE_URL, QUERYSTRING
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 headers = API_Functions.getAPIRequestHeaders()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
