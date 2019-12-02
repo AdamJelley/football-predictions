@@ -54,7 +54,7 @@ h1 {
     width: 200px;
     height: 100px;
     position: absolute;
-    bottom: 0px;
+    top: 100px;
     left: 0px;
 }
 
@@ -68,7 +68,7 @@ h1 {
     width: 200px;
     height: 100px;
     position: absolute;
-    bottom: 0px;
+    top: 100px;
     right: 0px;
 }
 
