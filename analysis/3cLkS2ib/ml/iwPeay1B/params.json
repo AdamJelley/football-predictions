@@ -341,6 +341,52 @@
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
+      },
+      "league_name": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "AUTO",
+        "role": "INPUT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "venue": {
+        "text_handling": "TOKENIZE_HASHING_SVD",
+        "minRowsRatio": 0.001,
+        "maxRowsRatio": 0.8,
+        "maxWords": 0,
+        "ngramMinSize": 1,
+        "ngramMaxSize": 1,
+        "hashSVDHashSize": 200000,
+        "hashSVDSVDLimit": 50000,
+        "hashSVDSVDComponents": 100,
+        "stopWordsMode": "NONE",
+        "useCustomVectorizer": false,
+        "name": "venue",
+        "role": "REJECT",
+        "type": "TEXT",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "FreeText"
+        },
+        "autoReason": "REJECT_DEFAULT_TEXT_HANDLING",
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
       }
     },
     "feature_generation": {
