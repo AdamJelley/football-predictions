@@ -39,7 +39,7 @@ h1 {
 #logo-right {
     width: 200px;
     height: 100px;
-    position: relative;
+    position: fixed;
     top: 0px;
     right: 0px;
 }
