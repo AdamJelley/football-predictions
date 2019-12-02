@@ -6,7 +6,8 @@
 @import '/static/public/styles/1.0.0/variables.css';
 
 h1 {
-    text-align:center
+    text-align:center;
+    font-size:32;
 }
 
 .box {
