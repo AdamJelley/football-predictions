@@ -54,7 +54,7 @@ h1 {
     width: 200px;
     height: 100px;
     position: relative;
-    top: 240px;
+    bottom: 0px;
     left: 0px;
 }
 
