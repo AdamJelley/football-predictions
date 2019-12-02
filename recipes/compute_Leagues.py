@@ -4,16 +4,10 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 import requests
+import API_Functions
+from API_Functions import BASE_URL, QUERYSTRING
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-base_url = 'https://api-football-v1.p.rapidapi.com/v2/'
-
-querystring = {"timezone":"Europe/London"}
-
-headers = {
-    'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
-    'x-rapidapi-key': "6feb679189msh0e2593854adc7e5p1c15a8jsnbaa3c48b1a11"
-    }
+headers = API_Functions.getAPIRequestHeaders()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 leagues_url = base_url + '/leagues'
