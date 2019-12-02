@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575287127181
+    "lastModifiedOn": 1575287143201
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,60 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "event_date",
+        "type": "date"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "home_Elo_rank",
+        "type": "double"
+      },
+      {
+        "name": "away_Elo_rank",
+        "type": "double"
+      },
+      {
+        "name": "ELOprob_homeTeam_team_id",
+        "type": "double"
+      },
+      {
+        "name": "ELOprob_awayTeam_team_id",
+        "type": "double"
+      },
+      {
+        "name": "target",
+        "type": "string"
+      },
+      {
+        "name": "proba_Home",
+        "type": "double"
+      },
+      {
+        "name": "proba_Away",
+        "type": "double"
+      },
+      {
+        "name": "proba_Draw",
+        "type": "double"
+      },
+      {
+        "name": "prediction",
+        "type": "string"
+      },
+      {
+        "name": "prediction_correct",
+        "type": "boolean"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
