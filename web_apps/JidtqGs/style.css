@@ -10,6 +10,10 @@ h1 {
     top: 50px;
 }
 
+h1 {
+    text-align:center;
+}
+
 .box {
     border: 150px solid green;
     width: 100%;
