@@ -28,7 +28,7 @@ h1 {
 }
 
 /* resize images */
-.container img {
+#logo img {
     width: 100%;
     height: auto;
 }
