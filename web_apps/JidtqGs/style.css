@@ -54,7 +54,7 @@ h1 {
 #football {
     width: 200px;
     height: 100px;
-    position: fixed;
+    position: absolute;
     top: 200px;
     right: 0px;
 }
