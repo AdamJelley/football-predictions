@@ -7,7 +7,6 @@
 
 h1 {
     text-align:center;
-    font-size:362px;
 }
 
 .box {
@@ -51,7 +50,21 @@ h1 {
     height: auto;
 }
 
-#football {
+#football-left {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 220px;
+    left: 0px;
+}
+
+/* resize images */
+#football-left img {
+    width: 60%;
+    height: auto;
+}
+
+#football-right {
     width: 200px;
     height: 100px;
     position: absolute;
@@ -60,7 +73,7 @@ h1 {
 }
 
 /* resize images */
-#football img {
+#football-right img {
     width: 60%;
     height: auto;
 }
