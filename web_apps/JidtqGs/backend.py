@@ -10,8 +10,8 @@ from flask import request
 # From JavaScript, you can access the defined endpoints using
 # getWebAppBackendUrl('first_api_call')
 
-@app.route('/first_api_call')
-def first_call():
+@app.route('/predictions')
+def get_predictions():
     max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 500
     mydataset = dataiku.Dataset("Upcoming_Fixtures_EloFeatures_scored")
     df = mydataset.get_dataframe(sampling='head', limit=max_rows)

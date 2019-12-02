@@ -9,7 +9,7 @@ let historyButton = document.getElementById('history-button');
 let leagueDropdown = document.getElementById('dropdownMenuButton');
 
 fetchButton.addEventListener('click', function(event) {
-    $.getJSON(getWebAppBackendUrl('/first_api_call'), function(data) {
+    $.getJSON(getWebAppBackendUrl('/predictions'), function(data) {
         console.log('Received data from backend', data)
         /* modifying html to show the dataset as a table */
         $('#message').append(data['data'])
