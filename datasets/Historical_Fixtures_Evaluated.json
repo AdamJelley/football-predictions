@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575287143201
+    "lastModifiedOn": 1575289257384
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,6 +68,14 @@
       },
       {
         "name": "awayTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "league_name",
+        "type": "string"
+      },
+      {
+        "name": "venue",
         "type": "string"
       },
       {
