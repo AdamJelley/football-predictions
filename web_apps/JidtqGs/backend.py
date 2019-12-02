@@ -12,7 +12,7 @@ from flask import request
 
 @app.route('/predictions')
 def get_predictions():
-    max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 500
+    max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 100
     mydataset = dataiku.Dataset("Upcoming_Fixtures_EloFeatures_scored")
     df = mydataset.get_dataframe(sampling='head', limit=max_rows)
     df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction']]
@@ -22,10 +22,10 @@ def get_predictions():
 
 @app.route('/history')
 def get_history():
-    max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 500
+    max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 100
     mydataset = dataiku.Dataset("Historical_Fixtures_Evaluated")
     df = mydataset.get_dataframe(sampling='head', limit=max_rows)
     df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction', 'target', 'prediction_correct']]
-    df = df.sort_values('event_date', ascending=True)
+    df = df.sort_values('event_date', ascending=False)
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
