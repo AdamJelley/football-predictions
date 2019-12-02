@@ -70,7 +70,7 @@ h1 {
     height: 100px;
     position: absolute;
     top: 200px;
-    right: 50px;
+    right: -20px;
 }
 
 /* resize images */
