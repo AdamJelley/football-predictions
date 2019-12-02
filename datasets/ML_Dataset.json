@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574525656278
+    "lastModifiedOn": 1575285905956
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,6 +60,14 @@
     "columns": [
       {
         "name": "event_date",
+        "type": "string"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_name",
         "type": "string"
       },
       {
