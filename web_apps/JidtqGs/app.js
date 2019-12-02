@@ -19,6 +19,7 @@ fetchButton.addEventListener('click', function(event) {
 });
 
 historyButton.addEventListener('click', function(event) {
+    $('#message').empty();
     $.getJSON(getWebAppBackendUrl('/history'), function(data) {
         console.log('Received data from backend', data)
         /* modifying html to show the dataset as a table */
