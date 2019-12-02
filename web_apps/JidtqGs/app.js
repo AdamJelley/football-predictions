@@ -17,7 +17,7 @@ fetchButton.addEventListener('click', function(event) {
     return false;
 });
 
-fetchButton.historyButton('click', function(event) {
+historyButton.addEventListener('click', function(event) {
     $.getJSON(getWebAppBackendUrl('/predictions'), function(data) {
         console.log('Received data from backend', data)
         /* modifying html to show the dataset as a table */
