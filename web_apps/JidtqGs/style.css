@@ -68,7 +68,7 @@ h1 {
     width: 200px;
     height: 100px;
     position: absolute;
-    top: 220px;
+    bottom: 0px;
     right: 0px;
 }
 
