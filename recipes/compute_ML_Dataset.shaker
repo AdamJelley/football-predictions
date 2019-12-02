@@ -248,7 +248,12 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "sorting": [],
+  "sorting": [
+    {
+      "column": "event_date",
+      "ascending": false
+    }
+  ],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
