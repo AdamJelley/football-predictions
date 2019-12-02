@@ -53,7 +53,7 @@ h1 {
 #football-left {
     width: 200px;
     height: 100px;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     left: 0px;
 }
