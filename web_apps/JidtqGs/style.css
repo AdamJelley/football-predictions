@@ -37,6 +37,9 @@ h1 {
 #football {
     width: 200px;
     height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 /* resize images */
