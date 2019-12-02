@@ -47,9 +47,7 @@
           "status",
           "statusShort",
           "league_id",
-          "league_name",
           "league_country",
-          "venue",
           "referee",
           "round",
           "elapsed",
@@ -233,7 +231,9 @@
         "referenceColumn": "home_Elo_rank",
         "columns": [
           "homeTeam_team_name",
-          "awayTeam_team_name"
+          "awayTeam_team_name",
+          "league_name",
+          "venue"
         ],
         "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "COLUMNS"
