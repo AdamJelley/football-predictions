@@ -22,10 +22,15 @@ h1 {
     color: white;
 }
 
-#logo{
-    width:10px;
-    top:0;
-    left:0;
+.container {
+    width: 200px;
+    height: 120px;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
 }
 
 .buttons {
