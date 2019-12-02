@@ -24,8 +24,8 @@ def get_predictions():
 def get_history():
     max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 100
     mydataset = dataiku.Dataset("Historical_Fixtures_Evaluated")
-    df = mydataset.get_dataframe(sampling='head', limit=max_rows)
+    df = mydataset.get_dataframe()
     df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction', 'target', 'prediction_correct']]
-    df = df.sort_values('event_date', ascending=False)
+    df = df.sort_values('event_date', ascending=False).head(max_rows)
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
