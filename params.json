@@ -7,6 +7,25 @@
     "objects": []
   },
   "projectType": "REGULAR",
+  "bundleExporterSettings": {
+    "exportOptions": {
+      "exportUploads": false,
+      "exportManagedFS": false,
+      "exportAnalysisModels": false,
+      "exportSavedModels": false,
+      "exportManagedFolders": false,
+      "exportAllInputDatasets": false,
+      "exportAllDatasets": false,
+      "exportAllInputManagedFolders": false,
+      "exportGitRepository": false,
+      "exportInsightsData": false,
+      "useManualPluginsInfo": false,
+      "includedDatasetsData": [],
+      "includedSavedModels": [],
+      "includedManagedFolders": [],
+      "shareAllInputDatasets": false
+    }
+  },
   "owner": "ajelley",
   "permissions": [
     {
@@ -179,11 +198,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574762487120
+    "lastModifiedOn": 1575280672753
   },
   "creationTag": {
     "versionNumber": 0,
