@@ -17,6 +17,15 @@ fetchButton.addEventListener('click', function(event) {
     return false;
 });
 
+fetchButton.historyButton('click', function(event) {
+    $.getJSON(getWebAppBackendUrl('/predictions'), function(data) {
+        console.log('Received data from backend', data)
+        /* modifying html to show the dataset as a table */
+        $('#message').append(data['data'])
+    });
+    return false;
+});
+
 clearButton.addEventListener('click', function(event) {
     $('#message').empty();
     return false;
