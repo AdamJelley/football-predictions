@@ -23,13 +23,27 @@ h1 {
     color: white;
 }
 
-#logo {
+#logo-left {
     width: 200px;
     height: 100px;
 }
 
 /* resize images */
-#logo img {
+#logo-left img {
+    width: 100%;
+    height: auto;
+}
+
+#logo-right {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* resize images */
+#logo-right img {
     width: 100%;
     height: auto;
 }
