@@ -5,11 +5,11 @@
   "name": "PredictHistoricalFixtures",
   "active": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575380904633
+    "lastModifiedOn": 1575387798111
   },
   "checklists": {
     "checklists": []
