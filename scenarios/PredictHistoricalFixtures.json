@@ -5,11 +5,11 @@
   "name": "PredictHistoricalFixtures",
   "active": true,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575380777760
+    "lastModifiedOn": 1575380863821
   },
   "checklists": {
     "checklists": []
@@ -24,9 +24,12 @@
     {
       "id": "hHTvDTUS",
       "type": "follow_scenariorun",
+      "name": "PredictUpcomingFixtures",
       "delay": 60,
       "active": true,
-      "params": {},
+      "params": {
+        "scenarioId": "PredictUpcomingFixtures"
+      },
       "graceDelaySettings": {
         "delay": 0,
         "checkAgainAfterGraceDelay": false
@@ -35,7 +38,32 @@
   ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_d_ML_Dataset",
+        "type": "build_flowitem",
+        "name": "ML_Dataset",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "ML_Dataset",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
