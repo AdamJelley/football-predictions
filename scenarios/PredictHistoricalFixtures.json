@@ -5,11 +5,11 @@
   "name": "PredictHistoricalFixtures",
   "active": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575380863821
+    "lastModifiedOn": 1575380896601
   },
   "checklists": {
     "checklists": []
@@ -55,6 +55,30 @@
             {
               "type": "DATASET",
               "itemId": "ML_Dataset",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_Historical_Fixtures_Evaluated",
+        "type": "build_flowitem",
+        "name": "Historical Fixtures Evaluated",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "Historical_Fixtures_Evaluated",
               "partitionsSpec": ""
             }
           ],
