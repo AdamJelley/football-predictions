@@ -5,11 +5,11 @@
   "name": "PredictUpcomingFixtures",
   "active": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574760907765
+    "lastModifiedOn": 1575380738740
   },
   "checklists": {
     "checklists": []
@@ -82,7 +82,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
