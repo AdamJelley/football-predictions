@@ -3,13 +3,13 @@
   "id": "PredictHistoricalFixtures",
   "type": "step_based",
   "name": "PredictHistoricalFixtures",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575380763302
+    "lastModifiedOn": 1575380777760
   },
   "checklists": {
     "checklists": []
@@ -20,7 +20,19 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "hHTvDTUS",
+      "type": "follow_scenariorun",
+      "delay": 60,
+      "active": true,
+      "params": {},
+      "graceDelaySettings": {
+        "delay": 0,
+        "checkAgainAfterGraceDelay": false
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": []
