@@ -17,7 +17,7 @@ def get_predictions():
     df = mydataset.get_dataframe()
     df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction']]
     df = df.sort_values('event_date', ascending=True).head(max_rows)
-    df = df.rename(columns={"event_date":"Match Start"}, errors="raise")
+    df = df.rename(columns={"event_date":"MatchStart"}, errors="raise")
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
 
