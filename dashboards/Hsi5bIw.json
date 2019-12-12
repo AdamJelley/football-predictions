@@ -95,7 +95,7 @@
           }
         ]
       },
-      "title": "Football Match Predictions - Data",
+      "title": "Preditions and Rankings",
       "showTitle": true
     },
     {
@@ -217,11 +217,11 @@
   "name": "Football Match Predictions Dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157605954
+    "lastModifiedOn": 1576157632712
   },
   "creationTag": {
     "versionNumber": 0,
