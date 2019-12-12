@@ -87,6 +87,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Historical Fixture Predictions",
             "insightId": "ZYH6SaP",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -103,11 +104,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157132162
+    "lastModifiedOn": 1576157143601
   },
   "creationTag": {
     "versionNumber": 0,
