@@ -138,6 +138,6 @@ h2 {
     overflow-y:auto;
 }
 
-th {
+table, th {
     text-align:left;
 }
