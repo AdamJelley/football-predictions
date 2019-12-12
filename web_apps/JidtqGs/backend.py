@@ -16,8 +16,9 @@ def get_predictions():
     mydataset = dataiku.Dataset("Upcoming_Fixtures_EloFeatures_scored")
     df = mydataset.get_dataframe()
     df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction']]
+    df = df.sort_values('event_date', ascending=True).head(max_rows)
     df = df.rename(columns={"event_date": "Match Start", "homeTeam_team_name": "Home Team", "awayTeam_team_name": "Away Team", "league_name":"league", "venue":"Venue", "proba_Home":"Prob Home Win", "proba_Away":"Prob Away Win", "proba_Draw":"Prob Draw", "prediction":"Prediction"}, errors="raise")
-    df = df.sort_values("Match Start", ascending=True).head(max_rows)
+    
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
 
