@@ -18,7 +18,7 @@ def get_predictions():
     df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction']]
     df = df.sort_values('event_date', ascending=True).head(max_rows)
     df = df.rename(columns={"event_date":"Match Start", "homeTeam_team_name": "Home Team", "awayTeam_team_name": "Away Team", "league_name":"League", "venue":"Venue", "proba_Home":"Prob Home Win", "proba_Away":"Prob Away Win", "proba_Draw":"Prob Draw", "prediction":"Prediction"})
-    data = df.to_html(index=False)
+    data = df.to_html(index=False, justify='left')
     return json.dumps({"status": "ok", "data": data})
 
 @app.route('/history')
@@ -41,5 +41,5 @@ def get_rankings():
     df.Elo_rank = df.Elo_rank.astype('int')
     df = df.sort_values('Elo_rank', ascending=False).head(max_rows)
     df = df.rename(columns={'teamName':"Team Name", 'Elo_rank':"Elo Rank"})
-    data = df.to_html(index=False)
+    data = df.to_html(index=False, justify='left')
     return json.dumps({"status": "ok", "data": data})
