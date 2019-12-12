@@ -84,7 +84,7 @@ h2 {
 }
 
 .buttons {
-    width: 1000px !important;
+    min-width: 80px;
     text-align: center;
 }
 
