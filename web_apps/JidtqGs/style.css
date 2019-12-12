@@ -84,8 +84,11 @@ h2 {
 }
 
 .btn {
-    width: 250px;
-    
+    width: 250px;  
+}
+
+#clear-button {
+    margin: 20px;
 }
 
 #dropdownSeason, #dropdownLeague {
