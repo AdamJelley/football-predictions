@@ -180,7 +180,7 @@
           }
         ]
       },
-      "title": "Football Match Predictions - Model Summary",
+      "title": "Model Summary",
       "showTitle": true
     },
     {
@@ -217,11 +217,11 @@
   "name": "Football Match Predictions Dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 36,
+    "versionNumber": 37,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157676417
+    "lastModifiedOn": 1576157681516
   },
   "creationTag": {
     "versionNumber": 0,
