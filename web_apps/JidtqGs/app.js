@@ -6,7 +6,7 @@
 let fetchButton = document.getElementById('fetch-button');
 let clearButton = document.getElementById('clear-button');
 let historyButton = document.getElementById('history-button');
-let rankingbutton = document.getElementById('ranking-button');
+let rankingButton = document.getElementById('ranking-button');
 let leagueDropdown = document.getElementById('dropdownMenuButton');
 
 fetchButton.addEventListener('click', function(event) {
