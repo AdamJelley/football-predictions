@@ -37,6 +37,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "Historical_Fixtures_Evaluated",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -235,11 +244,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576156997403
+    "lastModifiedOn": 1576157048390
   },
   "creationTag": {
     "versionNumber": 0,
