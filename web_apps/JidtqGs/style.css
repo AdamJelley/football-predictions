@@ -87,6 +87,10 @@ h2 {
     text-align: center;
 }
 
+#ranking-button {
+    position: relative;
+}
+
 #dropdownSeason, #dropdownLeague {
     text-align: center;
     display: inline-block;
