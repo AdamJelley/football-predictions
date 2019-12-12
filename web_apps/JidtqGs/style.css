@@ -93,10 +93,6 @@ h2 {
     text-align: center;
 }
 
-#clear-button {
-    margin: 10px;
-}
-
 #dropdownSeason, #dropdownLeague {
     text-align: center;
     display: inline-block;
