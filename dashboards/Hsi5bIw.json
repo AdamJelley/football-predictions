@@ -48,15 +48,22 @@
             "box": {
               "top": 0,
               "left": 4,
-              "width": 7,
+              "width": 8,
               "height": 3
             },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {},
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
             "autoLoad": true,
             "showTitle": "YES",
-            "insightId": "4PAXXyW",
-            "insightType": "article",
+            "insightId": "Il3cCOm",
+            "insightType": "dataset_table",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -71,11 +78,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576156883861
+    "lastModifiedOn": 1576157012795
   },
   "creationTag": {
     "versionNumber": 0,
