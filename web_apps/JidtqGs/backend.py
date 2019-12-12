@@ -40,5 +40,6 @@ def get_rankings():
     df = df[['teamName', 'Elo_rank']]
     df.Elo_rank = df.Elo_rank.astype('int')
     df = df.sort_values('Elo_rank', ascending=False).head(max_rows)
+    df = df.rename(columns={'teamName':"Team Name", 'Elo_rank':"Elo Rank"})
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
