@@ -136,5 +136,8 @@ h2 {
     max-height: 300px;
     overflow:auto;
     overflow-y:auto;
+}
+
+th {
     text-align:left;
 }
