@@ -208,7 +208,7 @@
           }
         ]
       },
-      "title": "Football Match Predictions - Webapp",
+      "title": "Webapp",
       "showTitle": true
     }
   ],
@@ -217,11 +217,11 @@
   "name": "Football Match Predictions Dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 37,
+    "versionNumber": 38,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157681516
+    "lastModifiedOn": 1576157688934
   },
   "creationTag": {
     "versionNumber": 0,
