@@ -3,9 +3,25 @@
     {
       "id": "wiT0cTb",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "IMAGE",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 3,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "autoLoad": true,
+            "showTitle": "MOUSEOVER",
+            "displayMode": "IMAGE",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
-      "showTitle": false
+      "title": "Football Match Predictions Dashboard",
+      "showTitle": true
     }
   ],
   "owner": "ajelley",
@@ -13,11 +29,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1574159793546
+    "lastModifiedOn": 1576156604031
   },
   "creationTag": {
     "versionNumber": 0,
