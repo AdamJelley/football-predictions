@@ -95,7 +95,7 @@
           }
         ]
       },
-      "title": "Football Match Predictions Dashboard",
+      "title": "Football Match Predictions - Data",
       "showTitle": true
     },
     {
@@ -112,11 +112,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157208516
+    "lastModifiedOn": 1576157220115
   },
   "creationTag": {
     "versionNumber": 0,
