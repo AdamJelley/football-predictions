@@ -5,11 +5,11 @@
   "name": "build_flow",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576158203498
+    "lastModifiedOn": 1576158295386
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,42 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_2_true_d_Historical_Fixtures_Evaluated_d_Upcoming_Fixtures_EloFeatures_scored_d_Model_Performance_Metrics",
+        "type": "build_flowitem",
+        "name": "Flow",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "Historical_Fixtures_Evaluated",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "Upcoming_Fixtures_EloFeatures_scored",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "Model_Performance_Metrics",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
