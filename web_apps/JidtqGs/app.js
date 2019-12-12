@@ -6,11 +6,22 @@
 let fetchButton = document.getElementById('fetch-button');
 let clearButton = document.getElementById('clear-button');
 let historyButton = document.getElementById('history-button');
+let rankingbutton = document.getElementById('ranking-button');
 let leagueDropdown = document.getElementById('dropdownMenuButton');
 
 fetchButton.addEventListener('click', function(event) {
     $('#message').empty();
     $.getJSON(getWebAppBackendUrl('/predictions'), function(data) {
+        console.log('Received data from backend', data)
+        /* modifying html to show the dataset as a table */
+        $('#message').append(data['data'])
+    });
+    return false;
+});
+
+rankingButton.addEventListener('click', function(event) {
+    $('#message').empty();
+    $.getJSON(getWebAppBackendUrl('/rankings'), function(data) {
         console.log('Received data from backend', data)
         /* modifying html to show the dataset as a table */
         $('#message').append(data['data'])
