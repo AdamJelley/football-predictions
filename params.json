@@ -253,11 +253,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576158759957
+    "lastModifiedOn": 1576165241617
   },
   "creationTag": {
     "versionNumber": 0,
@@ -266,7 +266,7 @@
     },
     "lastModifiedOn": 1574159793541
   },
-  "description": "# Project Overview\nThe aim of this project was to predict the outcome of football matches. Currently, the project is predicting all Premier League and Championship games.",
+  "description": "# Project Overview\nThis project is designed to predict the outcome of football matches. Currently, the project is predicting all Premier League and Championship games.",
   "shortDesc": "The project *Football Match Predictions* was created by Adam Jelley on Nov 19th 2019",
   "tags": [
     "football",
