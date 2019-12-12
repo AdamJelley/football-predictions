@@ -24,7 +24,7 @@
             "box": {
               "top": 0,
               "left": 4,
-              "width": 3,
+              "width": 4,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -54,11 +54,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576156812692
+    "lastModifiedOn": 1576156816259
   },
   "creationTag": {
     "versionNumber": 0,
