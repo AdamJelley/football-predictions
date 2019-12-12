@@ -28,6 +28,7 @@ def get_history():
     df = mydataset.get_dataframe()
     df = df[['event_date', 'homeTeam_team_name', 'awayTeam_team_name', 'league_name', 'venue', 'proba_Home', 'proba_Away', 'proba_Draw', 'prediction', 'score_fulltime', 'prediction_correct']]
     df = df.sort_values('event_date', ascending=False).head(max_rows)
+    df = df.rename(columns={"event_date":"Match Start", "homeTeam_team_name": "Home Team", "awayTeam_team_name": "Away Team", "league_name":"League", "venue":"Venue", "proba_Home":"Prob Home Win", "proba_Away":"Prob Away Win", "proba_Draw":"Prob Draw", "prediction":"Prediction", 'score_fulltime':"Score", 'prediction_correct':"Prediction Correct"})
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
 
