@@ -46,6 +46,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "JidtqGs",
+          "objectType": "WEB_APP"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -244,11 +253,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157048390
+    "lastModifiedOn": 1576157483081
   },
   "creationTag": {
     "versionNumber": 0,
