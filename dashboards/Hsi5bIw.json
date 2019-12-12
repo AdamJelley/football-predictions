@@ -208,7 +208,8 @@
           }
         ]
       },
-      "showTitle": false
+      "title": "Football Match Predictions - Webapp",
+      "showTitle": true
     }
   ],
   "owner": "ajelley",
@@ -216,11 +217,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157504049
+    "lastModifiedOn": 1576157528974
   },
   "creationTag": {
     "versionNumber": 0,
