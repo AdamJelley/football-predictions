@@ -253,11 +253,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157483081
+    "lastModifiedOn": 1576158704401
   },
   "creationTag": {
     "versionNumber": 0,
@@ -266,6 +266,7 @@
     },
     "lastModifiedOn": 1574159793541
   },
+  "description": "# Project Overview\nThe aim of this project was to predict the outcome of football matches. Currently, the project is predicting all Premier League and Championship games.",
   "shortDesc": "The project *Football Match Predictions* was created by Adam Jelley on Nov 19th 2019",
   "tags": [],
   "customFields": {
@@ -277,34 +278,20 @@
   "checklists": {
     "checklists": [
       {
-        "title": "Your new project\u0027s Todo",
+        "title": "Project Next Steps:",
         "createdOn": 0,
         "items": [
           {
-            "done": true,
-            "text": "Create the project",
+            "done": false,
+            "text": "Include new features to improve model",
             "createdOn": 1574159793541,
             "createdBy": "ajelley",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1574159793541,
-            "createdBy": "ajelley",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/FOOTBALLMATCHPREDICTIONS/datasets/new/)",
-            "createdOn": 1574159793541,
-            "createdBy": "ajelley",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1574159793541,
+            "text": "Build additional functionality into webapp",
+            "createdOn": 1576158591846,
             "createdBy": "ajelley",
             "stateChangedOn": 0
           }
