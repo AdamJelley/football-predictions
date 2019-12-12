@@ -62,6 +62,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "#Upcoming_Fixtures_EloFeatures_scored table",
             "insightId": "Il3cCOm",
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
@@ -102,11 +103,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157093675
+    "lastModifiedOn": 1576157104540
   },
   "creationTag": {
     "versionNumber": 0,
