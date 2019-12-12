@@ -101,7 +101,84 @@
     {
       "id": "gZJay3I",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 4,
+              "height": 8
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "train"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "764wTPK",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 4,
+              "width": 8,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "c_detailed_metrics"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "nnC5s2h",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 4,
+              "left": 4,
+              "width": 3,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "mc_confusion"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "bbkmY7s",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 4,
+              "left": 8,
+              "width": 4,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "c_density_chart"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "pmtXO7b",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "title": "Football Match Predictions - Model Summary",
       "showTitle": true
@@ -112,11 +189,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157220115
+    "lastModifiedOn": 1576157396976
   },
   "creationTag": {
     "versionNumber": 0,
