@@ -97,6 +97,14 @@
       },
       "title": "Football Match Predictions Dashboard",
       "showTitle": true
+    },
+    {
+      "id": "gZJay3I",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Football Match Predictions - Model Summary",
+      "showTitle": true
     }
   ],
   "owner": "ajelley",
@@ -104,11 +112,11 @@
   "name": "Football Match Predictions\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576157163007
+    "lastModifiedOn": 1576157208516
   },
   "creationTag": {
     "versionNumber": 0,
