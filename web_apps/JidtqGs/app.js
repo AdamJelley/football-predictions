@@ -34,7 +34,7 @@ historyButton.addEventListener('click', function(event) {
     $.getJSON(getWebAppBackendUrl('/history'), function(data) {
         console.log('Received data from backend', data)
         /* modifying html to show the dataset as a table */
-        $('#message').append(data['data'])
+        $('#message').append(<table border="1" align="left"> data['data'])
     });
     return false;
 });
