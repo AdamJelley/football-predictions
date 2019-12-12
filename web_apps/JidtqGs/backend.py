@@ -35,7 +35,7 @@ def get_rankings():
     max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 100
     mydataset = dataiku.Dataset("Latest_Team_Elo_Ranks")
     df = mydataset.get_dataframe()
-     df = df[['teamName', 'Elo_rank']]
+    df = df[['teamName', 'Elo_rank']]
     df = df.sort_values('Elo_rank', ascending=False).head(max_rows)
     data = df.to_html(index=False)
     return json.dumps({"status": "ok", "data": data})
