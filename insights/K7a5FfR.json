@@ -1,0 +1,29 @@
+{
+  "type": "saved-model_report",
+  "params": {
+    "savedModelSmartId": "STX882mM"
+  },
+  "owner": "ajelley",
+  "listed": false,
+  "name": "Model Report",
+  "dashboardCreationId": "Hsi5bIw",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1576156911175
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1576156911175
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
