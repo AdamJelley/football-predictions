@@ -87,6 +87,10 @@ h2 {
     width: 250px;  
 }
 
+.buttons {
+    text-align: center;
+}
+
 #clear-button {
     margin: 5px;
 }
