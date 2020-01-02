@@ -20,5 +20,36 @@
     "key": "fFjtfn9QRUyszEpoiYCAiAiQjOG44c5U",
     "label": "Key for Web app FootballPredictions(JidtqGs)",
     "createdOn": 1574528072121
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "Px0UFBE",
+    "id": "nxAnYfYUW6Lqrrnn",
+    "key": "MUrSfFwgIZoZh7P9pAYcMpZ1m7A2ay95",
+    "label": "Key for Web app Plugin skin(Px0UFBE)",
+    "createdOn": 1577977614051
   }
 ]
