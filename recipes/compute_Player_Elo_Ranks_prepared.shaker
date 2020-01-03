@@ -34,6 +34,23 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "FilterOnBadType",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "player_id_home",
+          "player_id_away"
+        ],
+        "action": "REMOVE_ROW",
+        "appliesTo": "COLUMNS",
+        "type": "DoubleMeaning"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "RoundProcessor",
       "params": {
         "mode": "ROUND",
@@ -59,23 +76,6 @@
         ],
         "precision": 0,
         "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FilterOnBadType",
-      "params": {
-        "booleanMode": "AND",
-        "columns": [
-          "player_id_home",
-          "player_id_away"
-        ],
-        "action": "REMOVE_ROW",
-        "appliesTo": "COLUMNS",
-        "type": "LongMeaning"
       },
       "alwaysShowComment": false
     }
