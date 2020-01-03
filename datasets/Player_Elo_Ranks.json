@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578067892576
+    "lastModifiedOn": 1578067943367
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,121 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "fixture_id",
+        "type": "int"
+      },
+      {
+        "name": "event_date",
+        "type": "string"
+      },
+      {
+        "name": "player_id_home",
+        "type": "string"
+      },
+      {
+        "name": "player_id_away",
+        "type": "string"
+      },
+      {
+        "name": "goalsHomeTeam",
+        "type": "string"
+      },
+      {
+        "name": "goalsAwayTeam",
+        "type": "string"
+      },
+      {
+        "name": "player_id_home_rank",
+        "type": "string"
+      },
+      {
+        "name": "player_id_home_new_rank",
+        "type": "string"
+      },
+      {
+        "name": "player_id_away_rank",
+        "type": "string"
+      },
+      {
+        "name": "player_id_away_new_rank",
+        "type": "string"
+      },
+      {
+        "name": "rank_change_player_id_home",
+        "type": "string"
+      },
+      {
+        "name": "ELOprob_player_id_home",
+        "type": "string"
+      },
+      {
+        "name": "rank_change_player_id_away",
+        "type": "string"
+      },
+      {
+        "name": "ELOprob_player_id_away",
+        "type": "string"
+      },
+      {
+        "name": "homeTeam_team_id",
+        "type": "string"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_id",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "league_name",
+        "type": "string"
+      },
+      {
+        "name": "statusShort",
+        "type": "string"
+      },
+      {
+        "name": "team_id_home",
+        "type": "string"
+      },
+      {
+        "name": "player_home",
+        "type": "string"
+      },
+      {
+        "name": "number_home",
+        "type": "string"
+      },
+      {
+        "name": "pos_home",
+        "type": "string"
+      },
+      {
+        "name": "team_id_away",
+        "type": "string"
+      },
+      {
+        "name": "player_away",
+        "type": "string"
+      },
+      {
+        "name": "number_away",
+        "type": "string"
+      },
+      {
+        "name": "pos_away",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
