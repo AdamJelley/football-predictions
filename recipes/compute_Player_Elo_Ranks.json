@@ -3,7 +3,14 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "matchId": "fixture_id",
+      "match_datetime": "event_date",
+      "homeTeamId": "player_id_home",
+      "awayTeamId": "player_id_away",
+      "homeTeam_goals": "goalsHomeTeam",
+      "awayTeam_goals": "goalsAwayTeam"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -34,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578067894651
+    "lastModifiedOn": 1578067928129
   },
   "creationTag": {
     "versionNumber": 0,
