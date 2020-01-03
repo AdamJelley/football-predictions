@@ -77,6 +77,7 @@ def getLineupsByFixture(fixture_id, base_url, headers, querystring):
     lineup_url = base_url + "lineups/" + str(fixture_id)
     lineup_response = requests.request("GET", lineup_url, headers=headers, params=querystring)
     lineupsList = []
+    assert lineup_response.json()['api']['results'] == 2, "No lineup available"
     for team in lineup_response.json()['api']['lineUps']:
         lineupsList.append(lineup_response.json()['api']['lineUps'][team]['startXI'])
     homeLineups = pd.DataFrame(lineupsList[0])
