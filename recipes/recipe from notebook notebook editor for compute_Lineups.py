@@ -35,8 +35,3 @@ lineups_df = fixture_lineups_enriched
 # Write recipe outputs
 lineups = dataiku.Dataset("Lineups")
 lineups.write_with_schema(lineups_df)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Recipe outputs
-lineups = dataiku.Dataset("Lineups")
-lineups.write_with_schema(pandas_dataframe)
