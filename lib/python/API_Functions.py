@@ -36,6 +36,14 @@ def testRemainingRequests(base_url, headers, querystring):
         print('Warning: Only ' + str(remaining) + ' Requests Remaining')
     return 1
 
+def getAvailableLeagues(base_url, headers, querystring):
+    """Get league coverage from Football API"""
+    testRemainingRequests(base_url, headers, querystring)
+    leagues_url = BASE_URL + '/leagues'
+    leagues_response = requests.request("GET", leagues_url, headers=headers, params=QUERYSTRING)
+    leagues_df = pd.DataFrame(leagues_response.json()['api']['leagues'])
+    return leagues_df
+
 def getFixturesByLeague(league_id, base_url, headers, querystring):
     """Get fixtures dataframe for particular league id"""
     testRemainingRequests(base_url, headers, querystring)
