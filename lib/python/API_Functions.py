@@ -69,7 +69,7 @@ def getFixturesByDate(date, base_url, headers, querystring):
 
     return date_fixtures_df
 
-def getLineupsByFixture(fixture_id, base_url, headers, querystring):
+def getLineupsByFixture(fixture_id, homeTeam_id, base_url, headers, querystring):
     """Get lineups dataframe for particular fixture id"""
     
     testRemainingRequests(base_url, headers, querystring)
@@ -80,8 +80,14 @@ def getLineupsByFixture(fixture_id, base_url, headers, querystring):
     assert lineup_response.json()['api']['results'] == 2, "No lineup available"
     for team in lineup_response.json()['api']['lineUps']:
         lineupsList.append(lineup_response.json()['api']['lineUps'][team]['startXI'])
-    homeLineups = pd.DataFrame(lineupsList[0])
-    awayLineups = pd.DataFrame(lineupsList[1])
+    if pd.DataFrame(lineupsList[0])['team_id'].max() == homeTeam_id:
+        homeLineups = pd.DataFrame(lineupsList[0])
+        awayLineups = pd.DataFrame(lineupsList[1])
+    elif pd.DataFrame(lineupsList[1])['team_id'].max() == homeTeam_id:
+        homeLineups = pd.DataFrame(lineupsList[1])
+        awayLineups = pd.DataFrame(lineupsList[0])
+    else:
+        raise ValueError('Lineups do not match fixture for fixture_id: ' + str(fixture_id))
     lineups = homeLineups.join(awayLineups, lsuffix='_home', rsuffix='_away')
     lineups['fixture_id'] = fixture_id
     lineups = lineups[['fixture_id','team_id_home','player_id_home','player_home','number_home','pos_home',
