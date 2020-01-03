@@ -3,9 +3,21 @@
     "mode": "ALL"
   },
   "explorationSampling": {
-    "_refreshTrigger": 2,
+    "_refreshTrigger": 4,
     "selection": {
       "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "player_id_home",
+              "col": "event_date",
+              "string": "nan",
+              "num": 0.0,
+              "operator": "\u003d\u003d [string]"
+            }
+          ]
+        },
         "distinct": false,
         "enabled": false
       },
@@ -36,7 +48,7 @@
       "disabled": false,
       "type": "FilterOnBadType",
       "params": {
-        "booleanMode": "AND",
+        "booleanMode": "OR",
         "columns": [
           "player_id_home",
           "player_id_away"
