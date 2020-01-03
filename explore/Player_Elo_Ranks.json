@@ -22,8 +22,13 @@
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
         "ordering": {
-          "enabled": false,
-          "rules": []
+          "enabled": true,
+          "rules": [
+            {
+              "columnName": "event_date",
+              "asc": false
+            }
+          ]
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
         "maxRecords": 10000,
@@ -32,7 +37,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 2
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
