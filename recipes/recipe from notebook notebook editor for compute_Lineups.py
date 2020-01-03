@@ -18,6 +18,7 @@ headers = API_Functions.getAPIRequestHeaders()
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 fixture_lineups = []
 for fixture_id in fixtures_prepared_df['fixture_id']:
+    print('Getting lineup for fixture_id: ' + str(fixture_id))
     try:
         fixture_lineup = API_Functions.getLineupsByFixture(fixture_id, BASE_URL, headers, QUERYSTRING)
     except: 
