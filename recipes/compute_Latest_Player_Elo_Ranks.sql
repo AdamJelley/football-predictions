@@ -1,0 +1,2 @@
+SELECT *
+  FROM "FOOTBALLMATCHPREDICTIONS_player_elo_ranks"
