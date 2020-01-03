@@ -33,7 +33,6 @@ fixtures_prepared_df_reduced = fixtures_prepared_df[['event_date', 'fixture_id',
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 fixture_lineups_enriched = fixtures_prepared_df_reduced.merge(fixture_lineups, how='inner', left_on = 'fixture_id', right_on='fixture_id')
-fixture_lineups_enriched = fixture_lineups_enriched.astype({'player_id_home': 'int64', 'player_id_away': 'int64'})
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 lineups_df = fixture_lineups_enriched
