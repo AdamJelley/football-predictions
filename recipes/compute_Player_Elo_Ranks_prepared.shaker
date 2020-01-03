@@ -43,7 +43,7 @@
         ],
         "action": "KEEP_ROW",
         "appliesTo": "COLUMNS",
-        "type": "Text"
+        "type": "LongMeaning"
       },
       "alwaysShowComment": false
     },
