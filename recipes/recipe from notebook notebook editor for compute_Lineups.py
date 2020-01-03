@@ -17,7 +17,7 @@ headers = API_Functions.getAPIRequestHeaders()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 fixture_lineups = []
-for fixture_id in fixtures_prepared_df.head()['fixture_id']:
+for fixture_id in fixtures_prepared_df['fixture_id']:
     fixture_lineup = API_Functions.getLineupsByFixture(fixture_id, BASE_URL, headers, QUERYSTRING)
     fixture_lineups.append(fixture_lineup)
 fixture_lineups = pd.concat(fixture_lineups)
