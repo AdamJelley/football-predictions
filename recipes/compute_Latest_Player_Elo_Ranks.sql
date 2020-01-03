@@ -10,14 +10,14 @@ FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "player_id_home"
               ORDER BY "event_date" desc)
-              FROM "FOOTBALLMATCHPREDICTIONS_player_elo_ranks") a
+              FROM "FOOTBALLMATCHPREDICTIONS_player_elo_ranks_prepared") a
               WHERE a.ROW_NUMBER = 1
         UNION
             SELECT b."event_date" as "event_date", b."player_id_away" as "playerId", b."player_away" as "playerName", b."player_id_away_new_rank" as "Elo_rank" FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "player_id_away"
               ORDER BY "event_date" desc)
-              FROM "FOOTBALLMATCHPREDICTIONS_player_elo_ranks") b
+              FROM "FOOTBALLMATCHPREDICTIONS_player_elo_ranks_prepared") b
               WHERE b.ROW_NUMBER = 1
         ) c
     ) d
