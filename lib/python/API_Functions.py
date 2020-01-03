@@ -27,7 +27,7 @@ def getAPIRequestHeaders():
     return headers
 
 def testRemainingRequests(base_url, headers, querystring):
-    """Test remaining requests: fail if no requests remaining this month and give warning if < 100"""
+    """Test remaining requests: fail if no requests remaining today and give warning if < 100"""
     
     status_url = base_url + '/seasons'
     response = requests.request("GET", status_url, headers=headers, params=querystring)
