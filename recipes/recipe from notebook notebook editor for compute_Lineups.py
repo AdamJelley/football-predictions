@@ -17,11 +17,12 @@ headers = API_Functions.getAPIRequestHeaders()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 fixture_lineups = []
-for fixture_id in fixtures_prepared_df['fixture_id']:
+for fixture_id in fixtures_prepared_df.head()['fixture_id']:
     print('Getting lineup for fixture_id: ' + str(fixture_id))
+    homeTeam_id = int(fixtures_prepared_df.loc[fixtures_prepared_df['fixture_id'] == fixture_id, 'homeTeam_team_id'])
     try:
-        fixture_lineup = API_Functions.getLineupsByFixture(fixture_id, BASE_URL, headers, QUERYSTRING)
-    except: 
+        fixture_lineup = API_Functions.getLineupsByFixture(fixture_id, homeTeam_id, BASE_URL, headers, QUERYSTRING)
+    except:
         fixture_lineup = pd.DataFrame()
         print('No lineup for fixture_id: ' + str(fixture_id))
     fixture_lineups.append(fixture_lineup)
