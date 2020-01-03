@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578081882877
+    "lastModifiedOn": 1578084012692
   },
   "creationTag": {
     "versionNumber": 0,
@@ -104,7 +104,7 @@
       },
       {
         "name": "player_id_home",
-        "type": "bigint"
+        "type": "double"
       },
       {
         "name": "player_home",
@@ -124,7 +124,7 @@
       },
       {
         "name": "player_id_away",
-        "type": "bigint"
+        "type": "double"
       },
       {
         "name": "player_away",
