@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578071135479
+    "lastModifiedOn": 1578071990933
   },
   "creationTag": {
     "versionNumber": 0,
@@ -116,7 +116,8 @@
       },
       {
         "name": "pos_home",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "team_id_away",
@@ -139,7 +140,7 @@
         "type": "string"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "metrics": {
     "probes": [
