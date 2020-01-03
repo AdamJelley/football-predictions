@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578072693253
+    "lastModifiedOn": 1578076493385
   },
   "creationTag": {
     "versionNumber": 0,
@@ -70,8 +70,8 @@
       },
       {
         "name": "Elo_rank",
-        "type": "string",
-        "originalType": "text"
+        "type": "double",
+        "originalType": "float8"
       }
     ],
     "userModified": true
