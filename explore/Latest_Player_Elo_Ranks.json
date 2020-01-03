@@ -17,7 +17,19 @@
         "maxStoredBytes": 104857600,
         "filter": {
           "distinct": false,
-          "enabled": false
+          "enabled": false,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "playerName",
+                "operator": "contains",
+                "col": "playerName",
+                "string": "Kane",
+                "num": 0.0
+              }
+            ]
+          }
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
@@ -37,7 +49,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
