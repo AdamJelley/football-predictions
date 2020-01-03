@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578067699050
+    "lastModifiedOn": 1578067740615
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,89 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "event_date",
+        "type": "date"
+      },
+      {
+        "name": "fixture_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_id",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_id",
+        "type": "bigint"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "league_name",
+        "type": "string"
+      },
+      {
+        "name": "goalsHomeTeam",
+        "type": "double"
+      },
+      {
+        "name": "goalsAwayTeam",
+        "type": "double"
+      },
+      {
+        "name": "statusShort",
+        "type": "string"
+      },
+      {
+        "name": "team_id_home",
+        "type": "bigint"
+      },
+      {
+        "name": "player_id_home",
+        "type": "bigint"
+      },
+      {
+        "name": "player_home",
+        "type": "string"
+      },
+      {
+        "name": "number_home",
+        "type": "bigint"
+      },
+      {
+        "name": "pos_home",
+        "type": "string"
+      },
+      {
+        "name": "team_id_away",
+        "type": "bigint"
+      },
+      {
+        "name": "player_id_away",
+        "type": "bigint"
+      },
+      {
+        "name": "player_away",
+        "type": "string"
+      },
+      {
+        "name": "number_away",
+        "type": "bigint"
+      },
+      {
+        "name": "pos_away",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
