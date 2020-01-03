@@ -66,7 +66,18 @@
         "maxStoredBytes": 104857600,
         "filter": {
           "distinct": false,
-          "enabled": false
+          "enabled": true,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "player_id_away",
+                "operator": "empty string",
+                "col": "fixture_id",
+                "num": 0.0
+              }
+            ]
+          }
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
@@ -81,7 +92,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "autoRefreshSample": false,
