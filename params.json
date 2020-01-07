@@ -267,11 +267,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
-      "login": "ajelley"
+      "login": "raffane"
     },
-    "lastModifiedOn": 1576165587972
+    "lastModifiedOn": 1578416716731
   },
   "creationTag": {
     "versionNumber": 0,
@@ -285,13 +285,14 @@
   "tags": [
     "football",
     "webapp",
-    "demo"
+    "demo",
+    "gallery"
   ],
   "customFields": {
-    "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_dataset_export": false,
+    "gdpr_forbid_uploaded_datasets": false,
     "gdpr_forbid_model_creation": false,
-    "gdpr_forbid_uploaded_datasets": false
+    "gdpr_forbid_dataset_sharing": false
   },
   "checklists": {
     "checklists": [
