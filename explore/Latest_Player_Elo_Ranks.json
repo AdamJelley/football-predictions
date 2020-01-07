@@ -24,8 +24,8 @@
               {
                 "input": "playerName",
                 "operator": "contains",
-                "col": "playerName",
-                "string": "Kane",
+                "col": "playerId",
+                "string": "Kant",
                 "num": 0.0
               }
             ]
@@ -49,7 +49,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 3
+      "_refreshTrigger": 8
     },
     "vizSampling": {
       "autoRefreshSample": false,
