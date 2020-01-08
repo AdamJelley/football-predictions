@@ -6,188 +6,251 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "fixture_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "fixture_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "fixture_id",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "player_id_home_new_rank_min",
+      "type": "double",
       "table": 0
     },
     {
       "name": "player_id_home_new_rank_max",
+      "type": "double",
       "table": 0
     },
     {
       "name": "player_id_home_new_rank_avg",
+      "type": "double",
       "table": 0
     },
     {
       "name": "player_id_home_new_rank_stddev",
+      "type": "double",
       "table": 0
     },
     {
       "name": "player_id_away_new_rank_min",
+      "type": "double",
       "table": 0
     },
     {
       "name": "player_id_away_new_rank_max",
+      "type": "double",
       "table": 0
     },
     {
       "name": "player_id_away_new_rank_avg",
+      "type": "double",
       "table": 0
     },
     {
       "name": "player_id_away_new_rank_stddev",
+      "type": "double",
       "table": 0
     },
     {
       "name": "count",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "event_date",
+      "type": "string",
       "table": 1
     },
     {
       "name": "homeTeam_team_id",
+      "type": "string",
       "table": 1
     },
     {
       "name": "awayTeam_team_id",
+      "type": "string",
       "table": 1
     },
     {
       "name": "goalsHomeTeam",
+      "type": "string",
       "table": 1
     },
     {
       "name": "goalsAwayTeam",
+      "type": "string",
       "table": 1
     },
     {
       "name": "homeTeam_team_id_rank",
+      "type": "string",
       "table": 1
     },
     {
       "name": "homeTeam_team_id_new_rank",
+      "type": "string",
       "table": 1
     },
     {
       "name": "awayTeam_team_id_rank",
+      "type": "string",
       "table": 1
     },
     {
       "name": "awayTeam_team_id_new_rank",
+      "type": "string",
       "table": 1
     },
     {
       "name": "rank_change_homeTeam_team_id",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ELOprob_homeTeam_team_id",
+      "type": "string",
       "table": 1
     },
     {
       "name": "rank_change_awayTeam_team_id",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ELOprob_awayTeam_team_id",
+      "type": "string",
       "table": 1
     },
     {
       "name": "homeTeam_team_name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "awayTeam_team_name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "league_name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "league_country",
+      "type": "string",
       "table": 1
     },
     {
       "name": "venue",
+      "type": "string",
       "table": 1
     },
     {
       "name": "referee",
+      "type": "string",
       "table": 1
     },
     {
       "name": "round",
+      "type": "string",
       "table": 1
     },
     {
       "name": "elapsed",
+      "type": "string",
       "table": 1
     },
     {
       "name": "homeTeam_logo",
+      "type": "string",
       "table": 1
     },
     {
       "name": "awayTeam_logo",
+      "type": "string",
       "table": 1
     },
     {
       "name": "status",
+      "type": "string",
       "table": 1
     },
     {
       "name": "statusShort",
+      "type": "string",
       "table": 1
     },
     {
       "name": "league_id",
+      "type": "string",
       "table": 1
     },
     {
       "name": "league_logo",
+      "type": "string",
       "table": 1
     },
     {
       "name": "league_flag",
+      "type": "string",
       "table": 1
     },
     {
       "name": "event_timestamp",
+      "type": "string",
       "table": 1
     },
     {
       "name": "firstHalfStart",
+      "type": "string",
       "table": 1
     },
     {
       "name": "score_halftime",
+      "type": "string",
       "table": 1
     },
     {
       "name": "score_penalty",
+      "type": "string",
       "table": 1
     },
     {
       "name": "score_extratime",
+      "type": "string",
       "table": 1
     },
     {
       "name": "score_fulltime",
+      "type": "string",
       "table": 1
     },
     {
       "name": "secondHalfStart",
+      "type": "string",
       "table": 1
     }
   ],
@@ -245,5 +308,195 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "fixture_id",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_new_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_stddev",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_stddev",
+            "type": "double"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          },
+          {
+            "name": "event_date",
+            "type": "string"
+          },
+          {
+            "name": "homeTeam_team_id",
+            "type": "string"
+          },
+          {
+            "name": "awayTeam_team_id",
+            "type": "string"
+          },
+          {
+            "name": "goalsHomeTeam",
+            "type": "string"
+          },
+          {
+            "name": "goalsAwayTeam",
+            "type": "string"
+          },
+          {
+            "name": "homeTeam_team_id_rank",
+            "type": "string"
+          },
+          {
+            "name": "homeTeam_team_id_new_rank",
+            "type": "string"
+          },
+          {
+            "name": "awayTeam_team_id_rank",
+            "type": "string"
+          },
+          {
+            "name": "awayTeam_team_id_new_rank",
+            "type": "string"
+          },
+          {
+            "name": "rank_change_homeTeam_team_id",
+            "type": "string"
+          },
+          {
+            "name": "ELOprob_homeTeam_team_id",
+            "type": "string"
+          },
+          {
+            "name": "rank_change_awayTeam_team_id",
+            "type": "string"
+          },
+          {
+            "name": "ELOprob_awayTeam_team_id",
+            "type": "string"
+          },
+          {
+            "name": "homeTeam_team_name",
+            "type": "string"
+          },
+          {
+            "name": "awayTeam_team_name",
+            "type": "string"
+          },
+          {
+            "name": "league_name",
+            "type": "string"
+          },
+          {
+            "name": "league_country",
+            "type": "string"
+          },
+          {
+            "name": "venue",
+            "type": "string"
+          },
+          {
+            "name": "referee",
+            "type": "string"
+          },
+          {
+            "name": "round",
+            "type": "string"
+          },
+          {
+            "name": "elapsed",
+            "type": "string"
+          },
+          {
+            "name": "homeTeam_logo",
+            "type": "string"
+          },
+          {
+            "name": "awayTeam_logo",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "statusShort",
+            "type": "string"
+          },
+          {
+            "name": "league_id",
+            "type": "string"
+          },
+          {
+            "name": "league_logo",
+            "type": "string"
+          },
+          {
+            "name": "league_flag",
+            "type": "string"
+          },
+          {
+            "name": "event_timestamp",
+            "type": "string"
+          },
+          {
+            "name": "firstHalfStart",
+            "type": "string"
+          },
+          {
+            "name": "score_halftime",
+            "type": "string"
+          },
+          {
+            "name": "score_penalty",
+            "type": "string"
+          },
+          {
+            "name": "score_extratime",
+            "type": "string"
+          },
+          {
+            "name": "score_fulltime",
+            "type": "string"
+          },
+          {
+            "name": "secondHalfStart",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
