@@ -28,13 +28,13 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "FULL",
       "maxRecords": 100000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
-    "ssdTrainingRatio": 0.8,
+    "ssdTrainingRatio": 0.9,
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "kfold": false,
