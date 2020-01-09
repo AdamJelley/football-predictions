@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578567823386
+    "lastModifiedOn": 1578568259283
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,43 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "teamId",
+        "type": "int",
+        "originalType": "int4"
+      },
+      {
+        "name": "teamName",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "team_rank",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "player_rank_min",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "player_rank_max",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "player_rank_avg",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "player_rank_stddev",
+        "type": "double",
+        "originalType": "float8"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
