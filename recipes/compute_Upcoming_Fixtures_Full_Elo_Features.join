@@ -189,11 +189,6 @@
       "table": 0
     },
     {
-      "name": "teamName",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "team_rank",
       "type": "string",
       "table": 1
@@ -217,6 +212,31 @@
       "name": "player_rank_stddev",
       "type": "double",
       "table": 1
+    },
+    {
+      "name": "team_rank",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "player_rank_min",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "player_rank_max",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "player_rank_avg",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "player_rank_stddev",
+      "type": "double",
+      "table": 2
     }
   ],
   "engineParams": {
@@ -269,11 +289,12 @@
         "enabled": false
       },
       "autoSelectColumns": false,
-      "prefix": "",
+      "prefix": "home",
       "index": 1,
       "computedColumns": []
     },
     {
+      "prefix": "away",
       "index": 1
     }
   ],
@@ -396,32 +417,52 @@
           },
           {
             "originalType": "text",
-            "name": "teamName",
+            "name": "home_team_rank",
             "type": "string"
+          },
+          {
+            "originalType": "float8",
+            "name": "home_player_rank_min",
+            "type": "double"
+          },
+          {
+            "originalType": "float8",
+            "name": "home_player_rank_max",
+            "type": "double"
+          },
+          {
+            "originalType": "float8",
+            "name": "home_player_rank_avg",
+            "type": "double"
+          },
+          {
+            "originalType": "float8",
+            "name": "home_player_rank_stddev",
+            "type": "double"
           },
           {
             "originalType": "text",
-            "name": "team_rank",
+            "name": "away_team_rank",
             "type": "string"
           },
           {
             "originalType": "float8",
-            "name": "player_rank_min",
+            "name": "away_player_rank_min",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "player_rank_max",
+            "name": "away_player_rank_max",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "player_rank_avg",
+            "name": "away_player_rank_avg",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "player_rank_stddev",
+            "name": "away_player_rank_stddev",
             "type": "double"
           }
         ],
