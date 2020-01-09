@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578566615276
+    "lastModifiedOn": 1578566728243
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,7 +60,7 @@
     "columns": [
       {
         "name": "event_date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "homeTeam_team_name",
@@ -81,6 +81,38 @@
       {
         "name": "score_fulltime",
         "type": "string"
+      },
+      {
+        "name": "player_id_home_new_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_stddev",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_stddev",
+        "type": "double"
       },
       {
         "name": "home_Elo_rank",
