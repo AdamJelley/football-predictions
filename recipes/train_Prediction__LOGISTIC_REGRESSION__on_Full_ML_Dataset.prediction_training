@@ -109,7 +109,7 @@
     "gridLength": 5
   },
   "partSource": "ACTIVE_VERSION",
-  "generatingModelId": "A-FOOTBALLMATCHPREDICTIONS-wTRVG44t-rOWIrvQf-s4-pp2-m1",
+  "generatingModelId": "A-FOOTBALLMATCHPREDICTIONS-wTRVG44t-rOWIrvQf-s7-pp2-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -157,6 +157,48 @@
           "recordedMeaning": "FreeText",
           "userModified": false
         }
+      },
+      "home_player_rank_max": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "home_player_rank_stddev": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
       },
       "league_name": {
         "min_samples": 10,
@@ -221,48 +263,6 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200
       },
-      "player_id_home_new_rank_min": {
-        "rescaling": "AVGSTD",
-        "missing_impute_with": "MEAN",
-        "role": "INPUT",
-        "sendToInput": "main",
-        "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
-        "type": "NUMERIC",
-        "binarize_threshold_mode": "MEDIAN",
-        "customProcessorWantsMatrix": false,
-        "quantile_bin_nb_bins": 4,
-        "generate_derivative": false,
-        "missing_handling": "IMPUTE",
-        "numerical_handling": "REGULAR",
-        "state": {
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning",
-          "userModified": false
-        },
-        "impute_constant_value": 0.0
-      },
-      "player_id_home_new_rank_avg": {
-        "rescaling": "AVGSTD",
-        "missing_impute_with": "MEAN",
-        "role": "INPUT",
-        "sendToInput": "main",
-        "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
-        "type": "NUMERIC",
-        "binarize_threshold_mode": "MEDIAN",
-        "customProcessorWantsMatrix": false,
-        "quantile_bin_nb_bins": 4,
-        "generate_derivative": false,
-        "missing_handling": "IMPUTE",
-        "numerical_handling": "REGULAR",
-        "state": {
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning",
-          "userModified": false
-        },
-        "impute_constant_value": 0.0
-      },
       "ELOprob_homeTeam_team_id": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
@@ -284,73 +284,31 @@
         },
         "impute_constant_value": 0.0
       },
+      "away_player_rank_min": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
       "ELOprob_awayTeam_team_id": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "REJECT",
-        "sendToInput": "main",
-        "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
-        "type": "NUMERIC",
-        "binarize_threshold_mode": "MEDIAN",
-        "customProcessorWantsMatrix": false,
-        "quantile_bin_nb_bins": 4,
-        "generate_derivative": false,
-        "missing_handling": "IMPUTE",
-        "numerical_handling": "REGULAR",
-        "state": {
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning",
-          "userModified": false
-        },
-        "impute_constant_value": 0.0
-      },
-      "player_id_away_new_rank_min": {
-        "rescaling": "AVGSTD",
-        "missing_impute_with": "MEAN",
-        "role": "INPUT",
-        "sendToInput": "main",
-        "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
-        "type": "NUMERIC",
-        "binarize_threshold_mode": "MEDIAN",
-        "customProcessorWantsMatrix": false,
-        "quantile_bin_nb_bins": 4,
-        "generate_derivative": false,
-        "missing_handling": "IMPUTE",
-        "numerical_handling": "REGULAR",
-        "state": {
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning",
-          "userModified": false
-        },
-        "impute_constant_value": 0.0
-      },
-      "player_id_away_new_rank_avg": {
-        "rescaling": "AVGSTD",
-        "missing_impute_with": "MEAN",
-        "role": "INPUT",
-        "sendToInput": "main",
-        "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
-        "type": "NUMERIC",
-        "binarize_threshold_mode": "MEDIAN",
-        "customProcessorWantsMatrix": false,
-        "quantile_bin_nb_bins": 4,
-        "generate_derivative": false,
-        "missing_handling": "IMPUTE",
-        "numerical_handling": "REGULAR",
-        "state": {
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning",
-          "userModified": false
-        },
-        "impute_constant_value": 0.0
-      },
-      "player_id_away_new_rank_stddev": {
-        "rescaling": "AVGSTD",
-        "missing_impute_with": "MEAN",
-        "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -407,7 +365,49 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200
       },
-      "player_id_home_new_rank_stddev": {
+      "away_player_rank_avg": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "home_player_rank_min": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "away_player_rank_stddev": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
@@ -449,6 +449,27 @@
         },
         "impute_constant_value": 0.0
       },
+      "home_player_rank_avg": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
       "awayTeam_team_name": {
         "min_samples": 10,
         "missing_impute_with": "MODE",
@@ -469,27 +490,6 @@
         },
         "max_nb_categories": 100,
         "max_cat_safety": 200
-      },
-      "player_id_home_new_rank_max": {
-        "rescaling": "AVGSTD",
-        "missing_impute_with": "MEAN",
-        "role": "INPUT",
-        "sendToInput": "main",
-        "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
-        "type": "NUMERIC",
-        "binarize_threshold_mode": "MEDIAN",
-        "customProcessorWantsMatrix": false,
-        "quantile_bin_nb_bins": 4,
-        "generate_derivative": false,
-        "missing_handling": "IMPUTE",
-        "numerical_handling": "REGULAR",
-        "state": {
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning",
-          "userModified": false
-        },
-        "impute_constant_value": 0.0
       },
       "away_Elo_rank": {
         "rescaling": "AVGSTD",
@@ -512,7 +512,7 @@
         },
         "impute_constant_value": 0.0
       },
-      "player_id_away_new_rank_max": {
+      "away_player_rank_max": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
@@ -617,43 +617,43 @@
         "type": "string"
       },
       {
-        "name": "player_id_home_new_rank_min",
-        "type": "double"
-      },
-      {
-        "name": "player_id_home_new_rank_max",
-        "type": "double"
-      },
-      {
-        "name": "player_id_home_new_rank_avg",
-        "type": "double"
-      },
-      {
-        "name": "player_id_home_new_rank_stddev",
-        "type": "double"
-      },
-      {
-        "name": "player_id_away_new_rank_min",
-        "type": "double"
-      },
-      {
-        "name": "player_id_away_new_rank_max",
-        "type": "double"
-      },
-      {
-        "name": "player_id_away_new_rank_avg",
-        "type": "double"
-      },
-      {
-        "name": "player_id_away_new_rank_stddev",
-        "type": "double"
-      },
-      {
         "name": "home_Elo_rank",
         "type": "double"
       },
       {
         "name": "away_Elo_rank",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_stddev",
+        "type": "double"
+      },
+      {
+        "name": "away_player_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "away_player_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "away_player_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "away_player_rank_stddev",
         "type": "double"
       },
       {
@@ -702,10 +702,10 @@
     "kfold": false
   },
   "script": {
+    "contextProjectKey": "FOOTBALLMATCHPREDICTIONS",
     "columnsSelection": {
       "mode": "ALL"
     },
-    "analysisColumnData": {},
     "explorationSampling": {
       "_refreshTrigger": 0,
       "selection": {
@@ -729,20 +729,21 @@
       "autoRefreshSample": false
     },
     "explorationFilters": [],
-    "sorting": [],
     "exploreUIParams": {},
-    "globalSearchQuery": "",
-    "coloring": {
-      "scheme": "MEANING_AND_STATUS",
-      "individualColumns": [],
-      "valueColoringMode": "HASH"
-    },
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "previewMode": "ALL_ROWS",
     "vizSampling": {
       "_refreshTrigger": 0,
       "autoRefreshSample": false
+    },
+    "analysisColumnData": {},
+    "sorting": [],
+    "globalSearchQuery": "",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
     }
   },
   "sparkParams": {
