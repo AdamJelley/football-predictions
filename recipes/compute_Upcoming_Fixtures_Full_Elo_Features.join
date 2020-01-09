@@ -189,7 +189,7 @@
       "table": 0
     },
     {
-      "name": "team_rank",
+      "name": "Elo_rank",
       "type": "string",
       "table": 1
     },
@@ -214,7 +214,7 @@
       "table": 1
     },
     {
-      "name": "team_rank",
+      "name": "Elo_rank",
       "type": "string",
       "table": 2
     },
@@ -417,7 +417,7 @@
           },
           {
             "originalType": "text",
-            "name": "home_team_rank",
+            "name": "home_Elo_rank",
             "type": "string"
           },
           {
@@ -442,7 +442,7 @@
           },
           {
             "originalType": "text",
-            "name": "away_team_rank",
+            "name": "away_Elo_rank",
             "type": "string"
           },
           {
