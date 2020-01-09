@@ -201,6 +201,38 @@
           {
             "from": "awayTeam_team_id_rank",
             "to": "away_Elo_rank"
+          },
+          {
+            "from": "player_id_home_new_rank_min",
+            "to": "home_player_rank_min"
+          },
+          {
+            "from": "player_id_home_new_rank_max",
+            "to": "home_player_rank_max"
+          },
+          {
+            "from": "player_id_home_new_rank_avg",
+            "to": "home_player_rank_avg"
+          },
+          {
+            "from": "player_id_home_new_rank_stddev",
+            "to": "home_player_rank_stddev"
+          },
+          {
+            "from": "player_id_away_new_rank_min",
+            "to": "away_player_rank_min"
+          },
+          {
+            "from": "player_id_away_new_rank_max",
+            "to": "away_player_rank_max"
+          },
+          {
+            "from": "player_id_away_new_rank_avg",
+            "to": "away_player_rank_avg"
+          },
+          {
+            "from": "player_id_away_new_rank_stddev",
+            "to": "away_player_rank_stddev"
           }
         ]
       },
@@ -227,7 +259,7 @@
       "disabled": false,
       "type": "ColumnReorder",
       "params": {
-        "referenceColumn": "player_id_home_new_rank_min",
+        "referenceColumn": "home_player_rank_min",
         "columns": [
           "homeTeam_team_name",
           "awayTeam_team_name",
@@ -235,6 +267,22 @@
           "venue",
           "score_fulltime",
           "event_date"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "home_player_rank_min",
+        "columns": [
+          "home_Elo_rank",
+          "away_Elo_rank"
         ],
         "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "COLUMNS"
