@@ -10,7 +10,7 @@ FROM
                 a."event_date" as "event_date", 
                 a."homeTeam_team_id" as "teamId", 
                 a."homeTeam_team_name" as "teamName", 
-                a."homeTeam_team_id_new_rank" as "Elo_rank" 
+                a."homeTeam_team_id_new_rank" as "Elo_rank", 
                 a."player_id_home_new_rank_min" as "player_rank_min",
                 a."player_id_home_new_rank_max" as "player_rank_max",
                 a."player_id_home_new_rank_avg" as "player_rank_avg",
