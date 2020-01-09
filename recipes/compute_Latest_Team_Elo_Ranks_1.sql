@@ -1,4 +1,4 @@
-SELECT d."teamId"::INTEGER, d."teamName", d."Elo_rank" as "team_rank", d."player_rank_min", d."player_rank_max", d."player_rank_avg", d."player_rank_stddev"
+SELECT d."teamId"::INTEGER, d."teamName", d."Elo_rank", d."player_rank_min", d."player_rank_max", d."player_rank_avg", d."player_rank_stddev"
 FROM 
     (
     SELECT c.*, ROW_NUMBER()
