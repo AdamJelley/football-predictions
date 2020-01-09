@@ -9,7 +9,7 @@
     "ascending": true
   },
   "calibration": {
-    "calibrationMethod": "SIGMOID"
+    "calibrationMethod": "ISOTONIC"
   },
   "guessPolicy": "DEFAULT",
   "splitParams": {
