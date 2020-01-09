@@ -23,6 +23,28 @@
           "type": "EQ"
         }
       ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "awayTeam_team_id",
+            "table": 0
+          },
+          "column2": {
+            "name": "teamId",
+            "table": 2
+          },
+          "maxDistance": 1,
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
@@ -167,11 +189,6 @@
       "table": 0
     },
     {
-      "name": "teamId",
-      "type": "int",
-      "table": 1
-    },
-    {
       "name": "teamName",
       "type": "string",
       "table": 1
@@ -252,8 +269,12 @@
         "enabled": false
       },
       "autoSelectColumns": false,
+      "prefix": "",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "index": 1
     }
   ],
   "computedColumns": [],
@@ -372,11 +393,6 @@
           {
             "name": "secondHalfStart",
             "type": "double"
-          },
-          {
-            "originalType": "int4",
-            "name": "teamId",
-            "type": "int"
           },
           {
             "originalType": "text",
