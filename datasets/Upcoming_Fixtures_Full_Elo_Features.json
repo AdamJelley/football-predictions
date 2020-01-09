@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578568677728
+    "lastModifiedOn": 1578568716059
   },
   "creationTag": {
     "versionNumber": 0,
@@ -171,27 +171,43 @@
         "type": "double"
       },
       {
-        "name": "teamName",
+        "name": "home_team_rank",
         "type": "string"
       },
       {
-        "name": "team_rank",
+        "name": "home_player_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_stddev",
+        "type": "double"
+      },
+      {
+        "name": "away_team_rank",
         "type": "string"
       },
       {
-        "name": "player_rank_min",
+        "name": "away_player_rank_min",
         "type": "double"
       },
       {
-        "name": "player_rank_max",
+        "name": "away_player_rank_max",
         "type": "double"
       },
       {
-        "name": "player_rank_avg",
+        "name": "away_player_rank_avg",
         "type": "double"
       },
       {
-        "name": "player_rank_stddev",
+        "name": "away_player_rank_stddev",
         "type": "double"
       }
     ],
