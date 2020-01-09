@@ -227,16 +227,45 @@
       "disabled": false,
       "type": "ColumnReorder",
       "params": {
-        "referenceColumn": "home_Elo_rank",
+        "referenceColumn": "player_id_home_new_rank_min",
         "columns": [
           "homeTeam_team_name",
           "awayTeam_team_name",
           "league_name",
           "venue",
-          "score_fulltime"
+          "score_fulltime",
+          "event_date"
         ],
         "reorderAction": "BEFORE_COLUMN",
         "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "event_date"
+        ],
+        "reorderAction": "AT_START",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "count"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
