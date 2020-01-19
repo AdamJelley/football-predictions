@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (LOGISTIC_REGRESSION) on ML_Dataset",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1578798068242",
+  "activeVersion": "1579402829516",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -100,7 +100,6 @@
         "min_samples_leaf": [
           3
         ],
-        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -118,7 +117,6 @@
         "min_samples_leaf": [
           3
         ],
-        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -136,7 +134,6 @@
         "min_samples_leaf": [
           3
         ],
-        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -155,7 +152,6 @@
         "min_samples_leaf": [
           3
         ],
-        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -178,7 +174,6 @@
         "min_samples_leaf": [
           3
         ],
-        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -256,13 +251,11 @@
           5
         ],
         "distance_weighting": false,
-        "algorithm": "AUTO",
         "p": 2,
         "leaf_size": 30
       },
       "logistic_regression": {
         "enabled": false,
-        "multi_class": "OVR",
         "l1": false,
         "l2": true,
         "C": [
@@ -700,11 +693,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578798074220
+    "lastModifiedOn": 1579402835055
   },
   "creationTag": {
     "versionNumber": 0,
