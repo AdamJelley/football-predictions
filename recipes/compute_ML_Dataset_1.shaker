@@ -66,7 +66,8 @@
           "player_id_away_new_rank_min",
           "player_id_away_new_rank_max",
           "player_id_away_new_rank_avg",
-          "player_id_away_new_rank_stddev"
+          "player_id_away_new_rank_stddev",
+          "count"
         ],
         "keep": false,
         "appliesTo": "COLUMNS"
@@ -253,6 +254,64 @@
         ],
         "reorderAction": "AFTER_COLUMN",
         "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "home_player_id_home_new_rank_min_lag",
+        "columns": [
+          "away_Elo_rank"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "home_player_id_home_new_rank_min_lag",
+            "to": "home_player_min_new_last_match"
+          },
+          {
+            "from": "home_player_id_home_new_rank_max_lag",
+            "to": "home_player_max_new_last_match"
+          },
+          {
+            "from": "home_player_id_home_new_rank_avg_lag",
+            "to": "home_player_avg_new_last_match"
+          },
+          {
+            "from": "home_player_id_home_new_rank_stddev_lag",
+            "to": "home_player_stddev_new_last_match"
+          },
+          {
+            "from": "away_player_id_away_new_rank_min_lag",
+            "to": "away_player_min_new_last_match"
+          },
+          {
+            "from": "away_player_id_away_new_rank_max_lag",
+            "to": "away_player_max_new_last_match"
+          },
+          {
+            "from": "away_player_id_away_new_rank_avg_lag",
+            "to": "away_player_avg_new_last_match"
+          },
+          {
+            "from": "away_player_id_away_new_rank_stddev_lag",
+            "to": "away_player_stddev_new_last_match"
+          }
+        ]
       },
       "alwaysShowComment": false
     }
