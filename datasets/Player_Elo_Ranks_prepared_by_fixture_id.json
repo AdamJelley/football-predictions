@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578505845134
+    "lastModifiedOn": 1579783007767
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,6 +61,26 @@
       {
         "name": "fixture_id",
         "type": "bigint"
+      },
+      {
+        "name": "event_date",
+        "type": "string"
+      },
+      {
+        "name": "team_id_home",
+        "type": "bigint"
+      },
+      {
+        "name": "team_id_away",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
       },
       {
         "name": "player_id_home_new_rank_min",
