@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579787372895
+    "lastModifiedOn": 1579787589153
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,6 +61,26 @@
       {
         "name": "fixture_id",
         "type": "bigint"
+      },
+      {
+        "name": "event_date",
+        "type": "string"
+      },
+      {
+        "name": "team_id_home",
+        "type": "bigint"
+      },
+      {
+        "name": "team_id_away",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
       },
       {
         "name": "player_id_home_rank_min",
@@ -131,18 +151,6 @@
         "type": "bigint"
       },
       {
-        "name": "event_date",
-        "type": "string"
-      },
-      {
-        "name": "homeTeam_team_id",
-        "type": "string"
-      },
-      {
-        "name": "awayTeam_team_id",
-        "type": "string"
-      },
-      {
         "name": "goalsHomeTeam",
         "type": "string"
       },
@@ -180,14 +188,6 @@
       },
       {
         "name": "ELOprob_awayTeam_team_id",
-        "type": "string"
-      },
-      {
-        "name": "homeTeam_team_name",
-        "type": "string"
-      },
-      {
-        "name": "awayTeam_team_name",
         "type": "string"
       },
       {
