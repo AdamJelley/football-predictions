@@ -11,11 +11,11 @@
     "main": {
       "items": [
         {
-          "ref": "Player_Elo_Ranks_prepared_by_fixture_id",
+          "ref": "Team_Elo_Ranks",
           "deps": []
         },
         {
-          "ref": "Team_Elo_Ranks",
+          "ref": "Player_Elo_Ranks_prepared_by_last_fixture_prepared",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578505943405
+    "lastModifiedOn": 1579785164922
   },
   "creationTag": {
     "versionNumber": 0,
