@@ -21,18 +21,18 @@
     "main": {
       "items": [
         {
-          "ref": "Player_Elo_Ranks_prepared_by_last_fixture",
+          "ref": "Player_Elo_Ranks_last_fixture",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579784816726
+    "lastModifiedOn": 1579784940311
   },
   "creationTag": {
     "versionNumber": 0,
