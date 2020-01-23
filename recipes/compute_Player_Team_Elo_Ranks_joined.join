@@ -356,7 +356,8 @@
   },
   "virtualInputs": [
     {
-      "index": 1
+      "index": 1,
+      "computedColumns": []
     },
     {
       "preFilter": {
@@ -590,5 +591,5 @@
       }
     }
   },
-  "enableAutoCastInJoinConditions": false
+  "enableAutoCastInJoinConditions": true
 }
