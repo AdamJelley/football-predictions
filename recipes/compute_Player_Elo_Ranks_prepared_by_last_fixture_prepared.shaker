@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -26,19 +25,88 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "home_player_id_away_new_rank_min_lag",
+          "home_player_id_away_new_rank_max_lag",
+          "home_player_id_away_new_rank_avg_lag",
+          "home_player_id_away_new_rank_stddev_lag",
+          "away_player_id_home_new_rank_min_lag",
+          "away_player_id_home_new_rank_max_lag",
+          "away_player_id_home_new_rank_avg_lag",
+          "away_player_id_home_new_rank_stddev_lag"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "home_player_id_home_new_rank_min_lag",
+            "to": "home_player_rank_last_match_min"
+          },
+          {
+            "from": "home_player_id_home_new_rank_max_lag",
+            "to": "home_player_rank_last_match_max"
+          },
+          {
+            "from": "home_player_id_home_new_rank_avg_lag",
+            "to": "home_player_rank_last_match_avg"
+          },
+          {
+            "from": "home_player_id_home_new_rank_stddev_lag",
+            "to": "home_player_rank_last_match_stddev"
+          },
+          {
+            "from": "away_player_id_away_new_rank_min_lag",
+            "to": "away_player_rank_last_match_min"
+          },
+          {
+            "from": "away_player_id_away_new_rank_max_lag",
+            "to": "away_player_rank_last_match_max"
+          },
+          {
+            "from": "away_player_id_away_new_rank_avg_lag",
+            "to": "away_player_rank_last_match_avg"
+          },
+          {
+            "from": "away_player_id_away_new_rank_stddev_lag",
+            "to": "away_player_rank_last_match_stddev"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
