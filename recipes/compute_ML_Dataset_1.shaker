@@ -255,21 +255,6 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "player_id_home_rank_min",
-        "columns": [
-          "away_Elo_rank"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
