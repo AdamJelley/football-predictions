@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579788800299
+    "lastModifiedOn": 1579788958558
   },
   "creationTag": {
     "versionNumber": 0,
@@ -83,22 +83,6 @@
         "type": "string"
       },
       {
-        "name": "player_id_home_rank_min",
-        "type": "double"
-      },
-      {
-        "name": "player_id_home_rank_max",
-        "type": "double"
-      },
-      {
-        "name": "player_id_home_rank_avg",
-        "type": "double"
-      },
-      {
-        "name": "player_id_home_rank_stddev",
-        "type": "double"
-      },
-      {
         "name": "player_id_home_new_rank_min",
         "type": "double"
       },
@@ -112,22 +96,6 @@
       },
       {
         "name": "player_id_home_new_rank_stddev",
-        "type": "double"
-      },
-      {
-        "name": "player_id_away_rank_min",
-        "type": "double"
-      },
-      {
-        "name": "player_id_away_rank_max",
-        "type": "double"
-      },
-      {
-        "name": "player_id_away_rank_avg",
-        "type": "double"
-      },
-      {
-        "name": "player_id_away_rank_stddev",
         "type": "double"
       },
       {
@@ -149,6 +117,70 @@
       {
         "name": "count",
         "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_new_rank_min_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_home_new_rank_max_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_home_new_rank_avg_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_home_new_rank_stddev_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_min_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_max_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_avg_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_stddev_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_home_new_rank_min_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_home_new_rank_max_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_home_new_rank_avg_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_home_new_rank_stddev_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_away_new_rank_min_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_away_new_rank_max_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_away_new_rank_avg_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_away_new_rank_stddev_lag",
+        "type": "double"
       }
     ],
     "userModified": true
