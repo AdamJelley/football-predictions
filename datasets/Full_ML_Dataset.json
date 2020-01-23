@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579791844478
+    "lastModifiedOn": 1579792629720
   },
   "creationTag": {
     "versionNumber": 0,
@@ -83,43 +83,39 @@
         "type": "double"
       },
       {
-        "name": "count",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_home_new_rank_min_lag",
-        "type": "double"
-      },
-      {
-        "name": "home_player_id_home_new_rank_max_lag",
-        "type": "double"
-      },
-      {
-        "name": "home_player_id_home_new_rank_avg_lag",
-        "type": "double"
-      },
-      {
-        "name": "home_player_id_home_new_rank_stddev_lag",
-        "type": "double"
-      },
-      {
-        "name": "away_player_id_away_new_rank_min_lag",
-        "type": "double"
-      },
-      {
-        "name": "away_player_id_away_new_rank_max_lag",
-        "type": "double"
-      },
-      {
-        "name": "away_player_id_away_new_rank_avg_lag",
-        "type": "double"
-      },
-      {
-        "name": "away_player_id_away_new_rank_stddev_lag",
-        "type": "double"
-      },
-      {
         "name": "away_Elo_rank",
+        "type": "double"
+      },
+      {
+        "name": "home_player_min_new_last_match",
+        "type": "double"
+      },
+      {
+        "name": "home_player_max_new_last_match",
+        "type": "double"
+      },
+      {
+        "name": "home_player_avg_new_last_match",
+        "type": "double"
+      },
+      {
+        "name": "home_player_stddev_new_last_match",
+        "type": "double"
+      },
+      {
+        "name": "away_player_min_new_last_match",
+        "type": "double"
+      },
+      {
+        "name": "away_player_max_new_last_match",
+        "type": "double"
+      },
+      {
+        "name": "away_player_avg_new_last_match",
+        "type": "double"
+      },
+      {
+        "name": "away_player_stddev_new_last_match",
         "type": "double"
       },
       {
