@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579783920761
+    "lastModifiedOn": 1579784216446
   },
   "creationTag": {
     "versionNumber": 0,
@@ -83,35 +83,19 @@
         "type": "string"
       },
       {
-        "name": "home_player_id_home_new_rank_min_lag",
+        "name": "home_player_rank_last_match_min",
         "type": "double"
       },
       {
-        "name": "home_player_id_home_new_rank_max_lag",
+        "name": "home_player_rank_last_match_max",
         "type": "double"
       },
       {
-        "name": "home_player_id_home_new_rank_avg_lag",
+        "name": "home_player_rank_last_match_avg",
         "type": "double"
       },
       {
-        "name": "home_player_id_home_new_rank_stddev_lag",
-        "type": "double"
-      },
-      {
-        "name": "home_player_id_away_new_rank_min_lag",
-        "type": "double"
-      },
-      {
-        "name": "home_player_id_away_new_rank_max_lag",
-        "type": "double"
-      },
-      {
-        "name": "home_player_id_away_new_rank_avg_lag",
-        "type": "double"
-      },
-      {
-        "name": "home_player_id_away_new_rank_stddev_lag",
+        "name": "home_player_rank_last_match_stddev",
         "type": "double"
       },
       {
@@ -119,35 +103,19 @@
         "type": "bigint"
       },
       {
-        "name": "away_player_id_home_new_rank_min_lag",
+        "name": "away_player_rank_last_match_min",
         "type": "double"
       },
       {
-        "name": "away_player_id_home_new_rank_max_lag",
+        "name": "away_player_rank_last_match_max",
         "type": "double"
       },
       {
-        "name": "away_player_id_home_new_rank_avg_lag",
+        "name": "away_player_rank_last_match_avg",
         "type": "double"
       },
       {
-        "name": "away_player_id_home_new_rank_stddev_lag",
-        "type": "double"
-      },
-      {
-        "name": "away_player_id_away_new_rank_min_lag",
-        "type": "double"
-      },
-      {
-        "name": "away_player_id_away_new_rank_max_lag",
-        "type": "double"
-      },
-      {
-        "name": "away_player_id_away_new_rank_avg_lag",
-        "type": "double"
-      },
-      {
-        "name": "away_player_id_away_new_rank_stddev_lag",
+        "name": "away_player_rank_last_match_stddev",
         "type": "double"
       },
       {
