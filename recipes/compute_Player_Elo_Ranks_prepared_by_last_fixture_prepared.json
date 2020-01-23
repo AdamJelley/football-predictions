@@ -53,7 +53,7 @@
     "main": {
       "items": [
         {
-          "ref": "Player_Elo_Ranks_prepared_by_last_fixture",
+          "ref": "Player_Elo_Ranks_last_fixture",
           "deps": []
         }
       ]
@@ -70,11 +70,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579784732820
+    "lastModifiedOn": 1579784977165
   },
   "creationTag": {
     "versionNumber": 0,
