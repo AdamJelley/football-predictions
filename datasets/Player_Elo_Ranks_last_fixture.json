@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579784936449
+    "lastModifiedOn": 1579784939532
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,104 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "fixture_id",
+        "type": "bigint"
+      },
+      {
+        "name": "event_date",
+        "type": "string"
+      },
+      {
+        "name": "team_id_home",
+        "type": "bigint"
+      },
+      {
+        "name": "team_id_away",
+        "type": "bigint"
+      },
+      {
+        "name": "homeTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "awayTeam_team_name",
+        "type": "string"
+      },
+      {
+        "name": "home_player_id_home_new_rank_min_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_home_new_rank_max_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_home_new_rank_avg_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_home_new_rank_stddev_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_min_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_max_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_avg_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_stddev_lag",
+        "type": "double"
+      },
+      {
+        "name": "home_count_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_new_rank_min_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_home_new_rank_max_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_home_new_rank_avg_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_home_new_rank_stddev_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_away_new_rank_min_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_away_new_rank_max_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_away_new_rank_avg_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_player_id_away_new_rank_stddev_lag",
+        "type": "double"
+      },
+      {
+        "name": "away_count_lag",
+        "type": "bigint"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
