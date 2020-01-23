@@ -1064,7 +1064,7 @@
       "nJobs": 4
     },
     "metrics": {
-      "evaluationMetric": "ROC_AUC",
+      "evaluationMetric": "ACCURACY",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
