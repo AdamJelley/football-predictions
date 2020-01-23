@@ -15,7 +15,7 @@
           "deps": []
         },
         {
-          "ref": "Player_Elo_Ranks_prepared_by_fixture_id",
+          "ref": "Player_Elo_Ranks_last_fixture",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579787590043
+    "lastModifiedOn": 1579789193445
   },
   "creationTag": {
     "versionNumber": 0,

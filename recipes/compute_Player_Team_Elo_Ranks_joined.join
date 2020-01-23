@@ -85,26 +85,6 @@
       "table": 0
     },
     {
-      "name": "player_id_home_rank_min",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "player_id_home_rank_max",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "player_id_home_rank_avg",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "player_id_home_rank_stddev",
-      "type": "double",
-      "table": 0
-    },
-    {
       "name": "player_id_home_new_rank_min",
       "type": "double",
       "table": 0
@@ -121,26 +101,6 @@
     },
     {
       "name": "player_id_home_new_rank_stddev",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "player_id_away_rank_min",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "player_id_away_rank_max",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "player_id_away_rank_avg",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "player_id_away_rank_stddev",
       "type": "double",
       "table": 0
     },
@@ -167,6 +127,46 @@
     {
       "name": "count",
       "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "home_player_id_home_new_rank_min_lag",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "home_player_id_home_new_rank_max_lag",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "home_player_id_home_new_rank_avg_lag",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "home_player_id_home_new_rank_stddev_lag",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "away_player_id_away_new_rank_min_lag",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "away_player_id_away_new_rank_max_lag",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "away_player_id_away_new_rank_avg_lag",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "away_player_id_away_new_rank_stddev_lag",
+      "type": "double",
       "table": 0
     },
     {
@@ -356,8 +356,7 @@
   },
   "virtualInputs": [
     {
-      "index": 1,
-      "computedColumns": []
+      "index": 1
     },
     {
       "preFilter": {
@@ -399,22 +398,6 @@
             "type": "string"
           },
           {
-            "name": "player_id_home_rank_min",
-            "type": "double"
-          },
-          {
-            "name": "player_id_home_rank_max",
-            "type": "double"
-          },
-          {
-            "name": "player_id_home_rank_avg",
-            "type": "double"
-          },
-          {
-            "name": "player_id_home_rank_stddev",
-            "type": "double"
-          },
-          {
             "name": "player_id_home_new_rank_min",
             "type": "double"
           },
@@ -428,22 +411,6 @@
           },
           {
             "name": "player_id_home_new_rank_stddev",
-            "type": "double"
-          },
-          {
-            "name": "player_id_away_rank_min",
-            "type": "double"
-          },
-          {
-            "name": "player_id_away_rank_max",
-            "type": "double"
-          },
-          {
-            "name": "player_id_away_rank_avg",
-            "type": "double"
-          },
-          {
-            "name": "player_id_away_rank_stddev",
             "type": "double"
           },
           {
@@ -465,6 +432,38 @@
           {
             "name": "count",
             "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_new_rank_min_lag",
+            "type": "double"
+          },
+          {
+            "name": "home_player_id_home_new_rank_max_lag",
+            "type": "double"
+          },
+          {
+            "name": "home_player_id_home_new_rank_avg_lag",
+            "type": "double"
+          },
+          {
+            "name": "home_player_id_home_new_rank_stddev_lag",
+            "type": "double"
+          },
+          {
+            "name": "away_player_id_away_new_rank_min_lag",
+            "type": "double"
+          },
+          {
+            "name": "away_player_id_away_new_rank_max_lag",
+            "type": "double"
+          },
+          {
+            "name": "away_player_id_away_new_rank_avg_lag",
+            "type": "double"
+          },
+          {
+            "name": "away_player_id_away_new_rank_stddev_lag",
+            "type": "double"
           },
           {
             "name": "goalsHomeTeam",
