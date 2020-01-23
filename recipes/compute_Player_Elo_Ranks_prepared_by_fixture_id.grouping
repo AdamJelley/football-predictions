@@ -189,7 +189,7 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "player_id_home_rank",
       "count": false,
@@ -199,6 +199,24 @@
       "type": "double",
       "concatDistinct": false,
       "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": true,
+      "stddev": true,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "player_id_home_new_rank",
+      "count": false,
+      "$idx": 5,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
@@ -209,9 +227,9 @@
       "last": false,
       "max": true,
       "firstLastNotNull": false,
-      "column": "player_id_home_new_rank",
+      "column": "player_id_away_rank",
       "count": false,
-      "$idx": 5,
+      "$idx": 6,
       "sum": false,
       "concat": false,
       "type": "double",
@@ -227,9 +245,9 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "player_id_away_rank",
+      "column": "player_id_away_new_rank",
       "count": false,
-      "$idx": 6,
+      "$idx": 7,
       "sum": false,
       "concat": false,
       "type": "double",
@@ -239,24 +257,6 @@
       "countDistinct": false,
       "avg": false,
       "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": true,
-      "firstLastNotNull": false,
-      "column": "player_id_away_new_rank",
-      "count": false,
-      "$idx": 7,
-      "sum": false,
-      "concat": false,
-      "type": "double",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": true,
-      "countDistinct": false,
-      "avg": true,
-      "stddev": true,
       "first": false
     },
     {
@@ -579,35 +579,35 @@
             "type": "string"
           },
           {
-            "name": "player_id_home_new_rank_min",
+            "name": "player_id_home_rank_min",
             "type": "double"
           },
           {
-            "name": "player_id_home_new_rank_max",
+            "name": "player_id_home_rank_max",
             "type": "double"
           },
           {
-            "name": "player_id_home_new_rank_avg",
+            "name": "player_id_home_rank_avg",
             "type": "double"
           },
           {
-            "name": "player_id_home_new_rank_stddev",
+            "name": "player_id_home_rank_stddev",
             "type": "double"
           },
           {
-            "name": "player_id_away_new_rank_min",
+            "name": "player_id_away_rank_min",
             "type": "double"
           },
           {
-            "name": "player_id_away_new_rank_max",
+            "name": "player_id_away_rank_max",
             "type": "double"
           },
           {
-            "name": "player_id_away_new_rank_avg",
+            "name": "player_id_away_rank_avg",
             "type": "double"
           },
           {
-            "name": "player_id_away_new_rank_stddev",
+            "name": "player_id_away_rank_stddev",
             "type": "double"
           },
           {
