@@ -17,7 +17,7 @@ FROM
                 a."player_id_home_new_rank_stddev" as "player_rank_stddev"
             FROM
               (SELECT *, ROW_NUMBER()
-              OVER (PARTITION BY "homeTeam_team_id"
+              OVER (PARTITION BY "team_id_home"
               ORDER BY "event_date" desc)
               FROM "FOOTBALLMATCHPREDICTIONS_player_team_elo_ranks_joined") a
               WHERE a.ROW_NUMBER = 1
@@ -33,7 +33,7 @@ FROM
                 b."player_id_away_new_rank_stddev" as "player_rank_stddev"
             FROM
               (SELECT *, ROW_NUMBER()
-              OVER (PARTITION BY "awayTeam_team_id"
+              OVER (PARTITION BY "team_id_away"
               ORDER BY "event_date" desc)
               FROM "FOOTBALLMATCHPREDICTIONS_player_team_elo_ranks_joined") b
               WHERE b.ROW_NUMBER = 1
