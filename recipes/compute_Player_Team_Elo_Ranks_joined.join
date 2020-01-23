@@ -60,6 +60,31 @@
       "table": 0
     },
     {
+      "name": "event_date",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "team_id_home",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "team_id_away",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "homeTeam_team_name",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "awayTeam_team_name",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "player_id_home_rank_min",
       "type": "double",
       "table": 0
@@ -145,21 +170,6 @@
       "table": 0
     },
     {
-      "name": "event_date",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "homeTeam_team_id",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "awayTeam_team_id",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "goalsHomeTeam",
       "type": "string",
       "table": 1
@@ -206,16 +216,6 @@
     },
     {
       "name": "ELOprob_awayTeam_team_id",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "homeTeam_team_name",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "awayTeam_team_name",
       "type": "string",
       "table": 1
     },
@@ -379,6 +379,26 @@
             "type": "bigint"
           },
           {
+            "name": "event_date",
+            "type": "string"
+          },
+          {
+            "name": "team_id_home",
+            "type": "bigint"
+          },
+          {
+            "name": "team_id_away",
+            "type": "bigint"
+          },
+          {
+            "name": "homeTeam_team_name",
+            "type": "string"
+          },
+          {
+            "name": "awayTeam_team_name",
+            "type": "string"
+          },
+          {
             "name": "player_id_home_rank_min",
             "type": "double"
           },
@@ -447,18 +467,6 @@
             "type": "bigint"
           },
           {
-            "name": "event_date",
-            "type": "string"
-          },
-          {
-            "name": "homeTeam_team_id",
-            "type": "string"
-          },
-          {
-            "name": "awayTeam_team_id",
-            "type": "string"
-          },
-          {
             "name": "goalsHomeTeam",
             "type": "string"
           },
@@ -496,14 +504,6 @@
           },
           {
             "name": "ELOprob_awayTeam_team_id",
-            "type": "string"
-          },
-          {
-            "name": "homeTeam_team_name",
-            "type": "string"
-          },
-          {
-            "name": "awayTeam_team_name",
             "type": "string"
           },
           {
