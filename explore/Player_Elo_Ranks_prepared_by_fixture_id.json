@@ -49,13 +49,13 @@
     "globalSearchQuery": "",
     "explorationFilters": [
       {
-        "column": "team_id_home",
+        "column": "team_id_away",
         "type": "columnFilter",
         "currentMode": "SIMPLE_ALPHANUM",
         "active": true,
         "facet": {
           "type": "facet",
-          "column": "team_id_home",
+          "column": "team_id_away",
           "columnType": "NUMERICAL",
           "currentMode": "NUMERICAL",
           "sort": "count",
@@ -63,9 +63,9 @@
         },
         "alphanumFilter": {
           "type": "alphanum",
-          "column": "team_id_home",
+          "column": "team_id_away",
           "values": [
-            "40"
+            "50"
           ],
           "params": {
             "mode": "full_string",
@@ -74,7 +74,7 @@
         },
         "validityFilter": {
           "type": "validity",
-          "column": "team_id_home",
+          "column": "team_id_away",
           "params": {
             "type": "LongMeaning",
             "ok": true,
