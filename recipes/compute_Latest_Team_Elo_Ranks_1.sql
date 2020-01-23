@@ -8,7 +8,7 @@ FROM
         (
             SELECT 
                 a."event_date" as "event_date", 
-                a."homeTeam_team_id" as "teamId", 
+                a."team_id_home" as "teamId", 
                 a."homeTeam_team_name" as "teamName", 
                 a."homeTeam_team_id_new_rank" as "Elo_rank", 
                 a."player_id_home_new_rank_min" as "player_rank_min",
@@ -24,7 +24,7 @@ FROM
         UNION
             SELECT 
                 b."event_date" as "event_date", 
-                b."awayTeam_team_id" as "teamId", 
+                b."team_id_away" as "teamId", 
                 b."awayTeam_team_name" as "teamName", 
                 b."awayTeam_team_id_new_rank" as "Elo_rank",
                 b."player_id_away_new_rank_min" as "player_rank_min",
