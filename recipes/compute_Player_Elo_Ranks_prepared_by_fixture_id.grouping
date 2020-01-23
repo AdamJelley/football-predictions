@@ -207,7 +207,7 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "player_id_home_new_rank",
       "count": false,
@@ -217,10 +217,10 @@
       "type": "double",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
-      "avg": false,
-      "stddev": false,
+      "avg": true,
+      "stddev": true,
       "first": false
     },
     {
@@ -243,7 +243,7 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "player_id_away_new_rank",
       "count": false,
@@ -253,10 +253,10 @@
       "type": "double",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
-      "avg": false,
-      "stddev": false,
+      "avg": true,
+      "stddev": true,
       "first": false
     },
     {
@@ -595,6 +595,22 @@
             "type": "double"
           },
           {
+            "name": "player_id_home_new_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_stddev",
+            "type": "double"
+          },
+          {
             "name": "player_id_away_rank_min",
             "type": "double"
           },
@@ -608,6 +624,22 @@
           },
           {
             "name": "player_id_away_rank_stddev",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_stddev",
             "type": "double"
           },
           {
