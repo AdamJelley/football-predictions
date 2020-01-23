@@ -34,6 +34,91 @@
       "table": 0
     },
     {
+      "name": "player_id_home_rank_min",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_home_rank_max",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_home_rank_avg",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_home_rank_stddev",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_home_new_rank_min",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_home_new_rank_max",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_home_new_rank_avg",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_home_new_rank_stddev",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_away_rank_min",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_away_rank_max",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_away_rank_avg",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_away_rank_stddev",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_away_new_rank_min",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_away_new_rank_max",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_away_new_rank_avg",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "player_id_away_new_rank_stddev",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "count",
+      "type": "bigint",
+      "table": 0
+    },
+    {
       "name": "event_date",
       "type": "string",
       "table": 1
@@ -264,6 +349,74 @@
         "columns": [
           {
             "name": "fixture_id",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_rank_stddev",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_stddev",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_rank_stddev",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_stddev",
+            "type": "double"
+          },
+          {
+            "name": "count",
             "type": "bigint"
           },
           {
