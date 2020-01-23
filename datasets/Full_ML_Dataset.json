@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1578570880992
+    "lastModifiedOn": 1579785518448
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,8 +67,64 @@
         "type": "string"
       },
       {
+        "name": "home_Elo_rank",
+        "type": "double"
+      },
+      {
         "name": "awayTeam_team_name",
         "type": "string"
+      },
+      {
+        "name": "away_Elo_rank",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_last_match_min",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_last_match_max",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_last_match_avg",
+        "type": "double"
+      },
+      {
+        "name": "home_player_rank_last_match_stddev",
+        "type": "double"
+      },
+      {
+        "name": "home_count_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_last_match_min",
+        "type": "double"
+      },
+      {
+        "name": "away_player_rank_last_match_max",
+        "type": "double"
+      },
+      {
+        "name": "away_player_rank_last_match_avg",
+        "type": "double"
+      },
+      {
+        "name": "away_player_rank_last_match_stddev",
+        "type": "double"
+      },
+      {
+        "name": "away_count_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "ELOprob_homeTeam_team_id",
+        "type": "double"
+      },
+      {
+        "name": "ELOprob_awayTeam_team_id",
+        "type": "double"
       },
       {
         "name": "league_name",
@@ -81,54 +137,6 @@
       {
         "name": "score_fulltime",
         "type": "string"
-      },
-      {
-        "name": "home_Elo_rank",
-        "type": "double"
-      },
-      {
-        "name": "away_Elo_rank",
-        "type": "double"
-      },
-      {
-        "name": "home_player_rank_min",
-        "type": "double"
-      },
-      {
-        "name": "home_player_rank_max",
-        "type": "double"
-      },
-      {
-        "name": "home_player_rank_avg",
-        "type": "double"
-      },
-      {
-        "name": "home_player_rank_stddev",
-        "type": "double"
-      },
-      {
-        "name": "away_player_rank_min",
-        "type": "double"
-      },
-      {
-        "name": "away_player_rank_max",
-        "type": "double"
-      },
-      {
-        "name": "away_player_rank_avg",
-        "type": "double"
-      },
-      {
-        "name": "away_player_rank_stddev",
-        "type": "double"
-      },
-      {
-        "name": "ELOprob_homeTeam_team_id",
-        "type": "double"
-      },
-      {
-        "name": "ELOprob_awayTeam_team_id",
-        "type": "double"
       },
       {
         "name": "target",
