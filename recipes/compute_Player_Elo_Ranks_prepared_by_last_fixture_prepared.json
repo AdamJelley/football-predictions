@@ -12,6 +12,9 @@
           "map": {
             "Player_Elo_Ranks_prepared_by_last_fixture": {
               "repartition": 10
+            },
+            "Player_Elo_Ranks_last_fixture": {
+              "repartition": 10
             }
           }
         },
@@ -70,11 +73,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579784977165
+    "lastModifiedOn": 1579784979671
   },
   "creationTag": {
     "versionNumber": 0,
