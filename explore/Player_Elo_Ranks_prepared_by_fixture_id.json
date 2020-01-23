@@ -47,7 +47,43 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [],
+    "explorationFilters": [
+      {
+        "column": "team_id_home",
+        "type": "columnFilter",
+        "currentMode": "SIMPLE_ALPHANUM",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "team_id_home",
+          "columnType": "NUMERICAL",
+          "currentMode": "NUMERICAL",
+          "sort": "count",
+          "selectedValues": {}
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "team_id_home",
+          "values": [
+            "40"
+          ],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "team_id_home",
+          "params": {
+            "type": "LongMeaning",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
     "previewMode": "ALL_ROWS"
   },
   "charts": []
