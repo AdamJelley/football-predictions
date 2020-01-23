@@ -34,27 +34,6 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "home_player_id_away_new_rank_min_lag",
-          "home_player_id_away_new_rank_max_lag",
-          "home_player_id_away_new_rank_avg_lag",
-          "home_player_id_away_new_rank_stddev_lag",
-          "away_player_id_home_new_rank_min_lag",
-          "away_player_id_home_new_rank_max_lag",
-          "away_player_id_home_new_rank_avg_lag",
-          "away_player_id_home_new_rank_stddev_lag"
-        ],
-        "keep": false,
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
       "type": "ColumnRenamer",
       "params": {
         "renamings": [
@@ -91,6 +70,27 @@
             "to": "away_player_rank_last_match_stddev"
           }
         ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "home_player_id_away_new_rank_min_lag",
+          "home_player_id_away_new_rank_max_lag",
+          "home_player_id_away_new_rank_avg_lag",
+          "home_player_id_away_new_rank_stddev_lag",
+          "away_player_id_home_new_rank_min_lag",
+          "away_player_id_home_new_rank_max_lag",
+          "away_player_id_home_new_rank_avg_lag",
+          "away_player_id_home_new_rank_stddev_lag"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
