@@ -207,13 +207,113 @@
       "table": 0
     },
     {
-      "name": "player_id_home_concat",
-      "type": "string",
+      "name": "home_player_0",
+      "type": "bigint",
       "table": 1
     },
     {
-      "name": "player_id_away_concat",
-      "type": "string",
+      "name": "home_player_1",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_2",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_3",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_4",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_5",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_6",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_7",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_8",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_9",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "home_player_10",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_0",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_1",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_2",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_3",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_4",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_5",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_6",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_7",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_8",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_9",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "away_player_10",
+      "type": "bigint",
       "table": 1
     },
     {
@@ -616,12 +716,92 @@
             "type": "string"
           },
           {
-            "name": "player_id_home_concat",
-            "type": "string"
+            "name": "home_player_0",
+            "type": "bigint"
           },
           {
-            "name": "player_id_away_concat",
-            "type": "string"
+            "name": "home_player_1",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_2",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_3",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_4",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_5",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_6",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_7",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_8",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_9",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_10",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_0",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_1",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_2",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_3",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_4",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_5",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_6",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_7",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_8",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_9",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_10",
+            "type": "bigint"
           },
           {
             "name": "player_id_home_new_rank_min",
