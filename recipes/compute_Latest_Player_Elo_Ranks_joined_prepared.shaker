@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -26,19 +25,35 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "Elo_rank/Team_Elo_rank",
+        "column": "Normalised_Elo_Rank"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
