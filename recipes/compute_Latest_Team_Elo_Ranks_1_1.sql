@@ -20,7 +20,7 @@ FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "team_id_home"
               ORDER BY "event_date" desc)
-              FROM "FOOTBALLMATCHPREDICTIONS_player_elo_ranks_last_fixture") a
+              FROM "FOOTBALLMATCHPREDICTIONS_team_player_ranks_joined") a
               WHERE a.ROW_NUMBER = 1
         UNION
             SELECT 
@@ -37,7 +37,7 @@ FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "team_id_away"
               ORDER BY "event_date" desc)
-              FROM "FOOTBALLMATCHPREDICTIONS_player_elo_ranks_last_fixture") b
+              FROM "FOOTBALLMATCHPREDICTIONS_team_player_ranks_joined") b
               WHERE b.ROW_NUMBER = 1
         ) c
     ) d
