@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579885460027
+    "lastModifiedOn": 1579887194198
   },
   "creationTag": {
     "versionNumber": 0,
@@ -94,9 +94,59 @@
         "originalType": "float8"
       },
       {
-        "name": "player_id_concat",
-        "type": "string",
-        "originalType": "text"
+        "name": "player_0",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_1",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_2",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_3",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_4",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_5",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_6",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_7",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_8",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_9",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "player_10",
+        "type": "bigint",
+        "originalType": "int8"
       }
     ],
     "userModified": true
