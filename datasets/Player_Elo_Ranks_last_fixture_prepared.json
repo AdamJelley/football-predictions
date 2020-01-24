@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579873187897
+    "lastModifiedOn": 1579873625177
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,6 +65,10 @@
       {
         "name": "event_date",
         "type": "string"
+      },
+      {
+        "name": "event_date_parsed",
+        "type": "date"
       },
       {
         "name": "team_id_home",
