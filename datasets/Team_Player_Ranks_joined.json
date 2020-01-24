@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579879297850
+    "lastModifiedOn": 1579885382533
   },
   "creationTag": {
     "versionNumber": 0,
@@ -201,6 +201,46 @@
       {
         "name": "secondHalfStart",
         "type": "string"
+      },
+      {
+        "name": "player_id_home_concat",
+        "type": "string"
+      },
+      {
+        "name": "player_id_away_concat",
+        "type": "string"
+      },
+      {
+        "name": "player_id_home_new_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_stddev",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_stddev",
+        "type": "double"
       },
       {
         "name": "count",
