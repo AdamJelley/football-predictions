@@ -4,6 +4,7 @@
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -12,9 +13,11 @@
       "firstLastNotNull": false,
       "column": "event_date",
       "count": false,
+      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "date",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -35,9 +38,11 @@
       "firstLastNotNull": false,
       "column": "team_id_home",
       "count": false,
+      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -58,9 +63,11 @@
       "firstLastNotNull": false,
       "column": "team_id_away",
       "count": false,
+      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -81,9 +88,11 @@
       "firstLastNotNull": false,
       "column": "homeTeam_team_name",
       "count": false,
+      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -104,9 +113,11 @@
       "firstLastNotNull": false,
       "column": "awayTeam_team_name",
       "count": false,
+      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -127,9 +138,11 @@
       "firstLastNotNull": false,
       "column": "home_Elo_rank",
       "count": false,
+      "$idx": 5,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -150,9 +163,11 @@
       "firstLastNotNull": false,
       "column": "away_Elo_rank",
       "count": false,
+      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -173,9 +188,11 @@
       "firstLastNotNull": false,
       "column": "home_player_min_new_last_match",
       "count": false,
+      "$idx": 7,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -185,7 +202,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -196,9 +213,11 @@
       "firstLastNotNull": false,
       "column": "home_player_max_new_last_match",
       "count": false,
+      "$idx": 8,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -208,7 +227,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -219,9 +238,11 @@
       "firstLastNotNull": false,
       "column": "home_player_avg_new_last_match",
       "count": false,
+      "$idx": 9,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -231,7 +252,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -242,9 +263,11 @@
       "firstLastNotNull": false,
       "column": "home_player_stddev_new_last_match",
       "count": false,
+      "$idx": 10,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -254,7 +277,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -265,9 +288,11 @@
       "firstLastNotNull": false,
       "column": "away_player_min_new_last_match",
       "count": false,
+      "$idx": 11,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -277,7 +302,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -288,9 +313,11 @@
       "firstLastNotNull": false,
       "column": "away_player_max_new_last_match",
       "count": false,
+      "$idx": 12,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -300,7 +327,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -311,9 +338,11 @@
       "firstLastNotNull": false,
       "column": "away_player_avg_new_last_match",
       "count": false,
+      "$idx": 13,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -323,7 +352,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -334,9 +363,11 @@
       "firstLastNotNull": false,
       "column": "away_player_stddev_new_last_match",
       "count": false,
+      "$idx": 14,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -346,7 +377,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -357,9 +388,11 @@
       "firstLastNotNull": false,
       "column": "ELOprob_homeTeam_team_id",
       "count": false,
+      "$idx": 15,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -380,9 +413,11 @@
       "firstLastNotNull": false,
       "column": "ELOprob_awayTeam_team_id",
       "count": false,
+      "$idx": 16,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -403,9 +438,11 @@
       "firstLastNotNull": false,
       "column": "league_name",
       "count": false,
+      "$idx": 17,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -426,9 +463,11 @@
       "firstLastNotNull": false,
       "column": "venue",
       "count": false,
+      "$idx": 18,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -449,9 +488,11 @@
       "firstLastNotNull": false,
       "column": "score_fulltime",
       "count": false,
+      "$idx": 19,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -472,9 +513,11 @@
       "firstLastNotNull": false,
       "column": "target",
       "count": false,
+      "$idx": 20,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -495,9 +538,11 @@
       "firstLastNotNull": false,
       "column": "fixture_id",
       "count": false,
+      "$idx": 21,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -518,19 +563,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_0",
       "count": false,
+      "$idx": 22,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -541,19 +588,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_1",
       "count": false,
+      "$idx": 23,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -564,19 +613,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_2",
       "count": false,
+      "$idx": 24,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -587,19 +638,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_3",
       "count": false,
+      "$idx": 25,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -610,19 +663,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_4",
       "count": false,
+      "$idx": 26,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -633,19 +688,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_5",
       "count": false,
+      "$idx": 27,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -656,19 +713,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_6",
       "count": false,
+      "$idx": 28,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -679,19 +738,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_7",
       "count": false,
+      "$idx": 29,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -702,19 +763,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_8",
       "count": false,
+      "$idx": 30,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -725,19 +788,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_9",
       "count": false,
+      "$idx": 31,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -748,19 +813,21 @@
       "firstLastNotNull": false,
       "column": "player_id_home_10",
       "count": false,
+      "$idx": 32,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -771,19 +838,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_0",
       "count": false,
+      "$idx": 33,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -794,19 +863,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_1",
       "count": false,
+      "$idx": 34,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -817,19 +888,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_2",
       "count": false,
+      "$idx": 35,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -840,19 +913,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_3",
       "count": false,
+      "$idx": 36,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -863,19 +938,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_4",
       "count": false,
+      "$idx": 37,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -886,19 +963,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_5",
       "count": false,
+      "$idx": 38,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -909,19 +988,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_6",
       "count": false,
+      "$idx": 39,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -932,19 +1013,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_7",
       "count": false,
+      "$idx": 40,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -955,19 +1038,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_8",
       "count": false,
+      "$idx": 41,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -978,19 +1063,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_9",
       "count": false,
+      "$idx": 42,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -1001,19 +1088,21 @@
       "firstLastNotNull": false,
       "column": "player_id_away_10",
       "count": false,
+      "$idx": 43,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -1024,9 +1113,11 @@
       "firstLastNotNull": false,
       "column": "count",
       "count": false,
+      "$idx": 44,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1041,6 +1132,292 @@
       "first": false
     }
   ],
+  "windows": [
+    {
+      "windowUpperBound": 0,
+      "enablePartitioning": true,
+      "enableOrdering": true,
+      "precedingRows": 0,
+      "prefix": "home",
+      "limitFollowing": false,
+      "orders": [
+        {
+          "column": "event_date",
+          "desc": false
+        }
+      ],
+      "limitPreceding": false,
+      "followingRows": 0,
+      "windowLowerBound": 0,
+      "enableLimits": false,
+      "partitioningColumns": [
+        "homeTeam_team_name"
+      ]
+    },
+    {
+      "enablePartitioning": true,
+      "prefix": "away",
+      "enableOrdering": true,
+      "orders": [
+        {
+          "column": "event_date",
+          "desc": false
+        }
+      ],
+      "partitioningColumns": [
+        "awayTeam_team_name"
+      ]
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "event_date",
+            "type": "date"
+          },
+          {
+            "name": "team_id_home",
+            "type": "bigint"
+          },
+          {
+            "name": "team_id_away",
+            "type": "bigint"
+          },
+          {
+            "name": "homeTeam_team_name",
+            "type": "string"
+          },
+          {
+            "name": "awayTeam_team_name",
+            "type": "string"
+          },
+          {
+            "name": "home_Elo_rank",
+            "type": "double"
+          },
+          {
+            "name": "away_Elo_rank",
+            "type": "double"
+          },
+          {
+            "name": "ELOprob_homeTeam_team_id",
+            "type": "double"
+          },
+          {
+            "name": "ELOprob_awayTeam_team_id",
+            "type": "double"
+          },
+          {
+            "name": "league_name",
+            "type": "string"
+          },
+          {
+            "name": "venue",
+            "type": "string"
+          },
+          {
+            "name": "score_fulltime",
+            "type": "string"
+          },
+          {
+            "name": "target",
+            "type": "string"
+          },
+          {
+            "name": "fixture_id",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_0_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_1_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_2_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_3_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_4_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_5_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_6_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_7_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_8_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_9_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_home_10_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_0_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_1_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_2_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_3_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_4_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_5_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_6_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_7_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_8_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_9_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "home_player_id_away_10_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_0_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_1_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_2_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_3_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_4_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_5_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_6_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_7_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_8_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_9_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_home_10_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_0_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_1_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_2_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_3_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_4_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_5_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_6_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_7_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_8_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_9_lag",
+            "type": "bigint"
+          },
+          {
+            "name": "away_player_id_away_10_lag",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "cumeDist": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -1078,25 +1455,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "windows": [
-    {
-      "windowUpperBound": 0.0,
-      "enablePartitioning": false,
-      "enableOrdering": false,
-      "precedingRows": 0,
-      "limitFollowing": false,
-      "orders": [],
-      "limitPreceding": false,
-      "followingRows": 0,
-      "windowLowerBound": 0.0,
-      "enableLimits": false
-    }
-  ],
   "rowNumber": false,
-  "computedColumns": [],
-  "postFilter": {
-    "distinct": false,
-    "enabled": false
-  },
-  "cumeDist": false
+  "outputColumnNameOverrides": {}
 }
