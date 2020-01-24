@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579861993950
+    "lastModifiedOn": 1579863273013
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,6 +103,50 @@
         "type": "double"
       },
       {
+        "name": "home_player_rank_lag_0",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_1",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_2",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_3",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_4",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_5",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_6",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_7",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_8",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_9",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_rank_lag_10",
+        "type": "bigint"
+      },
+      {
         "name": "home_player_stddev_new_last_match",
         "type": "double"
       },
@@ -117,6 +161,50 @@
       {
         "name": "away_player_avg_new_last_match",
         "type": "double"
+      },
+      {
+        "name": "away_player_rank_lag_0",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_1",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_2",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_3",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_4",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_5",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_6",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_7",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_8",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_9",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_rank_lag_10",
+        "type": "bigint"
       },
       {
         "name": "away_player_stddev_new_last_match",
