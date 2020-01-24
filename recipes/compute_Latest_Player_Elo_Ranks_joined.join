@@ -4,34 +4,57 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "playerTeam",
+            "table": 0
+          },
+          "column2": {
+            "name": "teamName",
+            "table": 1
+          },
+          "maxDistance": 1,
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "playerId",
+      "type": "int",
       "table": 0
     },
     {
       "name": "playerName",
+      "type": "string",
       "table": 0
     },
     {
       "name": "playerTeam",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Elo_rank",
+      "type": "double",
       "table": 0
     },
     {
       "name": "teamId",
+      "type": "int",
       "table": 1
     },
     {
-      "name": "teamName",
+      "name": "Elo_rank",
+      "alias": "Team_Elo_rank",
+      "type": "string",
       "table": 1
     }
   ],
@@ -85,9 +108,50 @@
         "enabled": false
       },
       "autoSelectColumns": false,
+      "prefix": "",
       "index": 1,
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "originalType": "int4",
+            "name": "playerId",
+            "type": "int"
+          },
+          {
+            "originalType": "text",
+            "name": "playerName",
+            "type": "string"
+          },
+          {
+            "originalType": "text",
+            "name": "playerTeam",
+            "type": "string"
+          },
+          {
+            "originalType": "float8",
+            "name": "Elo_rank",
+            "type": "double"
+          },
+          {
+            "originalType": "int4",
+            "name": "teamId",
+            "type": "int"
+          },
+          {
+            "originalType": "text",
+            "name": "Team_Elo_rank",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
