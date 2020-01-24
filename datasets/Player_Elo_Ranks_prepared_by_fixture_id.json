@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579862980047
+    "lastModifiedOn": 1579878643925
   },
   "creationTag": {
     "versionNumber": 0,
@@ -83,6 +83,14 @@
         "type": "string"
       },
       {
+        "name": "player_id_home_concat",
+        "type": "string"
+      },
+      {
+        "name": "player_id_away_concat",
+        "type": "string"
+      },
+      {
         "name": "player_id_home_new_rank_min",
         "type": "double"
       },
@@ -93,10 +101,6 @@
       {
         "name": "player_id_home_new_rank_avg",
         "type": "double"
-      },
-      {
-        "name": "player_id_home_new_rank_concat",
-        "type": "string"
       },
       {
         "name": "player_id_home_new_rank_stddev",
@@ -113,10 +117,6 @@
       {
         "name": "player_id_away_new_rank_avg",
         "type": "double"
-      },
-      {
-        "name": "player_id_away_new_rank_concat",
-        "type": "string"
       },
       {
         "name": "player_id_away_new_rank_stddev",
