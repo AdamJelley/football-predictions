@@ -15,7 +15,18 @@ FROM
                 a."player_id_home_new_rank_max" as "player_rank_max",
                 a."player_id_home_new_rank_avg" as "player_rank_avg",
                 a."player_id_home_new_rank_stddev" as "player_rank_stddev",
-                a."player_id_home_concat" as "player_id_concat"
+                a."player_id_home_concat" as "player_id_concat",
+                a."home_player_0" as "player_0",
+                a."home_player_1" as "player_1",
+                a."home_player_2" as "player_2",
+                a."home_player_3" as "player_3",
+                a."home_player_4" as "player_4",
+                a."home_player_5" as "player_5",
+                a."home_player_6" as "player_6",
+                a."home_player_7" as "player_7",
+                a."home_player_8" as "player_8",
+                a."home_player_9" as "player_9",
+                a."home_player_10" as "player_10"
             FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "homeTeam_team_id"
@@ -32,7 +43,18 @@ FROM
                 b."player_id_away_new_rank_max" as "player_rank_max",
                 b."player_id_away_new_rank_avg" as "player_rank_avg",
                 b."player_id_away_new_rank_stddev" as "player_rank_stddev",
-                b."player_id_away_concat" as "player_id_concat"
+                b."player_id_away_concat" as "player_id_concat",
+                a."away_player_0" as "player_0",
+                a."away_player_1" as "player_1",
+                a."away_player_2" as "player_2",
+                a."away_player_3" as "player_3",
+                a."away_player_4" as "player_4",
+                a."away_player_5" as "player_5",
+                a."away_player_6" as "player_6",
+                a."away_player_7" as "player_7",
+                a."away_player_8" as "player_8",
+                a."away_player_9" as "player_9",
+                a."away_player_10" as "player_10"
             FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "awayTeam_team_id"
