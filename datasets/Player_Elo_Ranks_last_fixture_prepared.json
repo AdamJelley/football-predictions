@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579873625177
+    "lastModifiedOn": 1579873741640
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,10 +65,6 @@
       {
         "name": "event_date",
         "type": "string"
-      },
-      {
-        "name": "event_date_parsed",
-        "type": "date"
       },
       {
         "name": "team_id_home",
@@ -155,10 +151,6 @@
         "type": "double"
       },
       {
-        "name": "home_player_id_away_new_rank_concat_lag",
-        "type": "string"
-      },
-      {
         "name": "home_player_id_away_new_rank_stddev_lag",
         "type": "double"
       },
@@ -173,6 +165,10 @@
       {
         "name": "away_player_id_home_new_rank_avg_lag",
         "type": "double"
+      },
+      {
+        "name": "home_player_id_away_new_rank_concat_lag",
+        "type": "string"
       },
       {
         "name": "away_player_id_home_new_rank_concat_lag",
