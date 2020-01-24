@@ -313,6 +313,63 @@
         ]
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 11
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "home_player_id_home_new_rank_concat_lag",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": ",",
+        "outColPrefix": "home_player_rank_lag_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 11
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "away_player_id_away_new_rank_concat_lag",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": ",",
+        "outColPrefix": "away_player_rank_lag_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "home_player_id_home_new_rank_concat_lag",
+          "away_player_id_away_new_rank_concat_lag"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
