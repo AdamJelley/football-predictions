@@ -37,7 +37,6 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
-          "fixture_id",
           "homeTeam_team_id_new_rank",
           "awayTeam_team_id_new_rank",
           "rank_change_homeTeam_team_id",
