@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579862591888
+    "lastModifiedOn": 1579862650597
   },
   "creationTag": {
     "versionNumber": 0,
@@ -160,94 +160,6 @@
       },
       {
         "name": "home_player_id_home_10_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_0_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_1_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_2_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_3_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_4_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_5_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_6_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_7_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_8_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_9_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "home_player_id_away_10_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_0_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_1_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_2_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_3_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_4_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_5_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_6_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_7_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_8_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_9_lag",
-        "type": "bigint"
-      },
-      {
-        "name": "away_player_id_home_10_lag",
         "type": "bigint"
       },
       {
