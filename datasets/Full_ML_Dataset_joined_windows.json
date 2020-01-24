@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579862418776
+    "lastModifiedOn": 1579862510147
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,38 +87,6 @@
         "type": "double"
       },
       {
-        "name": "home_player_min_new_last_match",
-        "type": "double"
-      },
-      {
-        "name": "home_player_max_new_last_match",
-        "type": "double"
-      },
-      {
-        "name": "home_player_avg_new_last_match",
-        "type": "double"
-      },
-      {
-        "name": "home_player_stddev_new_last_match",
-        "type": "double"
-      },
-      {
-        "name": "away_player_min_new_last_match",
-        "type": "double"
-      },
-      {
-        "name": "away_player_max_new_last_match",
-        "type": "double"
-      },
-      {
-        "name": "away_player_avg_new_last_match",
-        "type": "double"
-      },
-      {
-        "name": "away_player_stddev_new_last_match",
-        "type": "double"
-      },
-      {
         "name": "ELOprob_homeTeam_team_id",
         "type": "double"
       },
@@ -147,95 +115,183 @@
         "type": "bigint"
       },
       {
-        "name": "player_id_home_0",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_1",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_2",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_3",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_4",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_5",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_6",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_7",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_8",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_9",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_home_10",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_0",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_1",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_2",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_3",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_4",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_5",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_6",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_7",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_8",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_9",
-        "type": "bigint"
-      },
-      {
-        "name": "player_id_away_10",
-        "type": "bigint"
-      },
-      {
         "name": "count",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_0_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_1_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_2_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_3_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_4_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_5_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_6_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_7_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_8_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_9_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_home_10_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_0_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_1_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_2_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_3_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_4_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_5_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_6_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_7_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_8_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_9_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "home_player_id_away_10_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_0_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_1_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_2_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_3_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_4_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_5_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_6_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_7_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_8_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_9_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_home_10_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_0_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_1_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_2_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_3_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_4_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_5_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_6_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_7_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_8_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_9_lag",
+        "type": "bigint"
+      },
+      {
+        "name": "away_player_id_away_10_lag",
         "type": "bigint"
       }
     ],
