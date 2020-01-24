@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579879268138
+    "lastModifiedOn": 1579879297850
   },
   "creationTag": {
     "versionNumber": 0,
@@ -201,14 +201,6 @@
       {
         "name": "secondHalfStart",
         "type": "string"
-      },
-      {
-        "name": "team_id_home",
-        "type": "bigint"
-      },
-      {
-        "name": "team_id_away",
-        "type": "bigint"
       },
       {
         "name": "count",
