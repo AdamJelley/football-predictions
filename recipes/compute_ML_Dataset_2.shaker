@@ -254,6 +254,49 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "home_player_id_home_new_rank_min_lag",
+            "to": "home_player_rank_min_lag"
+          },
+          {
+            "from": "home_player_id_home_new_rank_max_lag",
+            "to": "home_player_rank_max_lag"
+          },
+          {
+            "from": "home_player_id_home_new_rank_avg_lag",
+            "to": "home_player_rank_avg_lag"
+          },
+          {
+            "from": "home_player_id_home_new_rank_stddev_lag",
+            "to": "home_player_rank_stddev_lag"
+          },
+          {
+            "from": "away_player_id_away_new_rank_min_lag",
+            "to": "away_player_rank_min_lag"
+          },
+          {
+            "from": "away_player_id_away_new_rank_max_lag",
+            "to": "away_player_rank_max_lag"
+          },
+          {
+            "from": "away_player_id_away_new_rank_avg_lag",
+            "to": "away_player_rank_avg_lag"
+          },
+          {
+            "from": "away_player_id_away_new_rank_stddev_lag",
+            "to": "away_player_rank_stddev_lag"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
