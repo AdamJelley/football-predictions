@@ -29,7 +29,43 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "home_player_id_away_0_lag",
+          "home_player_id_away_1_lag",
+          "home_player_id_away_2_lag",
+          "home_player_id_away_3_lag",
+          "home_player_id_away_4_lag",
+          "home_player_id_away_5_lag",
+          "home_player_id_away_6_lag",
+          "home_player_id_away_7_lag",
+          "home_player_id_away_8_lag",
+          "home_player_id_away_9_lag",
+          "home_player_id_away_10_lag",
+          "away_player_id_home_0_lag",
+          "away_player_id_home_1_lag",
+          "away_player_id_home_2_lag",
+          "away_player_id_home_3_lag",
+          "away_player_id_home_4_lag",
+          "away_player_id_home_5_lag",
+          "away_player_id_home_6_lag",
+          "away_player_id_home_7_lag",
+          "away_player_id_home_8_lag",
+          "away_player_id_home_9_lag",
+          "away_player_id_home_10_lag"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
