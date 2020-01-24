@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579871781583
+    "lastModifiedOn": 1579871836109
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,33 +60,27 @@
     "columns": [
       {
         "name": "playerId",
-        "type": "int",
-        "originalType": "int4"
+        "type": "int"
       },
       {
         "name": "playerName",
-        "type": "string",
-        "originalType": "text"
+        "type": "string"
       },
       {
         "name": "playerTeam",
-        "type": "string",
-        "originalType": "text"
+        "type": "string"
       },
       {
         "name": "Elo_rank",
-        "type": "double",
-        "originalType": "float8"
+        "type": "double"
       },
       {
         "name": "teamId",
-        "type": "int",
-        "originalType": "int4"
+        "type": "int"
       },
       {
-        "name": "teamName",
-        "type": "string",
-        "originalType": "text"
+        "name": "Team_Elo_rank",
+        "type": "string"
       }
     ],
     "userModified": true
