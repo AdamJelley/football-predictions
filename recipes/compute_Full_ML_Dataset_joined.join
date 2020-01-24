@@ -4,110 +4,290 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "fixture_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "fixture_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "team_id_home",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "team_id_home",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "team_id_away",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "team_id_away",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "event_date",
+      "type": "date",
       "table": 0
     },
     {
       "name": "team_id_home",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "team_id_away",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "homeTeam_team_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "awayTeam_team_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "home_Elo_rank",
+      "type": "double",
       "table": 0
     },
     {
       "name": "away_Elo_rank",
+      "type": "double",
       "table": 0
     },
     {
       "name": "home_player_min_new_last_match",
+      "type": "double",
       "table": 0
     },
     {
       "name": "home_player_max_new_last_match",
+      "type": "double",
       "table": 0
     },
     {
       "name": "home_player_avg_new_last_match",
+      "type": "double",
       "table": 0
     },
     {
       "name": "home_player_stddev_new_last_match",
+      "type": "double",
       "table": 0
     },
     {
       "name": "away_player_min_new_last_match",
+      "type": "double",
       "table": 0
     },
     {
       "name": "away_player_max_new_last_match",
+      "type": "double",
       "table": 0
     },
     {
       "name": "away_player_avg_new_last_match",
+      "type": "double",
       "table": 0
     },
     {
       "name": "away_player_stddev_new_last_match",
+      "type": "double",
       "table": 0
     },
     {
       "name": "ELOprob_homeTeam_team_id",
+      "type": "double",
       "table": 0
     },
     {
       "name": "ELOprob_awayTeam_team_id",
+      "type": "double",
       "table": 0
     },
     {
       "name": "league_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "venue",
+      "type": "string",
       "table": 0
     },
     {
       "name": "score_fulltime",
+      "type": "string",
       "table": 0
     },
     {
       "name": "target",
+      "type": "string",
       "table": 0
     },
     {
       "name": "fixture_id",
+      "type": "bigint",
       "table": 1
     },
     {
-      "name": "player_id_home_concat",
+      "name": "player_id_home_0",
+      "type": "bigint",
       "table": 1
     },
     {
-      "name": "player_id_away_concat",
+      "name": "player_id_home_1",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_2",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_3",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_4",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_5",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_6",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_7",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_8",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_9",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_10",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_0",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_1",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_2",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_3",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_4",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_5",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_6",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_7",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_8",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_9",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_10",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "count",
+      "type": "bigint",
       "table": 1
     }
   ],
@@ -156,14 +336,198 @@
       "computedColumns": []
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
-      "index": 1,
-      "computedColumns": []
+      "index": 1
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "event_date",
+            "type": "date"
+          },
+          {
+            "name": "team_id_home",
+            "type": "bigint"
+          },
+          {
+            "name": "team_id_away",
+            "type": "bigint"
+          },
+          {
+            "name": "homeTeam_team_name",
+            "type": "string"
+          },
+          {
+            "name": "awayTeam_team_name",
+            "type": "string"
+          },
+          {
+            "name": "home_Elo_rank",
+            "type": "double"
+          },
+          {
+            "name": "away_Elo_rank",
+            "type": "double"
+          },
+          {
+            "name": "home_player_min_new_last_match",
+            "type": "double"
+          },
+          {
+            "name": "home_player_max_new_last_match",
+            "type": "double"
+          },
+          {
+            "name": "home_player_avg_new_last_match",
+            "type": "double"
+          },
+          {
+            "name": "home_player_stddev_new_last_match",
+            "type": "double"
+          },
+          {
+            "name": "away_player_min_new_last_match",
+            "type": "double"
+          },
+          {
+            "name": "away_player_max_new_last_match",
+            "type": "double"
+          },
+          {
+            "name": "away_player_avg_new_last_match",
+            "type": "double"
+          },
+          {
+            "name": "away_player_stddev_new_last_match",
+            "type": "double"
+          },
+          {
+            "name": "ELOprob_homeTeam_team_id",
+            "type": "double"
+          },
+          {
+            "name": "ELOprob_awayTeam_team_id",
+            "type": "double"
+          },
+          {
+            "name": "league_name",
+            "type": "string"
+          },
+          {
+            "name": "venue",
+            "type": "string"
+          },
+          {
+            "name": "score_fulltime",
+            "type": "string"
+          },
+          {
+            "name": "target",
+            "type": "string"
+          },
+          {
+            "name": "fixture_id",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_0",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_1",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_2",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_3",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_4",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_5",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_6",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_7",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_8",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_9",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_home_10",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_0",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_1",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_2",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_3",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_4",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_5",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_6",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_7",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_8",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_9",
+            "type": "bigint"
+          },
+          {
+            "name": "player_id_away_10",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }

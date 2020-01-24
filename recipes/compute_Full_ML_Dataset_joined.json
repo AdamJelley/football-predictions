@@ -15,7 +15,7 @@
           "deps": []
         },
         {
-          "ref": "Lineups_by_fixture_id",
+          "ref": "Lineups_by_fixture_id_prepared",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579861941832
+    "lastModifiedOn": 1579862080676
   },
   "creationTag": {
     "versionNumber": 0,
