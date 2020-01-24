@@ -213,7 +213,7 @@
       "count": false,
       "$idx": 5,
       "sum": false,
-      "concat": false,
+      "concat": true,
       "type": "double",
       "concatDistinct": false,
       "sum2": false,
@@ -221,7 +221,9 @@
       "countDistinct": false,
       "avg": true,
       "stddev": true,
-      "first": false
+      "first": false,
+      "orderColumn": "fixture_id",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -249,7 +251,7 @@
       "count": false,
       "$idx": 7,
       "sum": false,
-      "concat": false,
+      "concat": true,
       "type": "double",
       "concatDistinct": false,
       "sum2": false,
@@ -257,7 +259,9 @@
       "countDistinct": false,
       "avg": true,
       "stddev": true,
-      "first": false
+      "first": false,
+      "orderColumn": "fixture_id",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -591,6 +595,10 @@
             "type": "double"
           },
           {
+            "name": "player_id_home_new_rank_concat",
+            "type": "string"
+          },
+          {
             "name": "player_id_home_new_rank_stddev",
             "type": "double"
           },
@@ -605,6 +613,10 @@
           {
             "name": "player_id_away_new_rank_avg",
             "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_concat",
+            "type": "string"
           },
           {
             "name": "player_id_away_new_rank_stddev",
