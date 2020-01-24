@@ -207,6 +207,56 @@
       "table": 0
     },
     {
+      "name": "player_id_home_concat",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_concat",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_new_rank_min",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_new_rank_max",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_new_rank_avg",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "player_id_home_new_rank_stddev",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_new_rank_min",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_new_rank_max",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_new_rank_avg",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "player_id_away_new_rank_stddev",
+      "type": "double",
+      "table": 1
+    },
+    {
       "name": "count",
       "type": "bigint",
       "table": 1
@@ -564,6 +614,46 @@
           {
             "name": "secondHalfStart",
             "type": "string"
+          },
+          {
+            "name": "player_id_home_concat",
+            "type": "string"
+          },
+          {
+            "name": "player_id_away_concat",
+            "type": "string"
+          },
+          {
+            "name": "player_id_home_new_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_home_new_rank_stddev",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_min",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_max",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_avg",
+            "type": "double"
+          },
+          {
+            "name": "player_id_away_new_rank_stddev",
+            "type": "double"
           },
           {
             "name": "count",
