@@ -11,6 +11,9 @@
           "map": {
             "Team_Elo_Ranks": {
               "repartition": 10
+            },
+            "Team_Player_Ranks_joined": {
+              "repartition": 10
             }
           }
         },
@@ -69,11 +72,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579879570998
+    "lastModifiedOn": 1579880271707
   },
   "creationTag": {
     "versionNumber": 0,
