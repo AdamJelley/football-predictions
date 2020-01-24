@@ -8,7 +8,7 @@ FROM
         (
             SELECT 
                 a."event_date" as "event_date", 
-                a."team_id_home" as "teamId", 
+                a."homeTeam_team_id" as "teamId", 
                 a."homeTeam_team_name" as "teamName", 
                 a."homeTeam_team_id_new_rank" as "Elo_rank", 
                 a."player_id_home_new_rank_min" as "player_rank_min",
@@ -18,14 +18,14 @@ FROM
                 a."player_id_home_concat" as "player_id_concat"
             FROM
               (SELECT *, ROW_NUMBER()
-              OVER (PARTITION BY "team_id_home"
+              OVER (PARTITION BY "homeTeam_team_id"
               ORDER BY "event_date" desc)
               FROM "FOOTBALLMATCHPREDICTIONS_team_player_ranks_joined") a
               WHERE a.ROW_NUMBER = 1
         UNION
             SELECT 
                 b."event_date" as "event_date", 
-                b."team_id_away" as "teamId", 
+                b."awayTeam_team_id" as "teamId", 
                 b."awayTeam_team_name" as "teamName", 
                 b."awayTeam_team_id_new_rank" as "Elo_rank",
                 b."player_id_away_new_rank_min" as "player_rank_min",
@@ -35,7 +35,7 @@ FROM
                 b."player_id_away_concat" as "player_id_concat"
             FROM
               (SELECT *, ROW_NUMBER()
-              OVER (PARTITION BY "team_id_away"
+              OVER (PARTITION BY "awayTeam_team_id"
               ORDER BY "event_date" desc)
               FROM "FOOTBALLMATCHPREDICTIONS_team_player_ranks_joined") b
               WHERE b.ROW_NUMBER = 1
