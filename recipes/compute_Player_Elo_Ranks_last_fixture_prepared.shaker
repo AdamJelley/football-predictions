@@ -31,7 +31,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateParser",
@@ -46,6 +46,21 @@
         "timezone_id": "UTC",
         "appliesTo": "SINGLE_COLUMN",
         "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "away_player_id_home_new_rank_avg_lag",
+        "columns": [
+          "home_player_id_away_new_rank_concat_lag"
+        ],
+        "reorderAction": "AFTER_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
