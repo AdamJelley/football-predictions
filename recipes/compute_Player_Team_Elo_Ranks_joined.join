@@ -145,6 +145,11 @@
       "table": 0
     },
     {
+      "name": "home_player_id_home_new_rank_concat_lag",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "home_player_id_home_new_rank_stddev_lag",
       "type": "double",
       "table": 0
@@ -162,6 +167,11 @@
     {
       "name": "away_player_id_away_new_rank_avg_lag",
       "type": "double",
+      "table": 0
+    },
+    {
+      "name": "away_player_id_away_new_rank_concat_lag",
+      "type": "string",
       "table": 0
     },
     {
@@ -446,6 +456,10 @@
             "type": "double"
           },
           {
+            "name": "home_player_id_home_new_rank_concat_lag",
+            "type": "string"
+          },
+          {
             "name": "home_player_id_home_new_rank_stddev_lag",
             "type": "double"
           },
@@ -460,6 +474,10 @@
           {
             "name": "away_player_id_away_new_rank_avg_lag",
             "type": "double"
+          },
+          {
+            "name": "away_player_id_away_new_rank_concat_lag",
+            "type": "string"
           },
           {
             "name": "away_player_id_away_new_rank_stddev_lag",
