@@ -1,4 +1,4 @@
-SELECT d."teamId"::INTEGER, d."teamName", d."Elo_rank", d."player_rank_min", d."player_rank_max", d."player_rank_avg", d."player_rank_stddev"
+SELECT d."teamId"::INTEGER, d."teamName", d."Elo_rank", d."player_rank_min", d."player_rank_max", d."player_rank_avg", d."player_rank_stddev", d."player_id_concat"
 FROM 
     (
     SELECT c.*, ROW_NUMBER()
@@ -14,7 +14,8 @@ FROM
                 a."player_id_home_new_rank_min" as "player_rank_min",
                 a."player_id_home_new_rank_max" as "player_rank_max",
                 a."player_id_home_new_rank_avg" as "player_rank_avg",
-                a."player_id_home_new_rank_stddev" as "player_rank_stddev"
+                a."player_id_home_new_rank_stddev" as "player_rank_stddev",
+                a."player_id_home_concat" as "player_id_concat"
             FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "team_id_home"
@@ -30,7 +31,8 @@ FROM
                 b."player_id_away_new_rank_min" as "player_rank_min",
                 b."player_id_away_new_rank_max" as "player_rank_max",
                 b."player_id_away_new_rank_avg" as "player_rank_avg",
-                b."player_id_away_new_rank_stddev" as "player_rank_stddev"
+                b."player_id_away_new_rank_stddev" as "player_rank_stddev",
+                b."player_id_away_concat" as "player_id_concat"
             FROM
               (SELECT *, ROW_NUMBER()
               OVER (PARTITION BY "team_id_away"
