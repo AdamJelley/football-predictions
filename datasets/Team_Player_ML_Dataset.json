@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579880266414
+    "lastModifiedOn": 1579880543017
   },
   "creationTag": {
     "versionNumber": 0,
@@ -187,35 +187,35 @@
         "type": "bigint"
       },
       {
-        "name": "home_player_id_home_new_rank_min_lag",
+        "name": "home_player_rank_min_lag",
         "type": "double"
       },
       {
-        "name": "home_player_id_home_new_rank_max_lag",
+        "name": "home_player_rank_max_lag",
         "type": "double"
       },
       {
-        "name": "home_player_id_home_new_rank_avg_lag",
+        "name": "home_player_rank_avg_lag",
         "type": "double"
       },
       {
-        "name": "home_player_id_home_new_rank_stddev_lag",
+        "name": "home_player_rank_stddev_lag",
         "type": "double"
       },
       {
-        "name": "away_player_id_away_new_rank_min_lag",
+        "name": "away_player_rank_min_lag",
         "type": "double"
       },
       {
-        "name": "away_player_id_away_new_rank_max_lag",
+        "name": "away_player_rank_max_lag",
         "type": "double"
       },
       {
-        "name": "away_player_id_away_new_rank_avg_lag",
+        "name": "away_player_rank_avg_lag",
         "type": "double"
       },
       {
-        "name": "away_player_id_away_new_rank_stddev_lag",
+        "name": "away_player_rank_stddev_lag",
         "type": "double"
       },
       {
