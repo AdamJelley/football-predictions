@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1579878762144
+    "lastModifiedOn": 1579885030301
   },
   "creationTag": {
     "versionNumber": 0,
@@ -81,6 +81,46 @@
       {
         "name": "awayTeam_team_name",
         "type": "string"
+      },
+      {
+        "name": "player_id_home_concat",
+        "type": "string"
+      },
+      {
+        "name": "player_id_away_concat",
+        "type": "string"
+      },
+      {
+        "name": "player_id_home_new_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "player_id_home_new_rank_stddev",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_min",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_max",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_avg",
+        "type": "double"
+      },
+      {
+        "name": "player_id_away_new_rank_stddev",
+        "type": "double"
       },
       {
         "name": "count",
