@@ -236,23 +236,18 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "player_id_home_new_rank_stddev",
+      "column": "player_id_home_new_rank_concat",
       "count": false,
       "$idx": 9,
-      "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
+      "type": "string",
       "lead": false,
-      "concatDistinct": false,
-      "dateDiffUnit": "DAY",
       "min": false,
-      "countDistinct": false,
       "avg": false,
       "lag": true,
-      "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -261,7 +256,7 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "player_id_away_new_rank_min",
+      "column": "player_id_home_new_rank_stddev",
       "count": false,
       "$idx": 10,
       "lagValues": "1",
@@ -286,7 +281,7 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "player_id_away_new_rank_max",
+      "column": "player_id_away_new_rank_min",
       "count": false,
       "$idx": 11,
       "lagValues": "1",
@@ -311,7 +306,7 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "player_id_away_new_rank_avg",
+      "column": "player_id_away_new_rank_max",
       "count": false,
       "$idx": 12,
       "lagValues": "1",
@@ -336,7 +331,7 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "player_id_away_new_rank_stddev",
+      "column": "player_id_away_new_rank_avg",
       "count": false,
       "$idx": 13,
       "lagValues": "1",
@@ -361,9 +356,54 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "count",
+      "column": "player_id_away_new_rank_concat",
       "count": false,
       "$idx": 14,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": true,
+      "stddev": false,
+      "value": false,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "player_id_away_new_rank_stddev",
+      "count": false,
+      "$idx": 15,
+      "lagValues": "1",
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": true,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "count",
+      "count": false,
+      "$idx": 16,
       "lagValues": "1",
       "sum": false,
       "concat": false,
@@ -497,6 +537,10 @@
             "type": "double"
           },
           {
+            "name": "home_player_id_home_new_rank_concat_lag",
+            "type": "string"
+          },
+          {
             "name": "home_player_id_home_new_rank_stddev_lag",
             "type": "double"
           },
@@ -511,6 +555,10 @@
           {
             "name": "home_player_id_away_new_rank_avg_lag",
             "type": "double"
+          },
+          {
+            "name": "home_player_id_away_new_rank_concat_lag",
+            "type": "string"
           },
           {
             "name": "home_player_id_away_new_rank_stddev_lag",
@@ -529,6 +577,10 @@
             "type": "double"
           },
           {
+            "name": "away_player_id_home_new_rank_concat_lag",
+            "type": "string"
+          },
+          {
             "name": "away_player_id_home_new_rank_stddev_lag",
             "type": "double"
           },
@@ -543,6 +595,10 @@
           {
             "name": "away_player_id_away_new_rank_avg_lag",
             "type": "double"
+          },
+          {
+            "name": "away_player_id_away_new_rank_concat_lag",
+            "type": "string"
           },
           {
             "name": "away_player_id_away_new_rank_stddev_lag",
