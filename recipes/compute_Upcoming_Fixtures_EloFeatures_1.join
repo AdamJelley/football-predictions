@@ -154,76 +154,91 @@
     },
     {
       "name": "player_rank_min",
+      "alias": "home_player_rank_min_lag",
       "type": "double",
       "table": 1
     },
     {
       "name": "player_rank_max",
+      "alias": "home_player_rank_max_lag",
       "type": "double",
       "table": 1
     },
     {
       "name": "player_rank_avg",
+      "alias": "home_player_rank_avg_lag",
       "type": "double",
       "table": 1
     },
     {
       "name": "player_rank_stddev",
+      "alias": "home_player_rank_stddev_lag",
       "type": "double",
       "table": 1
     },
     {
       "name": "player_0",
+      "alias": "home_player_lag_0",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_1",
+      "alias": "home_player_lag_1",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_2",
+      "alias": "home_player_lag_2",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_3",
+      "alias": "home_player_lag_3",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_4",
+      "alias": "home_player_lag_4",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_5",
+      "alias": "home_player_lag_5",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_6",
+      "alias": "home_player_lag_6",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_7",
+      "alias": "home_player_lag_7",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_8",
+      "alias": "home_player_lag_8",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_9",
+      "alias": "home_player_lag_9",
       "type": "bigint",
       "table": 1
     },
     {
       "name": "player_10",
+      "alias": "home_player_lag_10",
       "type": "bigint",
       "table": 1
     },
@@ -234,76 +249,91 @@
     },
     {
       "name": "player_rank_min",
+      "alias": "away_player_rank_min_lag",
       "type": "double",
       "table": 2
     },
     {
       "name": "player_rank_max",
+      "alias": "away_player_rank_max_lag",
       "type": "double",
       "table": 2
     },
     {
       "name": "player_rank_avg",
+      "alias": "away_player_rank_avg_lag",
       "type": "double",
       "table": 2
     },
     {
       "name": "player_rank_stddev",
+      "alias": "away_player_rank_stddev_lag",
       "type": "double",
       "table": 2
     },
     {
       "name": "player_0",
+      "alias": "away_player_lag_0",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_1",
+      "alias": "away_player_lag_1",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_2",
+      "alias": "away_player_lag_2",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_3",
+      "alias": "away_player_lag_3",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_4",
+      "alias": "away_player_lag_4",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_5",
+      "alias": "away_player_lag_5",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_6",
+      "alias": "away_player_lag_6",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_7",
+      "alias": "away_player_lag_7",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_8",
+      "alias": "away_player_lag_8",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_9",
+      "alias": "away_player_lag_9",
       "type": "bigint",
       "table": 2
     },
     {
       "name": "player_10",
+      "alias": "away_player_lag_10",
       "type": "bigint",
       "table": 2
     }
@@ -443,77 +473,77 @@
           },
           {
             "originalType": "float8",
-            "name": "home_player_rank_min",
+            "name": "home_player_rank_min_lag",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "home_player_rank_max",
+            "name": "home_player_rank_max_lag",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "home_player_rank_avg",
+            "name": "home_player_rank_avg_lag",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "home_player_rank_stddev",
+            "name": "home_player_rank_stddev_lag",
             "type": "double"
           },
           {
             "originalType": "int8",
-            "name": "home_player_0",
+            "name": "home_player_lag_0",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_1",
+            "name": "home_player_lag_1",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_2",
+            "name": "home_player_lag_2",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_3",
+            "name": "home_player_lag_3",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_4",
+            "name": "home_player_lag_4",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_5",
+            "name": "home_player_lag_5",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_6",
+            "name": "home_player_lag_6",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_7",
+            "name": "home_player_lag_7",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_8",
+            "name": "home_player_lag_8",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_9",
+            "name": "home_player_lag_9",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "home_player_10",
+            "name": "home_player_lag_10",
             "type": "bigint"
           },
           {
@@ -523,77 +553,77 @@
           },
           {
             "originalType": "float8",
-            "name": "away_player_rank_min",
+            "name": "away_player_rank_min_lag",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "away_player_rank_max",
+            "name": "away_player_rank_max_lag",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "away_player_rank_avg",
+            "name": "away_player_rank_avg_lag",
             "type": "double"
           },
           {
             "originalType": "float8",
-            "name": "away_player_rank_stddev",
+            "name": "away_player_rank_stddev_lag",
             "type": "double"
           },
           {
             "originalType": "int8",
-            "name": "away_player_0",
+            "name": "away_player_lag_0",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_1",
+            "name": "away_player_lag_1",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_2",
+            "name": "away_player_lag_2",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_3",
+            "name": "away_player_lag_3",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_4",
+            "name": "away_player_lag_4",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_5",
+            "name": "away_player_lag_5",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_6",
+            "name": "away_player_lag_6",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_7",
+            "name": "away_player_lag_7",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_8",
+            "name": "away_player_lag_8",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_9",
+            "name": "away_player_lag_9",
             "type": "bigint"
           },
           {
             "originalType": "int8",
-            "name": "away_player_10",
+            "name": "away_player_lag_10",
             "type": "bigint"
           }
         ],
