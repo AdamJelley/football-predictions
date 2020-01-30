@@ -3,13 +3,13 @@
   "id": "RetrainModel",
   "type": "step_based",
   "name": "RetrainModel",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1580397623840
+    "lastModifiedOn": 1580397826583
   },
   "checklists": {
     "checklists": []
