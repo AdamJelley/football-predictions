@@ -2,6 +2,8 @@
   "type": "STANDARD",
   "hasLegacyBackendURL": false,
   "params": {
+    "html": "\u003c!-- Body of your app --\u003e",
+    "css": "body {\n}",
     "backendEnabled": true,
     "autoStartBackend": false,
     "envSelection": {
@@ -24,7 +26,7 @@
   },
   "config": {},
   "name": "FootballPredictions",
-  "apiKey": "fFjtfn9QRUyszEpoiYCAiAiQjOG44c5U",
+  "apiKey": "AcNp2B2yvY15UWCprQMpLunstGrsVaqH",
   "versionTag": {
     "versionNumber": 193,
     "lastModifiedBy": {

@@ -82,36 +82,7 @@
     }
   },
   "owner": "ajelley",
-  "permissions": [
-    {
-      "group": "wscr",
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": false,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
-    },
-    {
-      "group": "gallery_admin",
-      "admin": true,
-      "readProjectContent": false,
-      "writeProjectContent": true,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
-    }
-  ],
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -209,7 +180,6 @@
     }
   },
   "name": "Football Match Predictions",
-  "projectStatus": "In use",
   "imgPattern": 5,
   "showInitials": false,
   "metrics": {
@@ -267,11 +237,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
-      "login": "raffane"
+      "login": "ajelley"
     },
-    "lastModifiedOn": 1578416716731
+    "lastModifiedOn": 1580397623820
   },
   "creationTag": {
     "versionNumber": 0,
@@ -286,7 +256,8 @@
     "football",
     "webapp",
     "demo",
-    "gallery"
+    "gallery",
+    "duplicated"
   ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,

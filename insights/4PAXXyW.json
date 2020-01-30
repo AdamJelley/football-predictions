@@ -1,29 +1,29 @@
 {
-  "type": "article",
-  "params": {
-    "articleId": "1"
-  },
-  "owner": "ajelley",
-  "listed": false,
-  "name": "Reference Doc",
-  "dashboardCreationId": "Hsi5bIw",
-  "versionTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "ajelley"
-    },
-    "lastModifiedOn": 1576156856397
-  },
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "ajelley"
-    },
-    "lastModifiedOn": 1576156856397
-  },
-  "tags": [],
-  "customFields": {},
-  "checklists": {
-    "checklists": []
-  }
+    "name": "Reference Doc", 
+    "versionTag": {
+        "lastModifiedBy": {
+            "login": "ajelley"
+        }, 
+        "lastModifiedOn": 1576156856397, 
+        "versionNumber": 0
+    }, 
+    "tags": [], 
+    "creationTag": {
+        "lastModifiedBy": {
+            "login": "ajelley"
+        }, 
+        "lastModifiedOn": 1576156856397, 
+        "versionNumber": 0
+    }, 
+    "params": {
+        "articleId": "1"
+    }, 
+    "listed": false, 
+    "owner": "ajelley", 
+    "checklists": {
+        "checklists": []
+    }, 
+    "customFields": {}, 
+    "dashboardCreationId": "Hsi5bIw", 
+    "type": "article"
 }

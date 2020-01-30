@@ -1,15 +1,15 @@
 {
-  "projectKey": "FOOTBALLMATCHPREDICTIONS",
+  "projectKey": "FOOTBALLMATCHPREDICTIONSDEMO",
   "id": "PredictUpcomingFixtures",
   "type": "step_based",
   "name": "PredictUpcomingFixtures",
-  "active": true,
+  "active": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575380738740
+    "lastModifiedOn": 1580397623836
   },
   "checklists": {
     "checklists": []

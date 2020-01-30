@@ -1,9 +1,12 @@
 {
   "tags": {
-    "recipe-editor": {},
-    "deleted-recipe-editor": {},
-    "football": {},
     "webapp": {},
+    "duplicated": {
+      "color": "#3A85AD"
+    },
+    "deleted-recipe-editor": {},
+    "recipe-editor": {},
+    "football": {},
     "demo": {},
     "gallery": {}
   }
