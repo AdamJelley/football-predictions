@@ -180,6 +180,7 @@
     }
   },
   "name": "Football Match Predictions - Demo",
+  "projectStatus": "In production",
   "imgPattern": 5,
   "showInitials": false,
   "metrics": {
@@ -237,11 +238,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1580397635799
+    "lastModifiedOn": 1580397737782
   },
   "creationTag": {
     "versionNumber": 0,
