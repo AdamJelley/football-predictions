@@ -3,13 +3,13 @@
   "id": "ComputeLatestRanks",
   "type": "step_based",
   "name": "ComputeLatestRanks",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1580397623824
+    "lastModifiedOn": 1580397824088
   },
   "checklists": {
     "checklists": []
