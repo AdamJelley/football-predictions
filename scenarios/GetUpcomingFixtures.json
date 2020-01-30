@@ -3,13 +3,13 @@
   "id": "GetUpcomingFixtures",
   "type": "step_based",
   "name": "GetUpcomingFixtures",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1580397623828
+    "lastModifiedOn": 1580397824704
   },
   "checklists": {
     "checklists": []
