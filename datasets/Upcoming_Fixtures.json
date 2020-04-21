@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1585958548693
+    "lastModifiedOn": 1587427270025
   },
   "creationTag": {
     "versionNumber": 0,
@@ -76,7 +76,7 @@
       },
       {
         "name": "firstHalfStart",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "fixture_id",
@@ -116,7 +116,7 @@
       },
       {
         "name": "secondHalfStart",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "status",
