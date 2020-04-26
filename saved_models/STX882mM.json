@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (LOGISTIC_REGRESSION) on ML_Dataset",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1587261618437",
+  "activeVersion": "1587866467465",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -1087,11 +1087,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1587261622646
+    "lastModifiedOn": 1587866470725
   },
   "creationTag": {
     "versionNumber": 0,
