@@ -3,13 +3,13 @@
   "id": "GetUpcomingFixtures",
   "type": "step_based",
   "name": "GetUpcomingFixtures",
-  "active": true,
+  "active": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1580397824704
+    "lastModifiedOn": 1590076456114
   },
   "checklists": {
     "checklists": []
@@ -50,6 +50,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {
@@ -74,6 +76,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {
