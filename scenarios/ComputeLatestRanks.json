@@ -3,13 +3,13 @@
   "id": "ComputeLatestRanks",
   "type": "step_based",
   "name": "ComputeLatestRanks",
-  "active": true,
+  "active": false,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1580397824088
+    "lastModifiedOn": 1590076455573
   },
   "checklists": {
     "checklists": []
@@ -53,6 +53,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {
@@ -77,6 +79,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {
@@ -101,6 +105,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {
@@ -125,6 +131,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {
