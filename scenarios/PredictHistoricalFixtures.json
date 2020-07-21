@@ -3,13 +3,13 @@
   "id": "PredictHistoricalFixtures",
   "type": "step_based",
   "name": "PredictHistoricalFixtures",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1590076456914
+    "lastModifiedOn": 1595325315807
   },
   "checklists": {
     "checklists": []
