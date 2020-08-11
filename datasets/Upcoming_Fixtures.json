@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1597017709578
+    "lastModifiedOn": 1597104092605
   },
   "creationTag": {
     "versionNumber": 0,
@@ -84,11 +84,11 @@
       },
       {
         "name": "goalsAwayTeam",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "goalsHomeTeam",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "homeTeam",
