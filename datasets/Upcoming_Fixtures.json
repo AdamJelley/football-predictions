@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1597968117564
+    "lastModifiedOn": 1598054490846
   },
   "creationTag": {
     "versionNumber": 0,
@@ -76,7 +76,7 @@
       },
       {
         "name": "firstHalfStart",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "fixture_id",
@@ -84,11 +84,11 @@
       },
       {
         "name": "goalsAwayTeam",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "goalsHomeTeam",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "homeTeam",
@@ -116,7 +116,7 @@
       },
       {
         "name": "secondHalfStart",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "status",
