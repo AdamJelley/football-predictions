@@ -62,6 +62,7 @@
     "objects": []
   },
   "projectType": "REGULAR",
+  "projectAppType": "REGULAR",
   "bundleExporterSettings": {
     "exportOptions": {
       "exportUploads": false,
@@ -90,6 +91,7 @@
   "settings": {
     "flowAnchorSourcesAndSinks": true,
     "gitCommitMode": "AUTO",
+    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": []
@@ -125,11 +127,15 @@
     },
     "codeEnvs": {
       "python": {
-        "useBuiltinEnv": true,
+        "mode": "INHERIT",
         "preventOverride": false
       },
       "r": {
-        "useBuiltinEnv": true,
+        "mode": "INHERIT",
+        "preventOverride": false
+      },
+      "julia": {
+        "mode": "INHERIT",
         "preventOverride": false
       }
     },
@@ -171,11 +177,21 @@
         "containerSelection": {
           "containerMode": "INHERIT"
         },
+        "overrideGlobalK8sExposition": false,
         "exposition": {
           "type": "local_process",
           "params": {}
         },
-        "nbReplicas": 1
+        "scaling": {
+          "initialReplicas": 1,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaMetrics": [],
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0,
+          "hpaAnnotations": []
+        },
+        "deploymentModifier": {}
       }
     }
   },
@@ -238,11 +254,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 29,
+    "versionNumber": 30,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1580397737782
+    "lastModifiedOn": 1599735386344
   },
   "creationTag": {
     "versionNumber": 0,
@@ -262,9 +278,9 @@
   ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,
-    "gdpr_forbid_uploaded_datasets": false,
+    "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_model_creation": false,
-    "gdpr_forbid_dataset_sharing": false
+    "gdpr_forbid_uploaded_datasets": false
   },
   "checklists": {
     "checklists": [
