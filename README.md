@@ -10,7 +10,7 @@ In the current version, we used the match fixtures API to get historical match r
 
 # Flow
 <p class="text-center">
-<a href="/projects/FOOTBALLMATCHPREDICTIONS/flow/"  class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon">Go to Flow</a>
+<a href="/projects/FOOTBALLMATCHPREDICTIONS/flow/" class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon">Go to Flow</a>
 </p>
 
 The first python recipe ([compute_Leagues](recipe:compute_Leagues)) is used to get the available leagues and their corresponding IDs from the API. This data is cleaned and filtered down to the leagues of interest to give the [Leagues_prepared_filtered](dataset:Leagues_prepared_filtered) dataset.
@@ -28,7 +28,7 @@ We trained a simple [logistic regression ](saved_model:STX882mM) algorithm on th
 
 There are currently 5 scenarios: 4 of which are run daily in sequence starting at 0200 UTC, one of which is run weekly on a Sunday at 0400 UTC (in addition to one just to re-build the entire flow from scratch) which are used to automate the project:
 
- - ** Compute Latest Ranks (Daily, 0200 UTC)** 
+ - **Compute Latest Ranks (Daily, 0200 UTC)** 
    This updates the historical fixtures table with the latest results, recalculates the Elo ranks for the entire history and then extracts the most recent Elo rank for each team.
    
 -  **Get Upcoming Fixtures (Daily, after Compute Latest Ranks completes)** 
