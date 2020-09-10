@@ -2,13 +2,14 @@
   "type": "STANDARD",
   "hasLegacyBackendURL": false,
   "params": {
-    "html": "\u003c!-- Body of your app --\u003e",
-    "css": "body {\n}",
     "backendEnabled": true,
+    "enableJavascriptModules": false,
     "autoStartBackend": false,
+    "hideJSSecurityPanel": false,
     "envSelection": {
       "envMode": "INHERIT"
     },
+    "nbProcesses": 1,
     "libraries": [
       "jquery",
       "dataiku"
@@ -17,16 +18,27 @@
       "containerSelection": {
         "containerMode": "INHERIT"
       },
+      "overrideGlobalK8sExposition": false,
       "exposition": {
         "type": "local_process",
         "params": {}
       },
-      "nbReplicas": 1
-    }
+      "scaling": {
+        "initialReplicas": 1,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "deploymentModifier": {}
+    },
+    "forceAuthentication": false
   },
   "config": {},
   "name": "FootballPredictions",
-  "apiKey": "AcNp2B2yvY15UWCprQMpLunstGrsVaqH",
+  "apiKey": "J9oLvDAAjP9Waasn6sjZm0tZE0NUW68k",
   "versionTag": {
     "versionNumber": 193,
     "lastModifiedBy": {

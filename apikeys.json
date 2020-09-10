@@ -13,11 +13,12 @@
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
       "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
     },
     "onBehalf": "JidtqGs",
     "id": "0PR1zX3Gyusz9W3U",
-    "key": "AcNp2B2yvY15UWCprQMpLunstGrsVaqH",
+    "key": "J9oLvDAAjP9Waasn6sjZm0tZE0NUW68k",
     "label": "Key for Web app FootballPredictions(JidtqGs)",
     "createdOn": 1574528072121
   }

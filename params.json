@@ -82,7 +82,7 @@
       "shareAllInputDatasets": false
     }
   },
-  "owner": "ajelley",
+  "owner": "admin",
   "permissions": [],
   "additionalDashboardUsers": {
     "users": []
@@ -91,7 +91,6 @@
   "settings": {
     "flowAnchorSourcesAndSinks": true,
     "gitCommitMode": "AUTO",
-    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": []
@@ -196,7 +195,6 @@
     }
   },
   "name": "Football Match Predictions - Demo",
-  "projectStatus": "In production",
   "imgPattern": 5,
   "showInitials": false,
   "metrics": {
@@ -254,11 +252,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 30,
+    "versionNumber": 31,
     "lastModifiedBy": {
-      "login": "ajelley"
+      "login": "admin"
     },
-    "lastModifiedOn": 1599735386344
+    "lastModifiedOn": 1599739316103
   },
   "creationTag": {
     "versionNumber": 0,
@@ -274,7 +272,8 @@
     "webapp",
     "demo",
     "gallery",
-    "duplicated"
+    "duplicated",
+    "imported"
   ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,

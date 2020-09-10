@@ -3,13 +3,13 @@
   "id": "PredictUpcomingFixtures",
   "type": "step_based",
   "name": "PredictUpcomingFixtures",
-  "active": true,
+  "active": false,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
-      "login": "ajelley"
+      "login": "admin"
     },
-    "lastModifiedOn": 1595325316480
+    "lastModifiedOn": 1599739316145
   },
   "checklists": {
     "checklists": []
