@@ -1,4 +1,4 @@
-# football-predictions
+# Football Predictions
 
 # Overview
 The aim of this project was to predict the outcome of football matches. Currently, the project is predicting all Premier League and Championship games.
