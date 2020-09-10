@@ -1,8 +1,4 @@
 # football-predictions
-Project to predict the outcomes of football matches.
-
-<img src="/static/dataiku/images/dss-logo-about.png" width="70" style="float: right; margin-right: 30px" />
-<br></br>
 
 # Overview
 The aim of this project was to predict the outcome of football matches. Currently, the project is predicting all Premier League and Championship games.
