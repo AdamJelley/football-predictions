@@ -10,7 +10,7 @@ In the current version, we used the match fixtures API to get historical match r
 
 # Flow
 <p class="text-center">
-<a href="/projects/FOOTBALLMATCHPREDICTIONS/flow/" class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon">Go to Flow</a>
+<a href="/projects/FOOTBALLMATCHPREDICTIONS/flow/" class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon">Go to Flow
 </p>
 
 The first python recipe ([compute_Leagues](recipe:compute_Leagues)) is used to get the available leagues and their corresponding IDs from the API. This data is cleaned and filtered down to the leagues of interest to give the [Leagues_prepared_filtered](dataset:Leagues_prepared_filtered) dataset.
