@@ -13,7 +13,7 @@ In the current version, we used the match fixtures API to get historical match r
 <a href="/projects/FOOTBALLMATCHPREDICTIONS/flow/" class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon">Go to Flow</a>
 </p>
  
-The first python recipe ([compute_Leagues](recipe:compute_Leagues)) is used to get the available leagues and their corresponding IDs from the API. This data is cleaned and filtered down to the leagues of interest to give the [Leagues_prepared_filtered](dataset:Leagues_prepared_filtered) dataset.
+*The first python recipe ([compute_Leagues](recipe:compute_Leagues)) is used to get the available leagues and their corresponding IDs from the API. This data is cleaned and filtered down to the leagues of interest to give the [Leagues_prepared_filtered](dataset:Leagues_prepared_filtered) dataset.
 
 These league IDs are then used to get all the corresponding [historical fixtures](dataset:Fixtures_prepared) (from beginning of 2010 season to yesterday inclusive), as well as the [upcoming fixtures](dataset:Upcoming_Fixtures_prepared) (from today for the next week inclusive), from the API.
 
@@ -62,4 +62,4 @@ The predictions are also served via a [dashboard](dashboard:Hsi5bIw). The dashbo
 
  2. The second slide shows an overview of the model, including training information, model performance metrics, the confusion matrix and the prediction density distributions.
  
- 3. The third slide contains the web application described above.
+ 3. The third slide contains the web application described above.*
