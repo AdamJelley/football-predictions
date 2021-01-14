@@ -9,7 +9,6 @@ The data all comes from [api-football](https://www.api-football.com/), for which
 In the current version, we used the match fixtures API to get historical match results for the Premier League and Championship for the last 10 years, as well as to get the upcoming fixtures for the next week.
 
 # Flow
-
  
 The first python recipe ([compute_Leagues](recipe:compute_Leagues)) is used to get the available leagues and their corresponding IDs from the API. This data is cleaned and filtered down to the leagues of interest to give the [Leagues_prepared_filtered](dataset:Leagues_prepared_filtered) dataset.
 
@@ -20,9 +19,6 @@ We then use a custom developed [plugin](recipe:compute_Team_Elo_Ranks) to comput
 We trained a simple [logistic regression ](saved_model:STX882mM) algorithm on these ranks from the fixtures history to predict the outcome of the game. This model is then used to score the  [upcoming fixtures](dataset:Upcoming_Fixtures_prepared) to get the model [predictions](dataset:Upcoming_Fixtures_EloFeatures_scored) for the next week of fixtures. We also evaluate the model on the historical fixtures so we can trace the accuracay of [historical predictions](dataset:Historical_Fixtures_Evaluated) as well.
 
 # Automation
-<p class="text-center">
-<a href="/projects/FOOTBALLMATCHPREDICTIONS/scenarios/"  class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon" />Scenarios</a>
-</p>
 
 There are currently 5 scenarios: 4 of which are run daily in sequence starting at 0200 UTC, one of which is run weekly on a Sunday at 0400 UTC (in addition to one just to re-build the entire flow from scratch) which are used to automate the project:
 
@@ -43,16 +39,12 @@ There are currently 5 scenarios: 4 of which are run daily in sequence starting a
 
 # Webapp
 <p class="text-center">
-<a href="/projects/FOOTBALLMATCHPREDICTIONS/webapps/JidtqGs_footballpredictions/view"  class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon" />Web Application</a>
+<a href="https://dsproj1.dataiku.com/public-webapps/football-predictions">Web Application</a>
 </p>
 
 The predictions for the upcoming fixtures and also for the historical fixtures are served via a basic Flask [webapp](web_app:JidtqGs). The webapp provides an interface with buttons to get either the upcoming or historical fixtures. These buttons use JS to access a python backend to get the requested data.
 
 # Dashboard
-
-<p class="text-center">
-<a href="/projects/FOOTBALLMATCHPREDICTIONS/dashboards/Hsi5bIw_football-match-predictions-dashboard/view/wiT0cTb"  class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon" />Dashboard</a>
-</p>
 
 The predictions are also served via a [dashboard](dashboard:Hsi5bIw). The dashboard has three slides:
 
